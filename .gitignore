@@ -1,0 +1,23 @@
+# Generated photographs
+Photos/
+
+# Generated analysis outputs
+output/
+analysis_metadata.json
+bilayercomparisonanalysis.csv
+failed_systems.csv
+masterdataanalysis.csv
+
+# Generated helper files
+*/Photograph_generated.tcl
+**/Photograph_generated.tcl
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Image outputs
+*.png
+
+# Optional local config/data files
+monomer_masses.json
