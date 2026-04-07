@@ -110,8 +110,8 @@ PANEL_LABEL_BAND_HEIGHT = 42
 # Sort order for stacked bilayer overview
 BILAYER_PRIORITY = [
     "POPC60CHOL40_W_WF",
-    "POPC80POPS20_W_WF",
     "POPE75POPG25_W_WF",
+    "POPC80POPS20_W_WF"
 ]
 
 # Expected VMD output order
@@ -124,6 +124,31 @@ SNAPSHOT_ORDER = [
     ("snapshot_water.png", "Water"),
 ]
 
+# Peptoid residue categories
+# Edit these to match the exact residue names in your .gro files
+#NOTE - the following residues are not 100% perfectly place or are middle points between bins:
+#   "NmO", "Nfe[4Cl]", "Nfe[4Br]", "Nf[naph]" 
+
+PEPTOID_RESIDUES = {
+    "hydrophobic": [
+        "Na", "Nab", "Ni", "Nl", "Nm", "Nv"
+    ],
+    "proline_like": [
+        # none in current mapping
+    ],
+    "polar": [
+        "Nn", "Nq", "Ns", "Nse", "Nt", "NmO"
+    ],
+    "positive": [
+        "Nk", "Nke", "Nr"
+    ],
+    "negative": [
+        "Nd", "Ne"
+    ],
+    "aromatic": [
+        "Nf", "Nfn", "Nfe", "Nfex", "Nw", "Nwe", "Ny", "Nfe[4Cl]", "Nfe[4Br]", "Nf[naph]"
+    ],
+}
 
 # =============================================================================
 # HELPERS

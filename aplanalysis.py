@@ -89,19 +89,30 @@ PLOT_CFG = {
     "line_width": 2.0,
     "figure_size": (8.0, 5.0),
     "dpi": 300,
+
     "pull_title": "Pull APL vs Time",
     "relax_title": "Relax APL vs Time",
     "combined_title": "Combined APL vs Time",
+    "stacked_combined_title": "Combined APL Comparison",
+
     "x_label": "Time (ns)",
     "y_label_po4": "APL (PO4 method)",
     "y_label_box": "APL (box method)",
-    "combined_use_box_method": False,  # False = plot PO4 APL, True = plot BOX APL
+
+    "combined_use_box_method": False,   # False = PO4, True = BOX
+    "single_use_box_method": False,     # False = PO4, True = BOX
+
+    "pull_color": "orange",
+    "relax_color": "blue",
+
     "pull_xlim": None,
     "relax_xlim": None,
     "combined_xlim": None,
-    "pull_ylim": None,
-    "relax_ylim": None,
-    "combined_ylim": None,
+
+    "pull_ylim": (55, 85),
+    "relax_ylim": (55, 85),
+    "combined_ylim": (55, 85),
+
     "tight_layout": True,
 }
 
@@ -198,6 +209,11 @@ def safe_read_csv(path: Path) -> pd.DataFrame:
 def safe_write_csv(df: pd.DataFrame, path: Path) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(path, index=False)
+
+    try:
+        df.to_excel(path.with_suffix(".xlsx"), index=False)
+    except Exception as exc:
+        print(f"Could not write Excel file for {path}: {exc}")
 
 
 def load_mass_overrides() -> Tuple[Dict[str, float], Dict[str, float]]:
@@ -309,14 +325,6 @@ def find_existing_file(system_dir: Path, candidates: List[str]) -> Path:
     raise FileNotFoundError(
         f"None of these files were found in {system_dir}: {candidates}"
     )
-
-
-def make_system_key(molecule_name: str, nmol: int, system_type: str, run_number: int) -> str:
-    return f"{molecule_name}|{nmol}|{system_type}|{run_number}"
-
-
-def make_system_key(molecule_name: str, nmol: int, system_type: str, run_number: int) -> str:
-    return f"{molecule_name}|{nmol}|{system_type}|{run_number}"
 
 
 def make_system_key(molecule_name: str, nmol: int, system_type: str, run_number: int) -> str:
@@ -445,10 +453,11 @@ def plot_single_phase(
     y_col: str,
     xlim: Optional[Tuple[float, float]],
     ylim: Optional[Tuple[float, float]],
+    line_color: str,
 ) -> None:
     apply_plot_style()
     fig, ax = plt.subplots(figsize=PLOT_CFG["figure_size"], dpi=PLOT_CFG["dpi"])
-    ax.plot(df["time_ns"], df[y_col], linewidth=PLOT_CFG["line_width"])
+    ax.plot(df["time_ns"], df[y_col], linewidth=PLOT_CFG["line_width"], color=line_color)
     ax.set_title(title)
     ax.set_xlabel(PLOT_CFG["x_label"])
     ax.set_ylabel(PLOT_CFG["y_label_box"] if y_col == "APL_BOX" else PLOT_CFG["y_label_po4"])
@@ -464,7 +473,7 @@ def plot_single_phase(
     output_png.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_png)
     plt.close(fig)
-
+    
 
 def plot_combined(
     pull_df: pd.DataFrame,
@@ -487,12 +496,14 @@ def plot_combined(
         pull_plot["time_ns_combined"],
         pull_plot[combined_metric],
         linewidth=PLOT_CFG["line_width"],
+        color=PLOT_CFG["pull_color"],
         label="Pull",
     )
     ax.plot(
         relax_plot["time_ns_combined"],
         relax_plot[combined_metric],
         linewidth=PLOT_CFG["line_width"],
+        color=PLOT_CFG["relax_color"],
         label="Relax",
     )
 
@@ -512,7 +523,7 @@ def plot_combined(
     output_png.parent.mkdir(parents=True, exist_ok=True)
     fig.savefig(output_png)
     plt.close(fig)
-
+    
 
 def save_system_timeseries(
     pull_df: pd.DataFrame,
@@ -527,7 +538,54 @@ def save_system_timeseries(
     relax_out["time_ns_combined"] = relax_out["time_ns"] + pull_end
 
     out = pd.concat([pull_out, relax_out], ignore_index=True)
-    out.to_csv(output_csv, index=False)
+    safe_write_csv(out, output_csv)
+
+
+def image_outputs_exist(system_output_dir: Path) -> bool:
+    required = [
+        system_output_dir / "pull_APL_vs_time.png",
+        system_output_dir / "relax_APL_vs_time.png",
+        system_output_dir / "combined_APL_over_time.png",
+        system_output_dir / "APL_time_series.csv",
+    ]
+    return all(p.exists() for p in required)
+
+
+def stitch_images_horizontally(image_paths: List[Path], output_path: Path, background=(255, 255, 255)) -> None:
+    valid_paths = [p for p in image_paths if p.exists()]
+    if not valid_paths:
+        return
+
+    images = [plt.imread(str(p)) for p in valid_paths]
+
+    # convert to PIL-compatible uint8 arrays if needed
+    pil_images = []
+    from PIL import Image
+    import numpy as np
+
+    for arr in images:
+        if arr.dtype != np.uint8:
+            arr = (255 * arr).clip(0, 255).astype(np.uint8)
+        pil_images.append(Image.fromarray(arr))
+
+    total_width = sum(img.size[0] for img in pil_images)
+    max_height = max(img.size[1] for img in pil_images)
+
+    stitched = Image.new("RGB", (total_width, max_height), background)
+
+    x = 0
+    for img in pil_images:
+        y = (max_height - img.size[1]) // 2
+        stitched.paste(img, (x, y))
+        x += img.size[0]
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    stitched.save(output_path, "PNG")
+    
+def ordered_bilayers(bilayers: List[str]) -> List[str]:
+    ordered = [b for b in BILAYER_PRIORITY if b in bilayers]
+    ordered.extend(sorted([b for b in bilayers if b not in BILAYER_PRIORITY]))
+    return ordered
 
 
 def ordered_bilayer_pairs(existing_bilayers: List[str]) -> List[Tuple[str, str]]:
@@ -563,7 +621,7 @@ def build_grouped_outputs(master_df: pd.DataFrame) -> pd.DataFrame:
         molecule_dir.mkdir(parents=True, exist_ok=True)
 
         mol_df_sorted = mol_df.sort_values(["run_number", "system_type", "nmol"]).reset_index(drop=True)
-        mol_df_sorted.to_csv(molecule_dir / "master_rows_for_this_molecule.csv", index=False)
+        safe_write_csv(mol_df_sorted, molecule_dir / "master_rows_for_this_molecule.csv")
 
         # Comparisons within same molecule, same run_number, same nmol
         for (run_number, nmol), sub in mol_df.groupby(["run_number", "nmol"], dropna=False):
@@ -626,9 +684,50 @@ def build_grouped_outputs(master_df: pd.DataFrame) -> pd.DataFrame:
         for molecule_name, sub in comparison_df.groupby("molecule_name", sort=True):
             molecule_dir = OUTPUT_ROOT / sanitize_filename(molecule_name)
             molecule_dir.mkdir(parents=True, exist_ok=True)
-            sub.to_csv(molecule_dir / "bilayercomparison_for_this_molecule.csv", index=False)
+            safe_write_csv(sub, molecule_dir / "bilayercomparison_for_this_molecule.csv")
 
     return comparison_df
+
+
+def build_grouped_apl_stacks(master_df: pd.DataFrame) -> None:
+    """
+    For each molecule + run + nmol, stitch combined APL graphs from each bilayer horizontally.
+    """
+    if master_df.empty:
+        return
+
+    for (molecule_name, run_number, nmol), sub in master_df.groupby(["molecule_name", "run_number", "nmol"], dropna=False):
+        bilayers = ordered_bilayers(list(sub["system_type"].unique()))
+        image_paths = []
+
+        for bilayer in bilayers:
+            row = sub[sub["system_type"] == bilayer]
+            if row.empty:
+                continue
+
+            system_output_dir = (
+                OUTPUT_ROOT
+                / sanitize_filename(molecule_name)
+                / sanitize_filename(bilayer)
+                / f"run_{int(run_number)}"
+            )
+
+            combined_png = system_output_dir / "combined_APL_over_time.png"
+            if combined_png.exists():
+                image_paths.append(combined_png)
+
+        if not image_paths:
+            continue
+
+        stacked_dir = OUTPUT_ROOT / sanitize_filename(molecule_name)
+        stacked_name = f"stacked_combined_APL_run_{int(run_number)}_nmol_{int(nmol)}.png"
+        stacked_path = stacked_dir / stacked_name
+
+        # proper check: don't recreate if already exists
+        if stacked_path.exists():
+            continue
+
+        stitch_images_horizontally(image_paths, stacked_path)
 
 
 def scan_system_folders(root: Path) -> List[Path]:
@@ -646,6 +745,15 @@ def scan_system_folders(root: Path) -> List[Path]:
                     folders.append(system_dir)
 
     return folders
+
+
+def get_system_output_dir(molecule_name: str, system_type: str, run_number: int) -> Path:
+    return (
+        OUTPUT_ROOT
+        / sanitize_filename(molecule_name)
+        / sanitize_filename(system_type)
+        / f"run_{run_number}"
+    )
 
 
 def analyze_system(
@@ -717,44 +825,44 @@ def analyze_system(
     membrane_area_finish = float(finish_row["membrane_area"])
     lipids_per_leaflet = float(start_row["lipids_per_leaflet"])
 
-    # Save grouped per-system outputs
-    system_output_dir = (
-        OUTPUT_ROOT
-        / sanitize_filename(molecule_name)
-        / sanitize_filename(system_type)
-        / f"run_{run_number}"
-    )
+    system_output_dir = get_system_output_dir(molecule_name, system_type, run_number)
     system_output_dir.mkdir(parents=True, exist_ok=True)
 
-    save_system_timeseries(
-        pull_df=pull_df,
-        relax_df=relax_df,
-        output_csv=system_output_dir / "APL_time_series.csv",
-    )
+    single_metric = "APL_BOX" if PLOT_CFG["single_use_box_method"] else "APL_PO4"
 
-    plot_single_phase(
-        df=pull_df,
-        output_png=system_output_dir / "pull_APL_vs_time.png",
-        title=PLOT_CFG["pull_title"],
-        y_col="APL_PO4",
-        xlim=PLOT_CFG["pull_xlim"],
-        ylim=PLOT_CFG["pull_ylim"],
-    )
+    # proper checking to avoid regenerating existing outputs
+    if not image_outputs_exist(system_output_dir):
+        save_system_timeseries(
+            pull_df=pull_df,
+            relax_df=relax_df,
+            output_csv=system_output_dir / "APL_time_series.csv",
+        )
 
-    plot_single_phase(
-        df=relax_df,
-        output_png=system_output_dir / "relax_APL_vs_time.png",
-        title=PLOT_CFG["relax_title"],
-        y_col="APL_PO4",
-        xlim=PLOT_CFG["relax_xlim"],
-        ylim=PLOT_CFG["relax_ylim"],
-    )
+        plot_single_phase(
+            df=pull_df,
+            output_png=system_output_dir / "pull_APL_vs_time.png",
+            title=PLOT_CFG["pull_title"],
+            y_col=single_metric,
+            xlim=PLOT_CFG["pull_xlim"],
+            ylim=PLOT_CFG["pull_ylim"],
+            line_color=PLOT_CFG["pull_color"],
+        )
 
-    plot_combined(
-        pull_df=pull_df,
-        relax_df=relax_df,
-        output_png=system_output_dir / "combined_APL_over_time.png",
-    )
+        plot_single_phase(
+            df=relax_df,
+            output_png=system_output_dir / "relax_APL_vs_time.png",
+            title=PLOT_CFG["relax_title"],
+            y_col=single_metric,
+            xlim=PLOT_CFG["relax_xlim"],
+            ylim=PLOT_CFG["relax_ylim"],
+            line_color=PLOT_CFG["relax_color"],
+        )
+
+        plot_combined(
+            pull_df=pull_df,
+            relax_df=relax_df,
+            output_png=system_output_dir / "combined_APL_over_time.png",
+        )
 
     row = {
         "system_key": make_system_key(molecule_name, nmol, system_type, run_number),
@@ -868,8 +976,13 @@ def main() -> None:
             molecule_name, nmol = split_system_folder_name(system_dir.name)
             system_key = make_system_key(molecule_name, nmol, system_type, run_number)
 
-            # Skip if already analyzed successfully
-            if system_key in existing_keys:
+            system_output_dir = get_system_output_dir(molecule_name, system_type, run_number)
+
+            row_missing = system_key not in existing_keys
+            plots_missing = not image_outputs_exist(system_output_dir)
+
+            # Skip completely if both data row and plot outputs already exist
+            if not row_missing and not plots_missing:
                 continue
 
             row = analyze_system(
@@ -877,7 +990,10 @@ def main() -> None:
                 peptide_mass=peptide_mass,
                 peptoid_mass=peptoid_mass,
             )
-            new_rows.append(row)
+
+            # Only add a new master row if it is not already present
+            if row_missing:
+                new_rows.append(row)
 
         except Exception as exc:
             # Try to preserve as much identity as possible even on failure
@@ -937,6 +1053,9 @@ def main() -> None:
     # Rebuild grouped outputs + bilayer comparisons from full master CSV
     comparison_df = build_grouped_outputs(master_df)
     safe_write_csv(comparison_df, COMPARISON_CSV)
+
+    # Build horizontal stacked combined-APL images for each molecule/run/nmol
+    build_grouped_apl_stacks(master_df)
 
     print(f"Analysis complete.")
     print(f"Master CSV: {MASTER_CSV}")

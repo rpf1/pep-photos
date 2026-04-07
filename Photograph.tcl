@@ -1,46 +1,89 @@
 proc geom_center {selection} {
-        # set the geometrical center to 0
-        set gc [veczero]
-        # [$selection get {x y z}] returns a list of {x y z} 
-        #    values (one per atoms) so get each term one by one
-        foreach coord [$selection get {x y z}] {
-           # sum up the coordinates
-           set gc [vecadd $gc $coord]
-        }
-        # and scale by the inverse of the number of atoms
-        return [vecscale [expr 1.0 /[$selection num]] $gc]
+    set gc [veczero]
+    foreach coord [$selection get {x y z}] {
+        set gc [vecadd $gc $coord]
+    }
+    return [vecscale [expr 1.0 / [$selection num]] $gc]
 }
-
-
 
 mol new AAAADEMC_80.psf type psf
 mol addfile AAAADEMC_80.pdb type pdb waitfor all
 
-mol delrep  0 top
+mol delrep 0 top
 
-set Bilayer [atomselect top "resname POPC POPS POPE POPG DPPC DTPC CHOL"]
-set Peptide [atomselect top "not resname POPC POPS POPE POPG DPPC DTPC CHOL W SW TW H2O NA CL NA+ CL- ION"]
-set All [atomselect top "all"]
-set W [atomselect top "resname H2O W SW TW"]
-set COG [geom_center $Peptide]
+# ============================================================================
+# CENTRAL DEFINITIONS
+# ============================================================================
 
-#set Box [pbc get -all]
-#$Peptide moveby {10 10 0}
+# Bilayer / solvent / ions
+set bilayer_resnames {POPC POPS POPE POPG DPPC DTPC CHOL}
+set water_resnames  {H2O W SW TW WF}
+set ion_resnames    {NA CL NA+ CL- ION}
 
-#pbc readxst cphmd_out.xst -molid top -all
+# Peptide residue groups
+set pep_hydrophobic {ALAC ALAN ALA VALC VALN VAL ILEC ILEN ILE LEUC LEUN LEU METC METN MET CYSC CYSN CYS}
+set pep_proline     {PROC PRON PRO}
+set pep_polar       {SERC SERN SER THRC THRN THR ASNC ASNN ASN GLNC GLNN GLN HSEC HSEN HSE}
+set pep_negative    {ASPC ASPN ASP GLUC GLUN GLU}
+set pep_aromatic    {PHEC PHEN PHE TYRC TYRN TYR TRPC TRPN TRP}
+set pep_positive    {LYSC LYSN LYS ARGC ARGN ARG}
+
+# --------------------------------------------------------------------------
+# IMPORTANT:
+# Put your peptoid residue names here.
+# These are EXAMPLES only. Replace/extend them to match your actual .gro/.xtc.
+# --------------------------------------------------------------------------
+set pto_hydrophobic {Na Nf Ni Nl Nm Nv Nw}
+set pto_polar       {}
+set pto_negative    {}
+set pto_aromatic    {}
+set pto_positive    {}
+
+# Combined lists
+set peptide_resnames [concat \
+    $pep_hydrophobic \
+    $pep_proline \
+    $pep_polar \
+    $pep_negative \
+    $pep_aromatic \
+    $pep_positive]
+
+set peptoid_resnames [concat \
+    $pto_hydrophobic \
+    $pto_polar \
+    $pto_negative \
+    $pto_aromatic \
+    $pto_positive]
+
+set all_polymer_resnames [concat $peptide_resnames $peptoid_resnames]
+
+# Useful atom selections
+set Bilayer [atomselect top "resname [join $bilayer_resnames { }]"]
+set W       [atomselect top "resname [join $water_resnames { }]"]
+set All     [atomselect top "all"]
+set Polymer [atomselect top "resname [join $all_polymer_resnames { }]"]
+
+# Only compute center if polymer exists
+if {[$Polymer num] > 0} {
+    set COG [geom_center $Polymer]
+}
+
 pbc wrap -all
-
 axes location off
 color Display Background white
-
-# pbc box -color black
 display projection Orthographic
+display depthcue off
 
-display depthcue   off
+# Make water actually light blue
+color change rgb 17 0.72 0.86 1.00
 
-mol selection resname POPC POPS POPE POPG DTPC DPPC CHOL
+# ============================================================================
+# BILAYER VIEW
+# ============================================================================
+
+mol selection "resname [join $bilayer_resnames { }]"
 mol color Charge
-mol representation QuickSurf 1.200000 0.300000 1.000000 2
+mol representation QuickSurf 1.2 0.3 1.0 2
 mol addrep top
 mol on top
 
@@ -49,69 +92,92 @@ rotate x by -90
 render snapshot snapshot_side_bilayer.png
 rotate x by 90
 
-mol selection resname ALAC ALAN ALA VALC VALN VAL ILEC ILEN ILE LEUC LEUN LEU METC METN MET CYSC CYSN CYS
-mol color ColorID 3 ; orange lipophilic
-mol representation VDW 1.000000 12.00000
+# ============================================================================
+# POLYMER REPS
+# Draw full residues, not just backbone beads
+# ============================================================================
+
+# Hydrophobic
+mol selection "resname [join [concat $pep_hydrophobic $pto_hydrophobic] { }]"
+mol color ColorID 3
+mol representation VDW 1.4 12.0
 mol addrep top
 mol on top
 
-mol selection resname PROC PRON PRO
-mol color ColorID 2 ; grey proline only?
-mol representation VDW 1.000000 12.00000
+# Proline
+mol selection "resname [join $pep_proline { }]"
+mol color ColorID 2
+mol representation VDW 1.4 12.0
 mol addrep top
 mol on top
 
-mol selection resname SERC SERN SER THRC THRN THR ASNC ASNN ASN GLNC GLNN GLN HSEC HSEN HSE
-mol color ColorID 7 ; green Polar
-mol representation VDW 1.000000 12.00000
+# Polar
+if {[llength [concat $pep_polar $pto_polar]] > 0} {
+    mol selection "resname [join [concat $pep_polar $pto_polar] { }]"
+    mol color ColorID 7
+    mol representation VDW 1.4 12.0
+    mol addrep top
+    mol on top
+}
+
+# Negative
+if {[llength [concat $pep_negative $pto_negative]] > 0} {
+    mol selection "resname [join [concat $pep_negative $pto_negative] { }]"
+    mol color ColorID 1
+    mol representation VDW 1.4 12.0
+    mol addrep top
+    mol on top
+}
+
+# Aromatic
+if {[llength [concat $pep_aromatic $pto_aromatic]] > 0} {
+    mol selection "resname [join [concat $pep_aromatic $pto_aromatic] { }]"
+    mol color ColorID 11
+    mol representation VDW 1.4 12.0
+    mol addrep top
+    mol on top
+}
+
+# Positive
+if {[llength [concat $pep_positive $pto_positive]] > 0} {
+    mol selection "resname [join [concat $pep_positive $pto_positive] { }]"
+    mol color ColorID 0
+    mol representation VDW 1.4 12.0
+    mol addrep top
+    mol on top
+}
+
+# Backbone overlay
+# Keep this only if your CG backbone beads are really called BB/BAS
+mol selection "(resname [join $all_polymer_resnames { }]) and (name BB BAS)"
+mol color ColorID 16
+mol representation VDW 1.25 12.0
 mol addrep top
 mol on top
-
-mol selection resname ASPC ASPN ASP GLUC GLUN GLU
-mol color ColorID 1 ; red negative
-mol representation VDW 1.000000 12.00000
-mol addrep top
-mol on top
-
-mol selection resname PHEC PHEN PHE TYRC TYRN TYR TRPC TRPN TRP
-mol color ColorID 11 ; purple aromatic
-mol representation VDW 1.000000 12.00000
-mol addrep top
-mol on top
-
-mol selection resname LYSC LYSN LYS ARGC ARGN ARG
-mol color ColorID 0 ; blue positive
-mol representation VDW 1.000000 12.00000
-mol addrep top
-mol on top
-
-mol selection name BAS BB
-mol color ColorID 16 ; black back bone
-mol representation VDW 1.000000 12.00000
-mol addrep top
-mol on top
-
-#display resize 500 1000
-
 
 render snapshot snapshot_top.png
 rotate x by -90
 render snapshot snapshot_side.png
-
 rotate x by -90
 render snapshot snapshot_bottom.png
-
-
-
 rotate x by 90
-mol delrep 0 top ; removes the first thing, in this case the bilayer
-mol selection resname H2O W SW TW
+
+# ============================================================================
+# WATER VIEW
+# Remove all current reps first, then add only water
+# ============================================================================
+
+set nreps [molinfo top get numreps]
+for {set i [expr {$nreps - 1}]} {$i >= 0} {incr i -1} {
+    mol delrep $i top
+}
+
+mol selection "resname [join $water_resnames { }]"
 mol color ColorID 17
-mol representation VDW 1.000000 12.00000
+mol representation VDW 1.2 12.0
 mol addrep top
 mol on top
+
 render snapshot snapshot_water.png
 
-
-#display update
 exit
