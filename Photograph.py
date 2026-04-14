@@ -71,11 +71,47 @@ from PIL import Image, ImageDraw, ImageFont
 # =============================================================================
 # USER SETTINGS
 # =============================================================================
+# OPTIONAL MANUAL INPUT OVERRIDE
+# Default = False
+# False -> normal full scan from DATA_ROOT
+# True  -> analyze only one target you provide
+#
+# PROVIDE EITHER:
+#   MANUAL_SYSTEM_DIR:
+#       Path to one simulation folder containing Relax/Pull files
+#
+# OR both:
+#   MANUAL_GRO_FILE
+#   MANUAL_XTC_FILE
+#
+# Example:
+# MANUAL_MODE = True
+# MANUAL_SYSTEM_DIR = Path("/path/to/system_folder")
+#
+# or
+#
+# MANUAL_MODE = True
+# MANUAL_GRO_FILE = Path("/path/to/Relax.gro")
+# MANUAL_XTC_FILE = Path("/path/to/Relax.xtc")
+# =============================================================================
+MANUAL_MODE         = False       #True or False
+MANUAL_SYSTEM_DIR   = None        #path or None
+MANUAL_GRO_FILE     = None        #file or None
+MANUAL_XTC_FILE     = None        #file or None
+
+# Optional manual labels when using direct file paths outside normal folder layout
+MANUAL_MOLECULE_NAME = "manual_system"
+MANUAL_NMOL = 1
+MANUAL_BILAYER = "manual_bilayer"
+MANUAL_RUN_NAME = "run_manual"
+MANUAL_STAGE_NAME = "Manual"
+MANUAL_MIN_TIME_PS = 100000.0
 
 SCRIPT_DIR = Path("/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis")
 DATA_ROOT = Path("/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1")
 TCL_TEMPLATE = SCRIPT_DIR / "Photograph.tcl"
 PHOTO_ROOT = SCRIPT_DIR / "Photos"
+MANUAL_PHOTO_ROOT = SCRIPT_DIR / "Photos" / "0_manually_picked"
 
 FORCEFIELD_FOLDER = "2.1"
 
@@ -153,6 +189,122 @@ PEPTOID_RESIDUES = {
 # =============================================================================
 # HELPERS
 # =============================================================================
+
+def resolve_photograph_target():
+    """
+    Returns a list of one or more targets in this format:
+    {
+        "system_dir": Path or None,
+        "molecule_name": str,
+        "nmol": int,
+        "bilayer": str,
+        "run_name": str,
+        "gro": Path,
+        "xtc": Path,
+        "stage": str,
+        "min_time_ps": float,
+    }
+    """
+    if not MANUAL_MODE:
+        targets = []
+
+        for bilayer_dir in sorted(DATA_ROOT.iterdir()):
+            if not bilayer_dir.is_dir():
+                continue
+
+            bilayer = bilayer_dir.name
+
+            for run_dir in sorted(bilayer_dir.iterdir()):
+                if not run_dir.is_dir() or not run_dir.name.startswith("run_"):
+                    continue
+
+                run_name = run_dir.name
+
+                for system_dir in sorted(run_dir.iterdir()):
+                    if not system_dir.is_dir():
+                        continue
+
+                    molecule_name, nmol = split_system_folder_name(system_dir.name)
+                    stage_info = get_stage_files(system_dir)
+
+                    targets.append({
+                        "system_dir": system_dir,
+                        "molecule_name": molecule_name,
+                        "nmol": nmol,
+                        "bilayer": bilayer,
+                        "run_name": run_name,
+                        "gro": stage_info["gro"],
+                        "xtc": stage_info["xtc"],
+                        "stage": stage_info["stage"],
+                        "min_time_ps": stage_info["min_time_ps"],
+                    })
+
+        return targets
+
+    # ---------------------------
+    # MANUAL: folder mode
+    # ---------------------------
+    if MANUAL_SYSTEM_DIR is not None:
+        system_dir = Path(MANUAL_SYSTEM_DIR)
+
+        if not system_dir.is_dir():
+            raise NotADirectoryError(f"MANUAL_SYSTEM_DIR is not a directory: {system_dir}")
+
+        stage_info = get_stage_files(system_dir)
+
+        try:
+            molecule_name, nmol = split_system_folder_name(system_dir.name)
+        except Exception:
+            molecule_name, nmol = MANUAL_MOLECULE_NAME, MANUAL_NMOL
+
+        try:
+            run_name = system_dir.parent.name
+            bilayer = system_dir.parents[1].name
+        except Exception:
+            run_name = MANUAL_RUN_NAME
+            bilayer = MANUAL_BILAYER
+
+        return [{
+            "system_dir": system_dir,
+            "molecule_name": molecule_name,
+            "nmol": nmol,
+            "bilayer": bilayer,
+            "run_name": run_name,
+            "gro": stage_info["gro"],
+            "xtc": stage_info["xtc"],
+            "stage": stage_info["stage"],
+            "min_time_ps": stage_info["min_time_ps"],
+        }]
+
+    # ---------------------------
+    # MANUAL: direct file mode
+    # ---------------------------
+    if MANUAL_GRO_FILE is not None and MANUAL_XTC_FILE is not None:
+        gro_file = Path(MANUAL_GRO_FILE)
+        xtc_file = Path(MANUAL_XTC_FILE)
+
+        if not gro_file.exists():
+            raise FileNotFoundError(f"MANUAL_GRO_FILE not found: {gro_file}")
+        if not xtc_file.exists():
+            raise FileNotFoundError(f"MANUAL_XTC_FILE not found: {xtc_file}")
+
+        return [{
+            "system_dir": gro_file.parent,
+            "molecule_name": MANUAL_MOLECULE_NAME,
+            "nmol": MANUAL_NMOL,
+            "bilayer": MANUAL_BILAYER,
+            "run_name": MANUAL_RUN_NAME,
+            "gro": gro_file,
+            "xtc": xtc_file,
+            "stage": MANUAL_STAGE_NAME,
+            "min_time_ps": MANUAL_MIN_TIME_PS,
+        }]
+
+    raise ValueError(
+        "MANUAL_MODE=True but no valid manual input was provided. "
+        "Use MANUAL_SYSTEM_DIR or both MANUAL_GRO_FILE + MANUAL_XTC_FILE."
+    )
+
 
 def readin(fname):
     with open(fname, "r", errors="ignore") as f:
@@ -372,98 +524,80 @@ def main():
     if not TCL_TEMPLATE.exists():
         raise FileNotFoundError(f"Missing Tcl template: {TCL_TEMPLATE}")
 
-    PHOTO_ROOT.mkdir(parents=True, exist_ok=True)
+    active_photo_root = MANUAL_PHOTO_ROOT if MANUAL_MODE else PHOTO_ROOT
+    active_photo_root.mkdir(parents=True, exist_ok=True)
     template_text = readin(TCL_TEMPLATE)
 
     generated_system_panels = {}
 
-    for bilayer_dir in sorted(DATA_ROOT.iterdir()):
-        if not bilayer_dir.is_dir():
+    try:
+        targets = resolve_photograph_target()
+    except Exception as exc:
+        raise RuntimeError(f"Could not resolve input target(s): {exc}")
+
+    for target in targets:
+        system_dir = target["system_dir"]
+        molecule_name = target["molecule_name"]
+        nmol = target["nmol"]
+        bilayer = target["bilayer"]
+        run_name = target["run_name"]
+        gro_file = target["gro"]
+        xtc_file = target["xtc"]
+        stage = target["stage"]
+        min_time_ps = target["min_time_ps"]
+
+        try:
+            final_time = check_trajectory_complete(gro_file, xtc_file, min_time_ps)
+        except Exception as exc:
+            print(f"SKIP {gro_file.parent}: {exc}")
             continue
 
-        bilayer = bilayer_dir.name
+        out_dir = active_photo_root / sanitize(molecule_name) / sanitize(bilayer) / sanitize(run_name)
+        out_dir.mkdir(parents=True, exist_ok=True)
 
-        for run_dir in sorted(bilayer_dir.iterdir()):
-            if not run_dir.is_dir() or not run_dir.name.startswith("run_"):
-                continue
+        panel_name = system_image_name(molecule_name, nmol, bilayer, run_name)
+        final_panel_path = out_dir / panel_name
 
-            run_name = run_dir.name
+        if final_panel_path.exists():
+            print(f"SKIP existing {final_panel_path}")
+            generated_system_panels.setdefault((molecule_name, run_name), []).append((bilayer, final_panel_path))
+            continue
 
-            for system_dir in sorted(run_dir.iterdir()):
-                if not system_dir.is_dir():
-                    continue
+        tcl_out = out_dir / "Photograph_generated.tcl"
+        write_system_tcl(
+            template_text=template_text,
+            gro_name=gro_file.name,
+            xtc_name=xtc_file.name,
+            outpath=tcl_out,
+        )
 
-                system_folder_name = system_dir.name
-                molecule_name, nmol = split_system_folder_name(system_folder_name)
+        system_tcl = system_dir / "Photograph.tcl"
+        shutil.copy2(tcl_out, system_tcl)
 
-                stage_info = None
+        print(f"Running VMD for {molecule_name} | {bilayer} | {run_name} | stage={stage} | final_time={final_time:.1f} ps")
+        run_vmd_in_system_dir(system_dir)
+
+        try:
+            snapshot_paths = collect_snapshot_paths(system_dir)
+        except Exception as exc:
+            print(f"FAILED snapshot collection {system_dir}: {exc}")
+            continue
+
+        title = f"{molecule_name} | nmol={nmol} | {bilayer} | {run_name} | {stage}"
+        make_horizontal_panel(snapshot_paths, final_panel_path, title=title)
+
+        generated_system_panels.setdefault((molecule_name, run_name), []).append((bilayer, final_panel_path))
+
+        for fname, _ in SNAPSHOT_ORDER:
+            p = system_dir / fname
+            if p.exists():
                 try:
-                    stage_info = get_stage_files(system_dir)
-                except Exception as exc:
-                    print(f"SKIP {system_dir}: {exc}")
-                    continue
+                    p.unlink()
+                except Exception:
+                    pass
 
-                gro_file = stage_info["gro"]
-                xtc_file = stage_info["xtc"]
-                stage = stage_info["stage"]
-                min_time_ps = stage_info["min_time_ps"]
+        print(f"SAVED {final_panel_path}")
 
-                try:
-                    final_time = check_trajectory_complete(gro_file, xtc_file, min_time_ps)
-                except Exception as exc:
-                    print(f"SKIP {system_dir}: {exc}")
-                    continue
-
-                out_dir = PHOTO_ROOT / sanitize(molecule_name) / sanitize(bilayer) / sanitize(run_name)
-                out_dir.mkdir(parents=True, exist_ok=True)
-
-                panel_name = system_image_name(molecule_name, nmol, bilayer, run_name)
-                final_panel_path = out_dir / panel_name
-
-                if final_panel_path.exists():
-                    print(f"SKIP existing {final_panel_path}")
-                    generated_system_panels.setdefault((molecule_name, run_name), []).append((bilayer, final_panel_path))
-                    continue
-
-                # Save generated Tcl with analysis outputs
-                tcl_out = out_dir / "Photograph_generated.tcl"
-                write_system_tcl(
-                    template_text=template_text,
-                    gro_name=gro_file.name,
-                    xtc_name=xtc_file.name,
-                    outpath=tcl_out,
-                )
-
-                # Copy Tcl into system folder temporarily because VMD is run there
-                system_tcl = system_dir / "Photograph.tcl"
-                shutil.copy2(tcl_out, system_tcl)
-
-                print(f"Running VMD for {molecule_name} | {bilayer} | {run_name} | stage={stage} | final_time={final_time:.1f} ps")
-                run_vmd_in_system_dir(system_dir)
-
-                try:
-                    snapshot_paths = collect_snapshot_paths(system_dir)
-                except Exception as exc:
-                    print(f"FAILED snapshot collection {system_dir}: {exc}")
-                    continue
-
-                title = f"{molecule_name} | nmol={nmol} | {bilayer} | {run_name} | {stage}"
-                make_horizontal_panel(snapshot_paths, final_panel_path, title=title)
-
-                generated_system_panels.setdefault((molecule_name, run_name), []).append((bilayer, final_panel_path))
-
-                # Clean up per-system raw snapshot PNGs from simulation folder
-                for fname, _ in SNAPSHOT_ORDER:
-                    p = system_dir / fname
-                    if p.exists():
-                        try:
-                            p.unlink()
-                        except Exception:
-                            pass
-
-                print(f"SAVED {final_panel_path}")
-
-    # Additional stacked image: all bilayers for same molecule/run
     for (molecule_name, run_name), bilayer_panels in generated_system_panels.items():
         if not bilayer_panels:
             continue
@@ -477,7 +611,7 @@ def main():
         )
 
         panel_paths = [p for _, p in bilayer_panels_sorted]
-        stack_dir = PHOTO_ROOT / sanitize(molecule_name) / "STACKED"
+        stack_dir = active_photo_root / sanitize(molecule_name) / "STACKED"
         stack_dir.mkdir(parents=True, exist_ok=True)
 
         stack_path = stack_dir / stacked_image_name(molecule_name, run_name)

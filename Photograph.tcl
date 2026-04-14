@@ -17,8 +17,8 @@ mol delrep 0 top
 
 # Bilayer / solvent / ions
 set bilayer_resnames {POPC POPS POPE POPG DPPC DTPC CHOL}
-set water_resnames  {H2O W SW TW WF}
-set ion_resnames    {NA CL NA+ CL- ION}
+set water_resnames   {H2O W SW TW WF}
+set ion_resnames     {NA CL NA+ CL- ION}
 
 # Peptide residue groups
 set pep_hydrophobic {ALAC ALAN ALA VALC VALN VAL ILEC ILEN ILE LEUC LEUN LEU METC METN MET CYSC CYSN CYS}
@@ -28,16 +28,12 @@ set pep_negative    {ASPC ASPN ASP GLUC GLUN GLU}
 set pep_aromatic    {PHEC PHEN PHE TYRC TYRN TYR TRPC TRPN TRP}
 set pep_positive    {LYSC LYSN LYS ARGC ARGN ARG}
 
-# --------------------------------------------------------------------------
-# IMPORTANT:
-# Put your peptoid residue names here.
-# These are EXAMPLES only. Replace/extend them to match your actual .gro/.xtc.
-# --------------------------------------------------------------------------
-set pto_hydrophobic {Na Nf Ni Nl Nm Nv Nw}
-set pto_polar       {}
-set pto_negative    {}
-set pto_aromatic    {}
-set pto_positive    {}
+# Peptoid residue groups
+set pto_hydrophobic {Na Nab Ni Nl Nm Nv}
+set pto_polar       {Nn Nq Ns Nse Nt NmO}
+set pto_negative    {Nd Ne}
+set pto_aromatic    {Nf Nfn Nfe Nfex Nw Nwe Ny Nfe4Cl Nfe4Br Nfnaph}
+set pto_positive    {Nk Nke Nr}
 
 # Combined lists
 set peptide_resnames [concat \

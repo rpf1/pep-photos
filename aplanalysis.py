@@ -44,6 +44,34 @@ from pandas.errors import EmptyDataError
 # =============================================================================
 # USER CONFIGURATION
 # =============================================================================
+# 
+# OPTIONAL MANUAL INPUT OVERRIDE
+# Default = False
+# False -> normal full scan from DATA_ROOT
+# True  -> analyze only one target you provide
+#
+# Option A:
+#   MANUAL_SYSTEM_DIR = folder containing Pull.gro Pull.xtc Relax.gro Relax.xtc
+#
+# Option B:
+#   provide all four files directly
+#
+# If using direct files outside the normal folder structure, also set:
+#   MANUAL_MOLECULE_NAME
+#   MANUAL_SYSTEM_TYPE
+#   MANUAL_RUN_NUMBER
+# =============================================================================
+MANUAL_MODE = False
+MANUAL_SYSTEM_DIR = None
+
+MANUAL_PULL_GRO = None
+MANUAL_PULL_XTC = None
+MANUAL_RELAX_GRO = None
+MANUAL_RELAX_XTC = None
+
+MANUAL_MOLECULE_NAME = "manual_system_1"
+MANUAL_SYSTEM_TYPE = "manual_bilayer"
+MANUAL_RUN_NUMBER = 0
 
 SCRIPT_PATH = Path("/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/aplanalysis.py")
 ANALYSIS_DIR = SCRIPT_PATH.parent
@@ -67,8 +95,15 @@ MASS_OVERRIDE_JSON = ANALYSIS_DIR / "monomer_masses.json"
 TARGET_RELAX_TIME_NS = 100.0
 TARGET_RELAX_TOLERANCE_NS = 0.5
 
-# Use PO4 beads for PO4-style APL and thickness
+# Use PO4 beads for PO4-style APL and thickness nd to calculate the CHOL fraction
 PO4_SELECTION = "name PO4"
+PHOSPHOLIPID_RESNAMES = {"POPC", "POPS", "POPE"}
+CHOL_RESNAMES = {"CHOL"}
+SYSTEM_TYPE_TO_ASSUMED_PHOSPHOLIPID_FRACTION = {
+    "POPC60CHOL40_W_WF": 0.60,
+    "POPC80POPS20_W_WF": 1.00,
+    "POPE75POPG25_W_WF": 1.00,
+}
 
 # Per-molecule bilayer comparison order
 BILAYER_PRIORITY = [
@@ -96,11 +131,11 @@ PLOT_CFG = {
     "stacked_combined_title": "Combined APL Comparison",
 
     "x_label": "Time (ns)",
-    "y_label_po4": "APL (PO4 method)",
+    "y_label_po4": "APL", #note this is the PO4 method
     "y_label_box": "APL (box method)",
 
-    "combined_use_box_method": False,   # False = PO4, True = BOX
-    "single_use_box_method": False,     # False = PO4, True = BOX
+    "combined_use_box_method": True,   # False = PO4, True = BOX
+    "single_use_box_method": True,     # False = PO4, True = BOX
 
     "pull_color": "orange",
     "relax_color": "blue",
@@ -109,9 +144,9 @@ PLOT_CFG = {
     "relax_xlim": None,
     "combined_xlim": None,
 
-    "pull_ylim": (55, 85),
-    "relax_ylim": (55, 85),
-    "combined_ylim": (55, 85),
+    "pull_ylim": (40, 85),
+    "relax_ylim": (40, 85),
+    "combined_ylim": (40, 85),
 
     "tight_layout": True,
 }
@@ -174,6 +209,85 @@ WATER_MASS_TERMINI = 18.01528
 # HELPER FUNCTIONS
 # =============================================================================
 
+def resolve_analysis_targets() -> List[dict]:
+    """
+    Returns a list of targets.
+    Auto mode -> many systems from DATA_ROOT
+    Manual mode -> one system from folder or direct files
+    """
+    if not MANUAL_MODE:
+        return [{"system_dir": p, "manual": False} for p in scan_system_folders(DATA_ROOT)]
+
+    if MANUAL_SYSTEM_DIR is not None:
+        system_dir = Path(MANUAL_SYSTEM_DIR)
+        if not system_dir.is_dir():
+            raise NotADirectoryError(f"MANUAL_SYSTEM_DIR is not a directory: {system_dir}")
+        return [{"system_dir": system_dir, "manual": False}]
+
+    direct_files = [MANUAL_PULL_GRO, MANUAL_PULL_XTC, MANUAL_RELAX_GRO, MANUAL_RELAX_XTC]
+    if all(x is not None for x in direct_files):
+        return [{
+            "system_dir": None,
+            "manual": True,
+            "pull_gro": Path(MANUAL_PULL_GRO),
+            "pull_xtc": Path(MANUAL_PULL_XTC),
+            "relax_gro": Path(MANUAL_RELAX_GRO),
+            "relax_xtc": Path(MANUAL_RELAX_XTC),
+            "molecule_name": MANUAL_MOLECULE_NAME,
+            "system_type": MANUAL_SYSTEM_TYPE,
+            "run_number": int(MANUAL_RUN_NUMBER),
+        }]
+
+    raise ValueError(
+        "MANUAL_MODE=True but no valid manual input was provided. "
+        "Use MANUAL_SYSTEM_DIR or all four direct files."
+    )
+
+
+def get_manual_system_output_dir(molecule_name: str, system_type: str, run_number: int) -> Path:
+    return (
+        OUTPUT_ROOT
+        / sanitize_filename(molecule_name)
+        / sanitize_filename(system_type)
+        / f"run_{int(run_number)}"
+    )
+
+
+def parse_system_components(folder_name: str) -> List[Dict[str, object]]:
+    """
+    Examples
+    --------
+    AAA_80
+        -> [{"name": "AAA", "count": 80}]
+
+    AAA_20|VVV_60
+        -> [{"name": "AAA", "count": 20},
+            {"name": "VVV", "count": 60}]
+
+    Nr-Nw-Nw_20|AAA_60
+        -> [{"name": "Nr-Nw-Nw", "count": 20},
+            {"name": "AAA", "count": 60}]
+    """
+    components = []
+
+    for part in folder_name.split("|"):
+        part = part.strip()
+        if "_" not in part:
+            raise ValueError(f"Component is missing '_count': {part}")
+
+        name, count_str = part.rsplit("_", 1)
+        if not name.strip():
+            raise ValueError(f"Empty component name in: {part}")
+
+        count = int(count_str)
+        components.append({
+            "name": name.strip(),
+            "count": count,
+        })
+
+    return components
+
+
 def apply_plot_style() -> None:
     if PLOT_CFG["style_use_default_matplotlib"]:
         plt.rcParams.update({
@@ -233,21 +347,29 @@ def load_mass_overrides() -> Tuple[Dict[str, float], Dict[str, float]]:
     return peptide_mass, peptoid_mass
 
 
+def detect_component_type(component_name: str) -> str:
+    return "peptoid" if "-" in component_name else "peptide"
+
+
 def detect_molecule_type(molecule_name: str) -> str:
-    return "peptoid" if "-" in molecule_name else "peptide"
+    components = parse_system_components(molecule_name)
+    types = {detect_component_type(comp["name"]) for comp in components}
+
+    if len(types) == 1:
+        return list(types)[0]
+
+    return "mixed"
 
 
 def split_system_folder_name(folder_name: str) -> Tuple[str, int]:
     """
-    Example:
-        RWWRWW_80 -> ("RWWRWW", 80)
-        Nr-Nw-Nw-Nr-Nw-Nw_80 -> ("Nr-Nw-Nw-Nr-Nw-Nw", 80)
+    Returns:
+        molecule_name: original composition string
+        nmol: total molecules across all components
     """
-    if "_" not in folder_name:
-        raise ValueError(f"Cannot parse molecule/nmol from folder name: {folder_name}")
-
-    molecule_name, nmol_str = folder_name.rsplit("_", 1)
-    nmol = int(nmol_str)
+    components = parse_system_components(folder_name)
+    molecule_name = folder_name
+    nmol = sum(int(comp["count"]) for comp in components)
     return molecule_name, nmol
 
 
@@ -257,19 +379,36 @@ def parse_run_number(run_folder_name: str) -> int:
     return int(run_folder_name.split("_", 1)[1])
 
 
+def tokenize_component(component_name: str, component_type: str) -> List[str]:
+    if component_type == "peptoid":
+        return [x.strip() for x in component_name.split("-") if x.strip()]
+    return list(component_name.strip())
+
+
 def tokenize_molecule(molecule_name: str, molecule_type: str) -> List[str]:
-    if molecule_type == "peptoid":
-        return [x.strip() for x in molecule_name.split("-") if x.strip()]
-    return list(molecule_name.strip())
+    components = parse_system_components(molecule_name)
+    tokens = []
+
+    for comp in components:
+        comp_name = str(comp["name"])
+        comp_count = int(comp["count"])
+        comp_type = detect_component_type(comp_name)
+        comp_tokens = tokenize_component(comp_name, comp_type)
+
+        for _ in range(comp_count):
+            tokens.extend(comp_tokens)
+
+    return tokens
 
 
 def charge_counts(tokens: List[str], molecule_type: str) -> Tuple[int, int, int]:
-    if molecule_type == "peptide":
-        pos = sum(tok in {"K", "R", "H"} for tok in tokens)
-        neg = sum(tok in {"D", "E"} for tok in tokens)
-    else:
-        pos = sum(tok in {"Nk", "Nr", "Nke"} for tok in tokens)
-        neg = sum(tok in {"Nd", "Ne"} for tok in tokens)
+    peptide_pos = {"K", "R", "H"}
+    peptide_neg = {"D", "E"}
+    peptoid_pos = {"Nk", "Nr", "Nke"}
+    peptoid_neg = {"Nd", "Ne"}
+
+    pos = sum(tok in peptide_pos or tok in peptoid_pos for tok in tokens)
+    neg = sum(tok in peptide_neg or tok in peptoid_neg for tok in tokens)
 
     net = pos - neg
     return pos, neg, net
@@ -340,6 +479,17 @@ def append_failed(
     stage: str,
     reason: str,
     system_path: Optional[Path],
+    failure_category: str = "",
+    relax_end_time_ns: Optional[float] = np.nan,
+    remaining_relax_time_ns: Optional[float] = np.nan,
+    pull_gro_exists: bool = False,
+    pull_xtc_exists: bool = False,
+    pull_cpt_exists: bool = False,
+    relax_gro_exists: bool = False,
+    relax_xtc_exists: bool = False,
+    relax_cpt_exists: bool = False,
+    restart_mode: str = "",
+    recommended_action: str = "",
 ) -> None:
     failed_records.append({
         "molecule_name": molecule_name,
@@ -349,31 +499,143 @@ def append_failed(
         "stage": stage,
         "reason": reason,
         "system_path": "" if system_path is None else str(system_path),
+
+        "failure_category": failure_category,
+        "relax_end_time_ns": relax_end_time_ns,
+        "remaining_relax_time_ns": remaining_relax_time_ns,
+
+        "pull_gro_exists": pull_gro_exists,
+        "pull_xtc_exists": pull_xtc_exists,
+        "pull_cpt_exists": pull_cpt_exists,
+
+        "relax_gro_exists": relax_gro_exists,
+        "relax_xtc_exists": relax_xtc_exists,
+        "relax_cpt_exists": relax_cpt_exists,
+
+        "restart_mode": restart_mode,
+        "recommended_action": recommended_action,
     })
 
 
-def get_po4_and_leaflets(universe: mda.Universe):
-    po4 = universe.select_atoms(PO4_SELECTION)
-    n_lipids = len(po4)
+def classify_failure_for_restart(system_dir: Path) -> dict:
+    pull_gro = system_dir / "Pull.gro"
+    pull_xtc = system_dir / "Pull.xtc"
+    pull_cpt = system_dir / "Pull.cpt"
 
-    if n_lipids == 0:
+    relax_gro = system_dir / "Relax.gro"
+    relax_xtc = system_dir / "Relax.xtc"
+    relax_cpt = system_dir / "Relax.cpt"
+
+    info = {
+        "failure_category": "other",
+        "relax_end_time_ns": np.nan,
+        "remaining_relax_time_ns": np.nan,
+
+        "pull_gro_exists": pull_gro.exists(),
+        "pull_xtc_exists": pull_xtc.exists(),
+        "pull_cpt_exists": pull_cpt.exists(),
+
+        "relax_gro_exists": relax_gro.exists(),
+        "relax_xtc_exists": relax_xtc.exists(),
+        "relax_cpt_exists": relax_cpt.exists(),
+
+        "restart_mode": "",
+        "recommended_action": "",
+    }
+
+    if not pull_gro.exists() or not pull_xtc.exists() or not relax_gro.exists() or not relax_xtc.exists():
+        info["failure_category"] = "missing_files"
+        info["restart_mode"] = "not_restartable"
+        info["recommended_action"] = "restore missing required files before rerun"
+        return info
+
+    try:
+        u = mda.Universe(str(relax_gro), str(relax_xtc), in_memory=False)
+        final_time_ns = float(u.trajectory[-1].time) / 1000.0
+        info["relax_end_time_ns"] = final_time_ns
+        info["remaining_relax_time_ns"] = max(0.0, TARGET_RELAX_TIME_NS - final_time_ns)
+
+        if final_time_ns + TARGET_RELAX_TOLERANCE_NS < TARGET_RELAX_TIME_NS:
+            info["failure_category"] = "relax_not_100ns"
+
+            if relax_cpt.exists():
+                info["restart_mode"] = "checkpoint"
+                info["recommended_action"] = "continue relax from Relax.cpt to remaining target time"
+            else:
+                info["restart_mode"] = "fresh_from_last_structure"
+                info["recommended_action"] = "start new relax extension from final Relax.gro structure"
+        else:
+            info["failure_category"] = "other"
+            info["restart_mode"] = "none"
+            info["recommended_action"] = "check failure reason manually"
+
+    except Exception:
+        info["failure_category"] = "trajectory_unreadable"
+        info["restart_mode"] = "manual_check"
+        info["recommended_action"] = "trajectory exists but could not be read; inspect files manually"
+
+    return info
+
+
+def get_po4_and_leaflets(universe: mda.Universe, system_type: str):
+    po4 = universe.select_atoms(PO4_SELECTION)
+
+    if len(po4) == 0:
         raise ValueError("No PO4 atoms found.")
 
-    lipids_per_leaflet = n_lipids / 2.0
-    return po4, n_lipids, lipids_per_leaflet
+    # Count phospholipid residues from PO4-bearing residues
+    phospholipid_residues = po4.residues
+    n_phospholipids = phospholipid_residues.n_residues
+
+    # Count cholesterol residues directly
+    chol_atoms = universe.select_atoms("resname " + " ".join(sorted(CHOL_RESNAMES)))
+    n_chol = chol_atoms.residues.n_residues
+
+    # Total membrane molecules
+    n_membrane_molecules = n_phospholipids + n_chol
+
+    # Fallback for systems where CHOL exists conceptually but is not detected
+    if "CHOL" in system_type and n_chol == 0:
+        assumed_fraction = SYSTEM_TYPE_TO_ASSUMED_PHOSPHOLIPID_FRACTION.get(system_type)
+        if assumed_fraction is None or assumed_fraction <= 0 or assumed_fraction > 1:
+            raise ValueError(
+                f"Could not detect CHOL residues and no valid fallback fraction defined for {system_type}"
+            )
+        n_membrane_molecules = n_phospholipids / assumed_fraction
+        n_chol = n_membrane_molecules - n_phospholipids
+
+    if n_membrane_molecules == 0:
+        raise ValueError("No membrane molecules counted.")
+
+    lipids_per_leaflet = n_membrane_molecules / 2.0
+
+    return {
+        "po4": po4,
+        "n_phospholipids": float(n_phospholipids),
+        "n_chol": float(n_chol),
+        "n_membrane_molecules": float(n_membrane_molecules),
+        "lipids_per_leaflet": float(lipids_per_leaflet),
+    }
 
 
 def analyze_trajectory(
     gro_path: Path,
     xtc_path: Path,
     phase_name: str,
+    system_type: str,
 ) -> pd.DataFrame:
     """
     Returns one DataFrame with all needed time-series data for this phase.
     Opens the trajectory once only.
     """
     u = mda.Universe(str(gro_path), str(xtc_path), in_memory=False)
-    po4, n_lipids, lipids_per_leaflet = get_po4_and_leaflets(u)
+    leaflet_info = get_po4_and_leaflets(u, system_type=system_type)
+    
+    po4 = leaflet_info["po4"]
+    n_phospholipids = leaflet_info["n_phospholipids"]
+    n_chol = leaflet_info["n_chol"]
+    n_membrane_molecules = leaflet_info["n_membrane_molecules"]
+    lipids_per_leaflet = leaflet_info["lipids_per_leaflet"]
 
     rows = []
 
@@ -412,6 +674,9 @@ def analyze_trajectory(
             "APL_BOX": apl_box,
             "thickness_z_span": z_span,
             "lipids_per_leaflet": lipids_per_leaflet,
+            "n_phospholipids": n_phospholipids,
+            "n_chol": n_chol,
+            "n_membrane_molecules": n_membrane_molecules,
             "membrane_area": membrane_area,
             "box_x": lx,
             "box_y": ly,
@@ -626,59 +891,59 @@ def build_grouped_outputs(master_df: pd.DataFrame) -> pd.DataFrame:
         # Comparisons within same molecule, same run_number, same nmol
         for (run_number, nmol), sub in mol_df.groupby(["run_number", "nmol"], dropna=False):
             bilayers = list(sub["system_type"].unique())
-            for left_bilayer, right_bilayer in ordered_bilayer_pairs(bilayers):
-                left = sub[sub["system_type"] == left_bilayer]
-                right = sub[sub["system_type"] == right_bilayer]
-
-                if left.empty or right.empty:
+            for subject_bilayer, comparison_bilayer in ordered_bilayer_pairs(bilayers):
+                subject = sub[sub["system_type"] == subject_bilayer]
+                comparison = sub[sub["system_type"] == comparison_bilayer]
+    
+                if subject.empty or comparison.empty:
                     continue
-
-                left_row = left.iloc[0]
-                right_row = right.iloc[0]
+                
+                subject_row = subject.iloc[0]
+                comparison_row = comparison.iloc[0]
 
                 comparison_rows.append({
                     "molecule_name": molecule_name,
-                    "molecule_type": left_row["molecule_type"],
+                    "molecule_type": subject_row["molecule_type"],
                     "run_number": int(run_number),
                     "nmol": int(nmol),
-
-                    "bilayer_left": left_bilayer,
-                    "bilayer_right": right_bilayer,
-
-                    "finish_APL_PO4_left": left_row["finish_APL_PO4_100ns"],
-                    "finish_APL_PO4_right": right_row["finish_APL_PO4_100ns"],
-                    "finish_APL_PO4_difference_left_minus_right":
-                        left_row["finish_APL_PO4_100ns"] - right_row["finish_APL_PO4_100ns"],
-
-                    "finish_APL_BOX_left": left_row["finish_APL_BOX_100ns"],
-                    "finish_APL_BOX_right": right_row["finish_APL_BOX_100ns"],
-                    "finish_APL_BOX_difference_left_minus_right":
-                        left_row["finish_APL_BOX_100ns"] - right_row["finish_APL_BOX_100ns"],
-
-                    "start_APL_PO4_left": left_row["start_APL_PO4"],
-                    "start_APL_PO4_right": right_row["start_APL_PO4"],
-                    "finish_diff_vs_start_left_PO4_percent":
-                        ((left_row["finish_APL_PO4_100ns"] - right_row["finish_APL_PO4_100ns"]) / left_row["start_APL_PO4"] * 100.0)
-                        if pd.notna(left_row["start_APL_PO4"]) and left_row["start_APL_PO4"] != 0 else np.nan,
-                    "finish_diff_vs_start_right_PO4_percent":
-                        ((left_row["finish_APL_PO4_100ns"] - right_row["finish_APL_PO4_100ns"]) / right_row["start_APL_PO4"] * 100.0)
-                        if pd.notna(right_row["start_APL_PO4"]) and right_row["start_APL_PO4"] != 0 else np.nan,
-
-                    "start_APL_BOX_left": left_row["start_APL_BOX"],
-                    "start_APL_BOX_right": right_row["start_APL_BOX"],
-                    "finish_diff_vs_start_left_BOX_percent":
-                        ((left_row["finish_APL_BOX_100ns"] - right_row["finish_APL_BOX_100ns"]) / left_row["start_APL_BOX"] * 100.0)
-                        if pd.notna(left_row["start_APL_BOX"]) and left_row["start_APL_BOX"] != 0 else np.nan,
-                    "finish_diff_vs_start_right_BOX_percent":
-                        ((left_row["finish_APL_BOX_100ns"] - right_row["finish_APL_BOX_100ns"]) / right_row["start_APL_BOX"] * 100.0)
-                        if pd.notna(right_row["start_APL_BOX"]) and right_row["start_APL_BOX"] != 0 else np.nan,
+                
+                    "subject_bilayer": subject_bilayer,
+                    "comparison_bilayer": comparison_bilayer,
+                
+                    "finish_APL_PO4_subject": subject_row["finish_APL_PO4_100ns"],
+                    "finish_APL_PO4_comparison": comparison_row["finish_APL_PO4_100ns"],
+                    "finish_APL_PO4_difference_subject_minus_comparison":
+                        subject_row["finish_APL_PO4_100ns"] - comparison_row["finish_APL_PO4_100ns"],
+                
+                    "finish_APL_BOX_subject": subject_row["finish_APL_BOX_100ns"],
+                    "finish_APL_BOX_comparison": comparison_row["finish_APL_BOX_100ns"],
+                    "finish_APL_BOX_difference_subject_minus_comparison":
+                        subject_row["finish_APL_BOX_100ns"] - comparison_row["finish_APL_BOX_100ns"],
+                
+                    "start_APL_PO4_subject": subject_row["start_APL_PO4"],
+                    "start_APL_PO4_comparison": comparison_row["start_APL_PO4"],
+                    "finish_APL_PO4_diff_normalized_to_subject_start_percent":
+                        ((subject_row["finish_APL_PO4_100ns"] - comparison_row["finish_APL_PO4_100ns"]) / subject_row["start_APL_PO4"] * 100.0)
+                        if pd.notna(subject_row["start_APL_PO4"]) and subject_row["start_APL_PO4"] != 0 else np.nan,
+                    "finish_APL_PO4_diff_normalized_to_comparison_start_percent":
+                        ((subject_row["finish_APL_PO4_100ns"] - comparison_row["finish_APL_PO4_100ns"]) / comparison_row["start_APL_PO4"] * 100.0)
+                        if pd.notna(comparison_row["start_APL_PO4"]) and comparison_row["start_APL_PO4"] != 0 else np.nan,
+                
+                    "start_APL_BOX_subject": subject_row["start_APL_BOX"],
+                    "start_APL_BOX_comparison": comparison_row["start_APL_BOX"],
+                    "finish_APL_BOX_diff_normalized_to_subject_start_percent":
+                        ((subject_row["finish_APL_BOX_100ns"] - comparison_row["finish_APL_BOX_100ns"]) / subject_row["start_APL_BOX"] * 100.0)
+                        if pd.notna(subject_row["start_APL_BOX"]) and subject_row["start_APL_BOX"] != 0 else np.nan,
+                    "finish_APL_BOX_diff_normalized_to_comparison_start_percent":
+                        ((subject_row["finish_APL_BOX_100ns"] - comparison_row["finish_APL_BOX_100ns"]) / comparison_row["start_APL_BOX"] * 100.0)
+                        if pd.notna(comparison_row["start_APL_BOX"]) and comparison_row["start_APL_BOX"] != 0 else np.nan,
                 })
 
     comparison_df = pd.DataFrame(comparison_rows)
 
     if not comparison_df.empty:
         comparison_df = comparison_df.sort_values(
-            ["molecule_name", "run_number", "nmol", "bilayer_left", "bilayer_right"]
+            ["molecule_name", "run_number", "nmol", "subject_bilayer", "comparison_bilayer"]
         ).reset_index(drop=True)
 
         for molecule_name, sub in comparison_df.groupby("molecule_name", sort=True):
@@ -757,17 +1022,41 @@ def get_system_output_dir(molecule_name: str, system_type: str, run_number: int)
 
 
 def analyze_system(
-    system_dir: Path,
+    system_dir: Optional[Path],
     peptide_mass: Dict[str, float],
     peptoid_mass: Dict[str, float],
+    manual_target: Optional[dict] = None,
 ) -> dict:
     """
-    Analyze one completed system and return one master row.
-    Raises exceptions for failures that should be logged into failed_systems.csv.
+    Normal mode:
+        system_dir from PFPeptoids folder layout
+
+    Manual direct-file mode:
+        system_dir=None
+        manual_target contains all file paths + labels
     """
-    system_type = system_dir.parents[1].name
-    run_number = parse_run_number(system_dir.parent.name)
-    molecule_name, nmol = split_system_folder_name(system_dir.name)
+    if manual_target is None:
+        system_type = system_dir.parents[1].name
+        run_number = parse_run_number(system_dir.parent.name)
+        molecule_name, nmol = split_system_folder_name(system_dir.name)
+
+        pull_gro = system_dir / "Pull.gro"
+        pull_xtc = system_dir / "Pull.xtc"
+        relax_gro = system_dir / "Relax.gro"
+        relax_xtc = system_dir / "Relax.xtc"
+        system_dir_str = str(system_dir)
+    else:
+        system_type = manual_target["system_type"]
+        run_number = int(manual_target["run_number"])
+        molecule_name = str(manual_target["molecule_name"])
+        _, nmol = split_system_folder_name(molecule_name)
+
+        pull_gro = Path(manual_target["pull_gro"])
+        pull_xtc = Path(manual_target["pull_xtc"])
+        relax_gro = Path(manual_target["relax_gro"])
+        relax_xtc = Path(manual_target["relax_xtc"])
+        system_dir_str = str(pull_gro.parent)
+
     molecule_type = detect_molecule_type(molecule_name)
 
     tokens = tokenize_molecule(molecule_name, molecule_type)
@@ -783,20 +1072,14 @@ def analyze_system(
 
     charge_density = (net_charge / length) if length > 0 else np.nan
 
-    pull_gro = system_dir / "Pull.gro"
-    pull_xtc = system_dir / "Pull.xtc"
-    relax_gro = system_dir / "Relax.gro"
-    relax_xtc = system_dir / "Relax.xtc"
-
     required = [pull_gro, pull_xtc, relax_gro, relax_xtc]
     missing = [str(x) for x in required if not x.exists()]
     if missing:
         raise FileNotFoundError(f"Missing required file(s): {missing}")
 
-    pull_df = analyze_trajectory(pull_gro, pull_xtc, phase_name="pull")
-    relax_df = analyze_trajectory(relax_gro, relax_xtc, phase_name="relax")
+    pull_df = analyze_trajectory(pull_gro, pull_xtc, phase_name="pull", system_type=system_type)
+    relax_df = analyze_trajectory(relax_gro, relax_xtc, phase_name="relax", system_type=system_type)
 
-    # Validate 100 ns availability
     nearest_100 = nearest_row(relax_df, TARGET_RELAX_TIME_NS)
     nearest_time_ns = float(nearest_100["time_ns"])
     if abs(nearest_time_ns - TARGET_RELAX_TIME_NS) > TARGET_RELAX_TOLERANCE_NS:
@@ -824,13 +1107,15 @@ def analyze_system(
     membrane_area_start = float(start_row["membrane_area"])
     membrane_area_finish = float(finish_row["membrane_area"])
     lipids_per_leaflet = float(start_row["lipids_per_leaflet"])
+    n_phospholipids = float(start_row["n_phospholipids"])
+    n_chol = float(start_row["n_chol"])
+    n_membrane_molecules = float(start_row["n_membrane_molecules"])
 
     system_output_dir = get_system_output_dir(molecule_name, system_type, run_number)
     system_output_dir.mkdir(parents=True, exist_ok=True)
 
     single_metric = "APL_BOX" if PLOT_CFG["single_use_box_method"] else "APL_PO4"
 
-    # proper checking to avoid regenerating existing outputs
     if not image_outputs_exist(system_output_dir):
         save_system_timeseries(
             pull_df=pull_df,
@@ -908,8 +1193,25 @@ def analyze_system(
         "timepoint_100ns_found": True,
         "analysis_complete": True,
 
-        "system_dir": str(system_dir),
+        "has_missing_mass": len(missing_mass_codes) > 0,
+        "missing_mass_count": len(missing_mass_codes),
+        "relax_end_time_ns": relax_end_ns,
+        "reached_100ns": abs(nearest_time_ns - TARGET_RELAX_TIME_NS) <= TARGET_RELAX_TOLERANCE_NS,
+        "target_relax_time_ns": TARGET_RELAX_TIME_NS,
+        "remaining_relax_time_ns": max(0.0, TARGET_RELAX_TIME_NS - relax_end_ns),
+        "token_sequence": "-".join(tokens) if molecule_type == "peptoid" else "".join(tokens),
+
+        "component_count": len(parse_system_components(molecule_name)),
+        "component_names": "|".join(str(c["name"]) for c in parse_system_components(molecule_name)),
+        "component_counts": "|".join(str(int(c["count"])) for c in parse_system_components(molecule_name)),
+        "contains_mixture": len(parse_system_components(molecule_name)) > 1,
+
+        "system_dir": system_dir_str,
         "output_dir": str(system_output_dir),
+
+        "n_phospholipids": n_phospholipids,
+        "n_chol": n_chol,
+        "n_membrane_molecules": n_membrane_molecules,
     }
 
     return row
@@ -967,21 +1269,29 @@ def main() -> None:
     new_rows = []
     failed_records = []
 
-    system_dirs = scan_system_folders(DATA_ROOT)
+    targets = resolve_analysis_targets()
 
-    for system_dir in system_dirs:
+    for target in targets:
+        system_dir = target.get("system_dir", None)
+        manual_target = target if target.get("manual", False) else None
+
         try:
-            system_type = system_dir.parents[1].name
-            run_number = parse_run_number(system_dir.parent.name)
-            molecule_name, nmol = split_system_folder_name(system_dir.name)
-            system_key = make_system_key(molecule_name, nmol, system_type, run_number)
+            if manual_target is None:
+                system_type = system_dir.parents[1].name
+                run_number = parse_run_number(system_dir.parent.name)
+                molecule_name, nmol = split_system_folder_name(system_dir.name)
+            else:
+                system_type = manual_target["system_type"]
+                run_number = int(manual_target["run_number"])
+                molecule_name = str(manual_target["molecule_name"])
+                _, nmol = split_system_folder_name(molecule_name)
 
+            system_key = make_system_key(molecule_name, nmol, system_type, run_number)
             system_output_dir = get_system_output_dir(molecule_name, system_type, run_number)
 
             row_missing = system_key not in existing_keys
             plots_missing = not image_outputs_exist(system_output_dir)
 
-            # Skip completely if both data row and plot outputs already exist
             if not row_missing and not plots_missing:
                 continue
 
@@ -989,28 +1299,63 @@ def main() -> None:
                 system_dir=system_dir,
                 peptide_mass=peptide_mass,
                 peptoid_mass=peptoid_mass,
+                manual_target=manual_target,
             )
 
-            # Only add a new master row if it is not already present
             if row_missing:
                 new_rows.append(row)
 
         except Exception as exc:
-            # Try to preserve as much identity as possible even on failure
             try:
-                system_type = system_dir.parents[1].name
+                if manual_target is None:
+                    system_type = system_dir.parents[1].name
+                    run_number = parse_run_number(system_dir.parent.name)
+                    molecule_name, nmol = split_system_folder_name(system_dir.name)
+                    failure_path = system_dir
+                else:
+                    system_type = manual_target["system_type"]
+                    run_number = int(manual_target["run_number"])
+                    molecule_name = str(manual_target["molecule_name"])
+                    _, nmol = split_system_folder_name(molecule_name)
+                    failure_path = Path(manual_target["pull_gro"]).parent
             except Exception:
                 system_type = None
-
-            try:
-                run_number = parse_run_number(system_dir.parent.name)
-            except Exception:
                 run_number = None
+                molecule_name = "manual_target"
+                nmol = None
+                failure_path = None
 
-            try:
-                molecule_name, nmol = split_system_folder_name(system_dir.name)
-            except Exception:
-                molecule_name, nmol = system_dir.name, None
+            if system_dir is not None:
+                try:
+                    failure_info = classify_failure_for_restart(system_dir)
+                except Exception:
+                    failure_info = {
+                        "failure_category": "other",
+                        "relax_end_time_ns": np.nan,
+                        "remaining_relax_time_ns": np.nan,
+                        "pull_gro_exists": False,
+                        "pull_xtc_exists": False,
+                        "pull_cpt_exists": False,
+                        "relax_gro_exists": False,
+                        "relax_xtc_exists": False,
+                        "relax_cpt_exists": False,
+                        "restart_mode": "",
+                        "recommended_action": "",
+                    }
+            else:
+                failure_info = {
+                    "failure_category": "manual_input_error",
+                    "relax_end_time_ns": np.nan,
+                    "remaining_relax_time_ns": np.nan,
+                    "pull_gro_exists": False,
+                    "pull_xtc_exists": False,
+                    "pull_cpt_exists": False,
+                    "relax_gro_exists": False,
+                    "relax_xtc_exists": False,
+                    "relax_cpt_exists": False,
+                    "restart_mode": "manual_check",
+                    "recommended_action": "check provided manual file paths",
+                }
 
             append_failed(
                 failed_records=failed_records,
@@ -1020,10 +1365,20 @@ def main() -> None:
                 run_number=run_number,
                 stage="analysis",
                 reason=f"{type(exc).__name__}: {exc}",
-                system_path=system_dir,
+                system_path=failure_path,
+                failure_category=failure_info["failure_category"],
+                relax_end_time_ns=failure_info["relax_end_time_ns"],
+                remaining_relax_time_ns=failure_info["remaining_relax_time_ns"],
+                pull_gro_exists=failure_info["pull_gro_exists"],
+                pull_xtc_exists=failure_info["pull_xtc_exists"],
+                pull_cpt_exists=failure_info["pull_cpt_exists"],
+                relax_gro_exists=failure_info["relax_gro_exists"],
+                relax_xtc_exists=failure_info["relax_xtc_exists"],
+                relax_cpt_exists=failure_info["relax_cpt_exists"],
+                restart_mode=failure_info["restart_mode"],
+                recommended_action=failure_info["recommended_action"],
             )
 
-    # Update master CSV
     if new_rows:
         new_master = pd.DataFrame(new_rows)
         master_df = pd.concat([existing_master, new_master], ignore_index=True)
@@ -1035,7 +1390,6 @@ def main() -> None:
         master_df = master_df.sort_values(["molecule_name", "system_type", "run_number", "nmol"]).reset_index(drop=True)
     safe_write_csv(master_df, MASTER_CSV)
 
-    # Update failed CSV
     failed_df = pd.DataFrame(failed_records)
     if not existing_failed.empty and not failed_df.empty:
         failed_df = pd.concat([existing_failed, failed_df], ignore_index=True)
@@ -1050,14 +1404,12 @@ def main() -> None:
 
     safe_write_csv(failed_df, FAILED_CSV)
 
-    # Rebuild grouped outputs + bilayer comparisons from full master CSV
     comparison_df = build_grouped_outputs(master_df)
     safe_write_csv(comparison_df, COMPARISON_CSV)
 
-    # Build horizontal stacked combined-APL images for each molecule/run/nmol
     build_grouped_apl_stacks(master_df)
 
-    print(f"Analysis complete.")
+    print("Analysis complete.")
     print(f"Master CSV: {MASTER_CSV}")
     print(f"Comparison CSV: {COMPARISON_CSV}")
     print(f"Failed systems CSV: {FAILED_CSV}")
