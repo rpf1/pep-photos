@@ -66,7 +66,7 @@ from pathlib import Path
 
 import MDAnalysis as mda
 from PIL import Image, ImageDraw, ImageFont
-
+import textwrap
 
 # =============================================================================
 # USER SETTINGS
@@ -129,15 +129,101 @@ VMD_COMMAND = "vglrun vmd -e Photograph.tcl"
 TRIM_IMAGES = True
 TRIM_FUZZ = "7%"
 
-# Panel labels / titles
-DRAW_LABELS = True
+# =============================================================================
+# TEXT / CLEAN IMAGE SETTINGS
+# =============================================================================
+
+# Master switch.
+# False = detailed figure.
+# True  = cleaner figure with less text.
+CLEAN_IMAGE_MODE = False
+
+# If True, existing final panels are regenerated.
+# Use this after changing label/format settings.
+FORCE_REMAKE_PANELS = False
+
+# Main row/system title.
+SHOW_SYSTEM_TITLE = True
+
+# Top title for the all-bilayers stacked image.
+SHOW_STACK_TITLE = True
+
+# Labels above each individual VMD panel:
+# Top bilayer, Side bilayer, Top, Side, Bottom, Water
+SHOW_PANEL_LABELS = True
+
+# Individual title components.
+SHOW_MOLECULE_IN_TITLE = True
+SHOW_NMOL_IN_TITLE = True
+SHOW_BILAYER_IN_TITLE = True
+SHOW_RUN_IN_TITLE = True
+SHOW_STAGE_IN_TITLE = True
+SHOW_APL_IN_TITLE = True
+
+# Bilayer label cleaning.
+REMOVE_W_WF_FROM_BILAYER_LABEL = True
+PRETTY_BILAYER_LABELS = True
+
+# Text appearance.
 LABEL_FONT_SIZE = 28
 TITLE_FONT_SIZE = 34
+TITLE_FONT_MIN_SIZE = 18
+
 LABEL_COLOR = "black"
 TITLE_COLOR = "black"
+
 LABEL_PADDING = 12
-TITLE_BAND_HEIGHT = 56
+TITLE_LINE_SPACING = 6
+TITLE_TOP_BOTTOM_PADDING = 10
 PANEL_LABEL_BAND_HEIGHT = 42
+
+# Maximum number of title lines.
+# If the title is still too long, it will be truncated with "..."
+MAX_TITLE_LINES = 2
+
+# Image alignment / scaling.
+# This makes each VMD panel sit inside a fixed-size white canvas.
+# It prevents different bilayers appearing shifted/scaled after trimming.
+NORMALISE_PANEL_SIZES = True
+
+# Fixed canvas sizes for the six snapshot types.
+# These do not change the VMD view/colouring; they only standardise the final PNG layout.
+PANEL_CANVAS_SIZES = {
+    "snapshot_top_bilayer.png":  (330, 330),
+    "snapshot_side_bilayer.png": (330, 250),
+    "snapshot_top.png":          (330, 330),
+    "snapshot_side.png":         (330, 250),
+    "snapshot_bottom.png":       (330, 330),
+    "snapshot_water.png":        (330, 330),
+}
+
+DEFAULT_PANEL_CANVAS_SIZE = (330, 330)
+
+# Vertical stack row alignment.
+# "left" keeps all bilayer rows aligned at the same left edge.
+# "center" centres shorter rows.
+STACK_ROW_ALIGNMENT = "left"
+
+
+if CLEAN_IMAGE_MODE:
+    SHOW_SYSTEM_TITLE = True
+    SHOW_STACK_TITLE = True
+    SHOW_PANEL_LABELS = False
+
+    SHOW_MOLECULE_IN_TITLE = True
+    SHOW_NMOL_IN_TITLE = False
+    SHOW_BILAYER_IN_TITLE = True
+    SHOW_RUN_IN_TITLE = False
+    SHOW_STAGE_IN_TITLE = False
+    SHOW_APL_IN_TITLE = True
+
+    TITLE_FONT_SIZE = 30
+    MAX_TITLE_LINES = 1
+
+# Visual-only bilayer Z repositioning
+SHIFT_BILAYER_VIEW = True
+BILAYER_TARGET_Z_FRACTION = 0.25   # 0.25+ recommended
+SHIFTED_OUTPUT_TAG = "bilayer_z025"
 
 # Final naming convention
 # system image: {molecule}__nmol_{nmol}__{bilayer}__{run}.png
@@ -145,9 +231,9 @@ PANEL_LABEL_BAND_HEIGHT = 42
 
 # Sort order for stacked bilayer overview
 BILAYER_PRIORITY = [
-    "POPC60CHOL40_W_WF",
-    "POPE75POPG25_W_WF",
-    "POPC80POPS20_W_WF"
+    "POPC60CHOL40_W_WF",  # POPC:CHOL
+    "POPE75POPG25_W_WF",  # POPE:POPG
+    "POPC80POPS20_W_WF",  # POPC:POPS
 ]
 
 # Expected VMD output order
@@ -186,24 +272,24 @@ PEPTOID_RESIDUES = {
     ],
 }
 
+
+PHOSPHOLIPID_RESNAMES = {"POPC", "POPS", "POPE", "POPG"}
+CHOL_RESNAMES = {"CHOL"}
+
+SYSTEM_TYPE_TO_ASSUMED_PHOSPHOLIPID_FRACTION = {
+    "POPC60CHOL40_W_WF": 0.60,
+    "POPC80POPS20_W_WF": 1.00,
+    "POPE75POPG25_W_WF": 1.00,
+}
+
+
 # =============================================================================
 # HELPERS
 # =============================================================================
 
 def resolve_photograph_target():
     """
-    Returns a list of one or more targets in this format:
-    {
-        "system_dir": Path or None,
-        "molecule_name": str,
-        "nmol": int,
-        "bilayer": str,
-        "run_name": str,
-        "gro": Path,
-        "xtc": Path,
-        "stage": str,
-        "min_time_ps": float,
-    }
+    Returns a list of one or more targets.
     """
     if not MANUAL_MODE:
         targets = []
@@ -224,8 +310,12 @@ def resolve_photograph_target():
                     if not system_dir.is_dir():
                         continue
 
-                    molecule_name, nmol = split_system_folder_name(system_dir.name)
-                    stage_info = get_stage_files(system_dir)
+                    try:
+                        molecule_name, nmol = split_system_folder_name(system_dir.name)
+                        stage_info = get_stage_files(system_dir)
+                    except Exception as exc:
+                        print(f"SKIP target discovery: {system_dir}: {exc}")
+                        continue
 
                     targets.append({
                         "system_dir": system_dir,
@@ -241,9 +331,6 @@ def resolve_photograph_target():
 
         return targets
 
-    # ---------------------------
-    # MANUAL: folder mode
-    # ---------------------------
     if MANUAL_SYSTEM_DIR is not None:
         system_dir = Path(MANUAL_SYSTEM_DIR)
 
@@ -276,9 +363,6 @@ def resolve_photograph_target():
             "min_time_ps": stage_info["min_time_ps"],
         }]
 
-    # ---------------------------
-    # MANUAL: direct file mode
-    # ---------------------------
     if MANUAL_GRO_FILE is not None and MANUAL_XTC_FILE is not None:
         gro_file = Path(MANUAL_GRO_FILE)
         xtc_file = Path(MANUAL_XTC_FILE)
@@ -386,11 +470,79 @@ def check_trajectory_complete(gro_file: Path, xtc_file: Path, min_time_ps: float
     return final_time
 
 
+def calculate_final_apl_box(gro_file: Path, xtc_file: Path, bilayer: str) -> float:
+    """
+    Calculates final-frame box-method APL:
+        APL = box_x * box_y / lipids_per_leaflet
+    """
+    u = mda.Universe(str(gro_file), str(xtc_file))
+    u.trajectory[-1]
+
+    dims = u.trajectory.ts.dimensions
+    if dims is None or len(dims) < 2:
+        raise ValueError("Missing box dimensions.")
+
+    box_x = float(dims[0])
+    box_y = float(dims[1])
+
+    phospholipid_sel = "resname " + " ".join(sorted(PHOSPHOLIPID_RESNAMES))
+    chol_sel = "resname " + " ".join(sorted(CHOL_RESNAMES))
+
+    phospholipids = u.select_atoms(phospholipid_sel).residues
+    chol = u.select_atoms(chol_sel).residues
+
+    n_phospholipids = phospholipids.n_residues
+    n_chol = chol.n_residues
+
+    n_membrane_molecules = n_phospholipids + n_chol
+
+    if "CHOL" in bilayer and n_chol == 0:
+        assumed_fraction = SYSTEM_TYPE_TO_ASSUMED_PHOSPHOLIPID_FRACTION.get(bilayer)
+        if assumed_fraction is None:
+            raise ValueError(f"No CHOL fallback fraction defined for {bilayer}")
+        n_membrane_molecules = n_phospholipids / assumed_fraction
+
+    if n_membrane_molecules <= 0:
+        raise ValueError("No membrane molecules counted for APL.")
+
+    lipids_per_leaflet = n_membrane_molecules / 2.0
+    apl = (box_x * box_y) / lipids_per_leaflet
+
+    print(
+    f"APL DEBUG | {bilayer} | "
+    f"box_x={box_x:.3f} box_y={box_y:.3f} | "
+    f"n_phospholipids={n_phospholipids} | "
+    f"n_chol={n_chol} | "
+    f"n_membrane_molecules={n_membrane_molecules:.1f} | "
+    f"lipids_per_leaflet={lipids_per_leaflet:.1f} | "
+    f"APL={apl:.3f}"
+)
+    return float(apl)
+
+
 def write_system_tcl(template_text: str, gro_name: str, xtc_name: str, outpath: Path):
     tcl = copy.copy(template_text)
-    tcl = tcl.replace("mol new AAAADEMC_80.psf type psf", f"mol new {gro_name} type gro")
-    tcl = tcl.replace("mol addfile AAAADEMC_80.pdb type pdb waitfor all",
-                      f"mol addfile {xtc_name} type xtc waitfor all")
+
+    tcl = tcl.replace(
+        "mol new AAAADEMC_80.psf type psf",
+        f"mol new {gro_name} type gro"
+    )
+
+    tcl = tcl.replace(
+        "mol addfile AAAADEMC_80.pdb type pdb waitfor all",
+        f"mol addfile {xtc_name} type xtc waitfor all"
+    )
+
+    tcl = tcl.replace(
+        "set SHIFT_BILAYER_VIEW 0",
+        f"set SHIFT_BILAYER_VIEW {1 if SHIFT_BILAYER_VIEW else 0}"
+    )
+
+    tcl = tcl.replace(
+        "set BILAYER_TARGET_Z_FRACTION 0.125",
+        f"set BILAYER_TARGET_Z_FRACTION {BILAYER_TARGET_Z_FRACTION}"
+    )
+
     with open(outpath, "w") as f:
         f.write(tcl)
 
@@ -413,22 +565,180 @@ def load_font(size):
         return ImageFont.load_default()
 
 
-def add_title_band(img: Image.Image, title: str):
-    if not DRAW_LABELS:
+def text_width(draw, text, font):
+    bbox = draw.textbbox((0, 0), text, font=font)
+    return bbox[2] - bbox[0]
+
+
+def text_height(draw, text, font):
+    bbox = draw.textbbox((0, 0), text, font=font)
+    return bbox[3] - bbox[1]
+
+
+def display_bilayer_name(bilayer: str) -> str:
+    """
+    Convert raw folder bilayer name into a shorter display label.
+
+    Example:
+        POPC60CHOL40_W_WF -> POPC60CHOL40
+    """
+    out = str(bilayer)
+
+    if REMOVE_W_WF_FROM_BILAYER_LABEL:
+        out = out.replace("_W_WF", "")
+
+    if PRETTY_BILAYER_LABELS:
+        out = out.replace("POPC60CHOL40", "POPC60:CHOL40")
+        out = out.replace("POPE75POPG25", "POPE75:POPG25")
+        out = out.replace("POPC80POPS20", "POPC80:POPS20")
+
+    return out
+
+
+def build_system_title(molecule_name, nmol, bilayer, run_name, stage, apl_text):
+    """
+    Build the title shown above each horizontal system panel.
+    Each part can be switched on/off in the settings section.
+    """
+    parts = []
+
+    if SHOW_MOLECULE_IN_TITLE:
+        parts.append(str(molecule_name))
+
+    if SHOW_NMOL_IN_TITLE:
+        parts.append(f"nmol={nmol}")
+
+    if SHOW_BILAYER_IN_TITLE:
+        parts.append(display_bilayer_name(bilayer))
+
+    if SHOW_RUN_IN_TITLE:
+        parts.append(str(run_name))
+
+    if SHOW_STAGE_IN_TITLE:
+        parts.append(str(stage))
+
+    if SHOW_APL_IN_TITLE:
+        parts.append(str(apl_text))
+
+    return " | ".join(parts)
+
+
+def build_stack_title(molecule_name, run_name):
+    """
+    Build the title shown above the all-bilayers stacked image.
+    """
+    return f"{molecule_name} | {run_name} | all bilayers"
+
+
+def wrap_title_to_width(draw, title, font, max_width):
+    """
+    Wrap a title by logical ' | ' chunks first.
+    This keeps titles cleaner than wrapping at arbitrary words.
+    """
+    parts = str(title).split(" | ")
+
+    lines = []
+    current = ""
+
+    for part in parts:
+        candidate = part if current == "" else current + " | " + part
+
+        if text_width(draw, candidate, font) <= max_width:
+            current = candidate
+        else:
+            if current:
+                lines.append(current)
+                current = part
+            else:
+                # Fallback if one individual part is too long.
+                wrapped = textwrap.wrap(part, width=40)
+                lines.extend(wrapped[:-1])
+                current = wrapped[-1] if wrapped else part
+
+    if current:
+        lines.append(current)
+
+    return lines
+
+
+def truncate_line_to_width(draw, text, font, max_width):
+    """
+    Truncate a line so it cannot run past the image width.
+    """
+    text = str(text)
+
+    if text_width(draw, text, font) <= max_width:
+        return text
+
+    suffix = "..."
+    while text and text_width(draw, text + suffix, font) > max_width:
+        text = text[:-1]
+
+    return text + suffix
+
+
+def choose_title_font_and_lines(draw, title, max_width):
+    """
+    Choose a font size and wrapped title that fits inside the image width.
+    """
+    for size in range(TITLE_FONT_SIZE, TITLE_FONT_MIN_SIZE - 1, -2):
+        font = load_font(size)
+        lines = wrap_title_to_width(draw, title, font, max_width)
+
+        if len(lines) <= MAX_TITLE_LINES:
+            return font, lines
+
+    # Last-resort fallback: use minimum font and truncate.
+    font = load_font(TITLE_FONT_MIN_SIZE)
+    lines = wrap_title_to_width(draw, title, font, max_width)
+
+    if len(lines) > MAX_TITLE_LINES:
+        lines = lines[:MAX_TITLE_LINES]
+
+    lines = [truncate_line_to_width(draw, line, font, max_width) for line in lines]
+    return font, lines
+
+
+def add_title_band(img: Image.Image, title: str, show_title: bool = True):
+    """
+    Add a title band that wraps/shrinks/truncates text so it cannot run off the edge.
+    """
+    if not show_title:
         return img
 
     width, height = img.size
-    new_img = Image.new("RGB", (width, height + TITLE_BAND_HEIGHT), "white")
-    new_img.paste(img, (0, TITLE_BAND_HEIGHT))
+
+    dummy = Image.new("RGB", (width, 100), "white")
+    draw = ImageDraw.Draw(dummy)
+
+    max_text_width = width - 2 * LABEL_PADDING
+    font, lines = choose_title_font_and_lines(draw, title, max_text_width)
+
+    line_h = text_height(draw, "Ag", font)
+    band_height = (
+        TITLE_TOP_BOTTOM_PADDING * 2
+        + len(lines) * line_h
+        + max(0, len(lines) - 1) * TITLE_LINE_SPACING
+    )
+
+    new_img = Image.new("RGB", (width, height + band_height), "white")
+    new_img.paste(img, (0, band_height))
 
     draw = ImageDraw.Draw(new_img)
-    font = load_font(TITLE_FONT_SIZE)
-    draw.text((LABEL_PADDING, 10), title, fill=TITLE_COLOR, font=font)
+
+    y = TITLE_TOP_BOTTOM_PADDING
+    for line in lines:
+        draw.text((LABEL_PADDING, y), line, fill=TITLE_COLOR, font=font)
+        y += line_h + TITLE_LINE_SPACING
+
     return new_img
 
 
 def add_panel_label(img: Image.Image, label: str):
-    if not DRAW_LABELS:
+    """
+    Add a short label above one VMD snapshot panel.
+    """
+    if not SHOW_PANEL_LABELS:
         return img
 
     width, height = img.size
@@ -437,16 +747,67 @@ def add_panel_label(img: Image.Image, label: str):
 
     draw = ImageDraw.Draw(new_img)
     font = load_font(LABEL_FONT_SIZE)
+
+    label = truncate_line_to_width(
+        draw=draw,
+        text=label,
+        font=font,
+        max_width=width - 2 * LABEL_PADDING,
+    )
+
     draw.text((LABEL_PADDING, 6), label, fill=LABEL_COLOR, font=font)
     return new_img
 
 
+def fit_image_on_canvas(img: Image.Image, canvas_size):
+    """
+    Fit an image onto a fixed-size white canvas without changing aspect ratio.
+
+    This fixes the alignment problem caused by trimming, where different bilayers
+    end up with slightly different panel sizes.
+    """
+    if not NORMALISE_PANEL_SIZES:
+        return img
+
+    canvas_w, canvas_h = canvas_size
+
+    try:
+        resample_filter = Image.Resampling.LANCZOS
+    except AttributeError:
+        resample_filter = Image.LANCZOS
+
+    fitted = img.copy()
+    fitted.thumbnail((canvas_w, canvas_h), resample_filter)
+
+    canvas = Image.new("RGB", (canvas_w, canvas_h), "white")
+
+    x = (canvas_w - fitted.size[0]) // 2
+    y = (canvas_h - fitted.size[1]) // 2
+
+    canvas.paste(fitted, (x, y))
+    return canvas
+
+
 def make_horizontal_panel(image_paths, output_path: Path, title: str):
+    """
+    Create one horizontal panel for one system/bilayer.
+
+    Each VMD snapshot is first placed on a fixed-size canvas, so all systems
+    have the same final panel geometry.
+    """
     panels = []
 
     for img_path, label in image_paths:
         img = Image.open(img_path).convert("RGB")
+
+        canvas_size = PANEL_CANVAS_SIZES.get(
+            img_path.name,
+            DEFAULT_PANEL_CANVAS_SIZE,
+        )
+
+        img = fit_image_on_canvas(img, canvas_size)
         img = add_panel_label(img, label)
+
         panels.append(img)
 
     total_width = sum(img.size[0] for img in panels)
@@ -460,7 +821,11 @@ def make_horizontal_panel(image_paths, output_path: Path, title: str):
         stitched.paste(img, (x, y))
         x += img.size[0]
 
-    stitched = add_title_band(stitched, title)
+    stitched = add_title_band(
+        img=stitched,
+        title=title,
+        show_title=SHOW_SYSTEM_TITLE,
+    )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     stitched.save(output_path, "PNG")
@@ -470,6 +835,12 @@ def make_horizontal_panel(image_paths, output_path: Path, title: str):
 
 
 def make_vertical_stack(image_paths, output_path: Path, title: str):
+    """
+    Stack system panels vertically.
+
+    STACK_ROW_ALIGNMENT = "left" is recommended because it keeps all bilayer rows
+    aligned at the same left edge.
+    """
     rows = [Image.open(p).convert("RGB") for p in image_paths]
 
     max_width = max(img.size[0] for img in rows)
@@ -479,11 +850,19 @@ def make_vertical_stack(image_paths, output_path: Path, title: str):
 
     y = 0
     for img in rows:
-        x = (max_width - img.size[0]) // 2
+        if STACK_ROW_ALIGNMENT == "center":
+            x = (max_width - img.size[0]) // 2
+        else:
+            x = 0
+
         stitched.paste(img, (x, y))
         y += img.size[1]
 
-    stitched = add_title_band(stitched, title)
+    stitched = add_title_band(
+        img=stitched,
+        title=title,
+        show_title=SHOW_STACK_TITLE,
+    )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     stitched.save(output_path, "PNG")
@@ -509,11 +888,13 @@ def collect_snapshot_paths(system_dir: Path):
 
 
 def system_image_name(molecule_name: str, nmol: int, bilayer: str, run_name: str):
-    return f"{sanitize(molecule_name)}__nmol_{nmol}__{sanitize(bilayer)}__{sanitize(run_name)}.png"
+    tag = f"__{sanitize(SHIFTED_OUTPUT_TAG)}" if SHIFT_BILAYER_VIEW else ""
+    return f"{sanitize(molecule_name)}__nmol_{nmol}__{sanitize(bilayer)}__{sanitize(run_name)}{tag}.png"
 
 
 def stacked_image_name(molecule_name: str, run_name: str):
-    return f"{sanitize(molecule_name)}__ALL_BILAYERS__{sanitize(run_name)}.png"
+    tag = f"__{sanitize(SHIFTED_OUTPUT_TAG)}" if SHIFT_BILAYER_VIEW else ""
+    return f"{sanitize(molecule_name)}__ALL_BILAYERS__{sanitize(run_name)}{tag}.png"
 
 
 # =============================================================================
@@ -529,11 +910,23 @@ def main():
     template_text = readin(TCL_TEMPLATE)
 
     generated_system_panels = {}
+    new_systems_created = []
+    
+    n_targets = 0
+    n_existing = 0
+    n_incomplete = 0
+    n_vmd_attempted = 0
+    n_vmd_failed = 0
+    n_snapshot_failed = 0
+    n_saved = 0
 
     try:
         targets = resolve_photograph_target()
     except Exception as exc:
         raise RuntimeError(f"Could not resolve input target(s): {exc}")
+
+    n_targets = len(targets)
+    print(f"Targets found after discovery filtering: {n_targets}")
 
     for target in targets:
         system_dir = target["system_dir"]
@@ -549,7 +942,8 @@ def main():
         try:
             final_time = check_trajectory_complete(gro_file, xtc_file, min_time_ps)
         except Exception as exc:
-            print(f"SKIP {gro_file.parent}: {exc}")
+            n_incomplete += 1
+            print(f"SKIP trajectory check: {gro_file.parent}: {exc}")
             continue
 
         out_dir = active_photo_root / sanitize(molecule_name) / sanitize(bilayer) / sanitize(run_name)
@@ -558,7 +952,8 @@ def main():
         panel_name = system_image_name(molecule_name, nmol, bilayer, run_name)
         final_panel_path = out_dir / panel_name
 
-        if final_panel_path.exists():
+        if final_panel_path.exists() and not FORCE_REMAKE_PANELS:
+            n_existing += 1
             print(f"SKIP existing {final_panel_path}")
             generated_system_panels.setdefault((molecule_name, run_name), []).append((bilayer, final_panel_path))
             continue
@@ -575,17 +970,40 @@ def main():
         shutil.copy2(tcl_out, system_tcl)
 
         print(f"Running VMD for {molecule_name} | {bilayer} | {run_name} | stage={stage} | final_time={final_time:.1f} ps")
-        run_vmd_in_system_dir(system_dir)
+        n_vmd_attempted += 1
+
+        try:
+            run_vmd_in_system_dir(system_dir)
+        except Exception as exc:
+            n_vmd_failed += 1
+            print(f"FAILED VMD {system_dir}: {exc}")
+            continue
 
         try:
             snapshot_paths = collect_snapshot_paths(system_dir)
         except Exception as exc:
+            n_snapshot_failed += 1
             print(f"FAILED snapshot collection {system_dir}: {exc}")
             continue
 
-        title = f"{molecule_name} | nmol={nmol} | {bilayer} | {run_name} | {stage}"
+        try:
+            final_apl = calculate_final_apl_box(gro_file, xtc_file, bilayer)
+            apl_text = f"APL = {final_apl:.2f}Å²"
+        except Exception as exc:
+            print(f"WARNING: Could not calculate APL for title: {system_dir}: {exc}")
+            apl_text = "APL = NA"
+        
+        title = build_system_title(
+            molecule_name=molecule_name,
+            nmol=nmol,
+            bilayer=bilayer,
+            run_name=run_name,
+            stage=stage,
+            apl_text=apl_text,
+        )
+        
         make_horizontal_panel(snapshot_paths, final_panel_path, title=title)
-
+        
         generated_system_panels.setdefault((molecule_name, run_name), []).append((bilayer, final_panel_path))
 
         for fname, _ in SNAPSHOT_ORDER:
@@ -596,6 +1014,17 @@ def main():
                 except Exception:
                     pass
 
+        n_saved += 1
+        
+        new_systems_created.append({
+            "molecule": molecule_name,
+            "nmol": nmol,
+            "bilayer": bilayer,
+            "run": run_name,
+            "stage": stage,
+            "path": str(final_panel_path),
+        })
+        
         print(f"SAVED {final_panel_path}")
 
     for (molecule_name, run_name), bilayer_panels in generated_system_panels.items():
@@ -615,11 +1044,42 @@ def main():
         stack_dir.mkdir(parents=True, exist_ok=True)
 
         stack_path = stack_dir / stacked_image_name(molecule_name, run_name)
-        title = f"{molecule_name} | {run_name} | all bilayers"
+        
+        title = build_stack_title(molecule_name, run_name)
         make_vertical_stack(panel_paths, stack_path, title=title)
 
         print(f"SAVED STACK {stack_path}")
 
+    print("\nPHOTO SUMMARY")
+    print(f"Targets found after discovery filtering: {n_targets}")
+    print(f"Existing panels skipped: {n_existing}")
+    print(f"Skipped at trajectory check: {n_incomplete}")
+    print(f"VMD attempted: {n_vmd_attempted}")
+    print(f"VMD failed: {n_vmd_failed}")
+    print(f"Snapshot collection failed: {n_snapshot_failed}")
+    print(f"New panels saved: {n_saved}")
 
+    print("\nNEW SYSTEMS CREATED")
+    if not new_systems_created:
+        print("None")
+    else:
+        for i, entry in enumerate(new_systems_created, 1):
+            print(
+                f"{i:03d} | "
+                f"{entry['molecule']} | nmol={entry['nmol']} | "
+                f"{entry['bilayer']} | {entry['run']} | {entry['stage']}"
+            )
+    
+    output_list_file = active_photo_root / "new_systems_created.txt"
+    
+    with open(output_list_file, "w") as f:
+        for entry in new_systems_created:
+            f.write(
+                f"{entry['molecule']} | nmol={entry['nmol']} | "
+                f"{entry['bilayer']} | {entry['run']} | {entry['stage']} | "
+                f"{entry['path']}\n"
+            )
+        
+        
 if __name__ == "__main__":
     main()

@@ -9,6 +9,12 @@ proc geom_center {selection} {
 mol new AAAADEMC_80.psf type psf
 mol addfile AAAADEMC_80.pdb type pdb waitfor all
 
+# ============================================================================
+# OPTIONAL VISUAL-ONLY BILAYER Z SHIFT
+# ============================================================================
+set SHIFT_BILAYER_VIEW 0
+set BILAYER_TARGET_Z_FRACTION 0.125
+
 mol delrep 0 top
 
 # ============================================================================
@@ -58,6 +64,30 @@ set Bilayer [atomselect top "resname [join $bilayer_resnames { }]"]
 set W       [atomselect top "resname [join $water_resnames { }]"]
 set All     [atomselect top "all"]
 set Polymer [atomselect top "resname [join $all_polymer_resnames { }]"]
+
+if {$SHIFT_BILAYER_VIEW == 1} {
+    set boxinfo [molinfo top get {a b c}]
+    set box_z [lindex $boxinfo 2]
+
+    if {[$Bilayer num] > 0 && $box_z > 0} {
+        set bilayer_center [geom_center $Bilayer]
+        set bilayer_z [lindex $bilayer_center 2]
+
+        set target_z [expr {$box_z * $BILAYER_TARGET_Z_FRACTION}]
+        set dz [expr {$target_z - $bilayer_z}]
+
+        puts "VISUAL SHIFT DEBUG:"
+        puts "  box_z      = $box_z"
+        puts "  bilayer_z  = $bilayer_z"
+        puts "  target_z   = $target_z"
+        puts "  dz         = $dz"
+
+        $All moveby [list 0.0 0.0 $dz]
+
+        # Rewrap visually into the periodic box
+        pbc wrap -all -compound residue
+    }
+}
 
 # Only compute center if polymer exists
 if {[$Polymer num] > 0} {
