@@ -1,0 +1,10 @@
+# PFPeptoids image-classification runtime state
+
+# Process lock
+pfp34_v2/membrane_session/.annotation.lock
+
+# Binary application database
+pfp34_v2/membrane_session/state.sqlite3
+
+# Automatic ZIP session backups
+pfp34_v2/membrane_session/backups/
