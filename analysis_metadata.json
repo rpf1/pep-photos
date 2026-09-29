@@ -1,0 +1,202 @@
+{
+  "data_root": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1",
+  "manual_mode": false,
+  "target_dir_mode": true,
+  "target_selection_mode": "run",
+  "analysis_run": "ML_cycle_02",
+  "analysis_bilayers": [
+    "POPC60CHOL40_W_WF",
+    "POPE75POPG25_W_WF"
+  ],
+  "target_dirs": [
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02",
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02"
+  ],
+  "master_csv": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/masterdataanalysis.csv",
+  "comparison_csv": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/bilayercomparisonanalysis.csv",
+  "failed_csv": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/failed_systems.csv",
+  "output_root": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/output_2",
+  "target_relax_time_ns": 100.0,
+  "target_relax_tolerance_ns": 0.5,
+  "po4_selection": "name PO4",
+  "bilayer_priority": [
+    "POPC60CHOL40_20Az",
+    "POPE75POPG25_20Az",
+    "POPC80POPS20_20Az",
+    "POPC60CHOL40_W_WF",
+    "POPE75POPG25_W_WF",
+    "POPC80POPS20_W_WF"
+  ],
+  "two_bilayer_stacks": [
+    [
+      "POPC60CHOL40_W_WF",
+      "POPE75POPG25_W_WF"
+    ]
+  ],
+  "generate_two_bilayer_stacks": true,
+  "generate_overlay_bilayer_graphs": true,
+  "generate_all_bilayer_overlay": false,
+  "generate_two_bilayer_overlays": true,
+  "overlay_all_bilayers_filename_template": "{molecule_name}_overlay_all_bilayers_run_{run_number}_nmol_{nmol}.png",
+  "overlay_two_bilayers_filename_template": "{molecule_name}_overlay_{pair_label}_run_{run_number}_nmol_{nmol}.png",
+  "overlay_show_title": false,
+  "overlay_figure_size": [
+    10.5,
+    5.5
+  ],
+  "overlay_legend_loc": "upper right",
+  "overlay_legend_bbox_to_anchor": [
+    0.98,
+    0.98
+  ],
+  "overlay_legend_font_size": 18,
+  "overlay_phase_colors": {
+    "Pull": "#554768",
+    "Relax": "#81B0CD"
+  },
+  "overlay_bilayer_markers": {
+    "POPC60CHOL40_W_WF": "o",
+    "POPE75POPG25_W_WF": "s",
+    "POPC80POPS20_W_WF": "^"
+  },
+  "overlay_bilayer_colors": {},
+  "overlay_phase_linestyles": {
+    "Pull": "-",
+    "Relax": "-"
+  },
+  "overlay_phase_markers": {},
+  "plot_config": {
+    "style_use_default_matplotlib": true,
+    "font_family": "Century Gothic",
+    "font_size": 20,
+    "title_size": 24,
+    "axis_label_size": 24,
+    "tick_label_size": 20,
+    "legend_size": 24,
+    "show_titles": false,
+    "title_wrap_width": 30,
+    "subplot_title_wrap_width": 28,
+    "suptitle_wrap_width": 42,
+    "title_pad": 18,
+    "suptitle_y": 0.98,
+    "line_width": 2.0,
+    "figure_size": [
+      8.0,
+      5.0
+    ],
+    "dpi": 300,
+    "pull_title": "Pull APL vs Time",
+    "relax_title": "Relax APL vs Time",
+    "combined_title": "Combined APL vs Time",
+    "stacked_combined_title": "Combined APL Comparison",
+    "x_label": "Time (ns)",
+    "y_label_po4": "APL (\u00c5\u00b2)",
+    "y_label_box": "APL (\u00c5\u00b2)",
+    "combined_use_box_method": true,
+    "single_use_box_method": true,
+    "pull_color": "#554768",
+    "relax_color": "#81B0CD",
+    "pull_xlim": null,
+    "relax_xlim": null,
+    "combined_xlim": null,
+    "pull_ylim": [
+      40,
+      90
+    ],
+    "relax_ylim": [
+      40,
+      90
+    ],
+    "combined_ylim": [
+      40,
+      90
+    ],
+    "tight_layout": true
+  },
+  "binned_apl_config": {
+    "enabled": true,
+    "metric": "APL",
+    "bin_size_ns": 5.0,
+    "start_ns": 0.0,
+    "end_ns": 200.0,
+    "use_bin_center_for_x": false,
+    "drop_incomplete_last_bin": false,
+    "plot_enabled": true,
+    "annotate_slope_values": true,
+    "annotation_fmt": "{:.3f}",
+    "annotation_rotation": 0,
+    "apl_title": null,
+    "slope_title": null,
+    "apl_xlabel": "Time (ns)",
+    "apl_ylabel": "Average APL (\u00c5\u00b2)",
+    "slope_xlabel": "Time (ns)",
+    "slope_ylabel": "\u0394APL per bin",
+    "apl_color": "black",
+    "slope_color": "red",
+    "pull_color": "#554768",
+    "relax_color": "#81B0CD",
+    "show_grid": true,
+    "show_apl_markers": true,
+    "show_slope_markers": true,
+    "apl_marker_size": 7.0,
+    "slope_marker_size": 7.0,
+    "annotation_font_size": 12,
+    "show_phase_boundary": true,
+    "phase_boundary_linestyle": "--",
+    "phase_boundary_color": "black",
+    "phase_boundary_linewidth": 1.0,
+    "show_legend": true,
+    "apl_xlim": [
+      0,
+      200
+    ],
+    "apl_ylim": [
+      40,
+      90
+    ],
+    "slope_xlim": [
+      0,
+      200
+    ],
+    "slope_mode": "delta_per_bin",
+    "slope_ylim_fixed": [
+      -2.0,
+      2.0
+    ],
+    "slope_major_tick": 0.5,
+    "slope_minor_tick": 0.25
+  },
+  "mass_override_json": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/monomer_masses.json",
+  "molecule_type_rule": {
+    "peptide": "no hyphens",
+    "peptoid": "hyphen-separated monomers"
+  },
+  "charge_rules": {
+    "peptide_positive": [
+      "K",
+      "R",
+      "H"
+    ],
+    "peptide_negative": [
+      "D",
+      "E"
+    ],
+    "peptoid_positive": [
+      "Nk",
+      "Nr",
+      "Nke"
+    ],
+    "peptoid_negative": [
+      "Nd",
+      "Ne"
+    ]
+  },
+  "apl_methods": {
+    "APL_PO4": "(PO4 x-span * PO4 y-span) / lipids_per_leaflet",
+    "APL_BOX": "(box_x * box_y) / lipids_per_leaflet"
+  },
+  "binned_outputs": {
+    "binned_APL.csv": "mean/std/min/max/n_frames per time bin",
+    "binned_APL_slope.csv": "slope between consecutive binned means"
+  }
+}

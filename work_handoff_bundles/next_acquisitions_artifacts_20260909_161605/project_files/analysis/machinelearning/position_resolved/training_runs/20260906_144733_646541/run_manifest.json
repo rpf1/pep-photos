@@ -1,0 +1,243 @@
+{
+  "manifest_schema_version": "1.0",
+  "run_id": "20260906_144733_646541",
+  "run_type": "training",
+  "workflow": "position_resolved",
+  "status": "complete",
+  "started_at": "2026-09-08T12:16:11.137117",
+  "updated_at": "2026-09-08T12:29:46.829970",
+  "purpose": "Model1C position retry; single-thread execution; original attempt archived",
+  "experiment": {
+    "descriptor_version": "v1",
+    "dataset_name": "dataset_Model1C",
+    "split_version": "split_Model1C",
+    "target": "DDAPL",
+    "models": [
+      "rf",
+      "lgbm",
+      "xgb",
+      "gbrt",
+      "mlp",
+      "ada",
+      "svr_gaussian",
+      "knn"
+    ],
+    "n_trials": 50,
+    "n_jobs": 1,
+    "n_cv_folds": 5,
+    "cv_random_seed": 42,
+    "optuna_random_seed": 42,
+    "logical_model_id": "Model1C"
+  },
+  "counts": {
+    "dataset": 55,
+    "train": 47,
+    "test": 8,
+    "features": 323,
+    "models": 8
+  },
+  "inputs": {
+    "dataset_membership": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/shared_data/datasets/dataset_Model1C.csv",
+      "exists": true,
+      "project_relative_path": "shared_data/datasets/dataset_Model1C.csv",
+      "sha256": "2f3b421451a29d84883a20bb9d0ede24e5aa61f1685b7a1ca03e76404c2bf2d1",
+      "size_bytes": 1581
+    },
+    "simulated_raw_descriptors": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/shared_data/active_learning/training_datasets/Model1C_training_data.csv",
+      "exists": true,
+      "project_relative_path": "shared_data/active_learning/training_datasets/Model1C_training_data.csv",
+      "sha256": "51a2a3ff04c843fdc61f46d1c135ba4dd88156abb75dd4d3f09a8f742a0e3f88",
+      "size_bytes": 229960
+    },
+    "simulated_cleaned_descriptors": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/training_dataset_aligned.csv",
+      "exists": true,
+      "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/training_dataset_aligned.csv",
+      "sha256": "75682d35610bbb9ba68336d729b829ed0553ba01429602dad67a9906fc1645f8",
+      "size_bytes": 229953
+    },
+    "reference_cleaned_descriptors": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/shared_data/descriptors/position_resolved/v1/all_sequence_rdkit_descriptors_with_targets_cleaned.csv",
+      "exists": true,
+      "project_relative_path": "shared_data/descriptors/position_resolved/v1/all_sequence_rdkit_descriptors_with_targets_cleaned.csv",
+      "sha256": "9addcbaf3f38464a391d3a7ac23d5e8ce20b9123e2c55c8b6bd8ccace7b7ca94",
+      "size_bytes": 129682431
+    },
+    "split_assignments": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/shared_data/splits/split_assignments_Model1C.csv",
+      "exists": true,
+      "project_relative_path": "shared_data/splits/split_assignments_Model1C.csv",
+      "sha256": "9055c6da6bce890c84c90453317f7860096f29191870362a7adb4189b6811918",
+      "size_bytes": 1779
+    }
+  },
+  "provenance_files": {
+    "dataset_ids_used": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/dataset_ids_used.csv",
+    "train_ids": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/train_ids.csv",
+    "test_ids": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/test_ids.csv",
+    "split_assignments_used": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/split_assignments_used.csv",
+    "feature_columns_used": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/feature_columns_used.csv",
+    "run_info": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/run_info.csv",
+    "model_diagnostics": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/model_diagnostics.csv"
+  },
+  "script": {
+    "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/scripts/peptoidmachinelearning.py",
+    "exists": true,
+    "project_relative_path": "position_resolved/scripts/peptoidmachinelearning.py",
+    "sha256": "bc9648e7b7c7046073bb4f3e014b75243593d5214081aa1e70006e177e5fba9b",
+    "size_bytes": 49113
+  },
+  "software": {
+    "python": "3.9.23",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "scikit_learn": "1.3.2",
+    "optuna": "4.9.0",
+    "joblib": "1.5.1",
+    "xgboost": "2.1.4",
+    "lightgbm": "4.6.0"
+  },
+  "output_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541",
+  "ended_at": "2026-09-08T12:29:46.829939",
+  "outputs": {
+    "results_csv": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/results.csv",
+      "exists": true,
+      "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/results.csv",
+      "sha256": "85ceeed947bb1400a353e6e3d1401cbcb508dd015a0491f4911bcba3a5fa3d82",
+      "size_bytes": 1549
+    },
+    "optimisation_json": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/optimisation.json",
+      "exists": true,
+      "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/optimisation.json",
+      "sha256": "ebda8720adadb7f6e622b9a4d7b5f4fdca6d3a4cb4fcee67c8f6bb6fc700bdae",
+      "size_bytes": 1741
+    },
+    "model_diagnostics_csv": {
+      "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/model_diagnostics.csv",
+      "exists": true,
+      "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/model_diagnostics.csv",
+      "sha256": "b748afd10d95ca3de4c6ab7781de38ffc2a3e8821acf798f03a07a6e7a046cab",
+      "size_bytes": 1027
+    },
+    "models": {
+      "rf": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/rf.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/rf.joblib",
+        "sha256": "2a3ca0ca9fb7af4983ec4d614209e4d40ed4d8087f58a303a40477df9bebd749",
+        "size_bytes": 269063
+      },
+      "lgbm": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/lgbm.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/lgbm.joblib",
+        "sha256": "cde994e1487230b12bfc369fd41dd788bd92ce4ebd5e6da52fc7af8b3cd54004",
+        "size_bytes": 124428
+      },
+      "xgb": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/xgb.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/xgb.joblib",
+        "sha256": "a349884d357a6561124da1c7ef4c0c28990499358d1e1e3345f503b63d4ceb8b",
+        "size_bytes": 87222
+      },
+      "gbrt": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/gbrt.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/gbrt.joblib",
+        "sha256": "fdb55102daa310cb8232db4bea3c239986d61bf9e24eecaf0c536803ddd559fe",
+        "size_bytes": 152690
+      },
+      "mlp": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/mlp.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/mlp.joblib",
+        "sha256": "3a28730c41466c7f03ed949f7dfa9fdb7cf0e0e99b7b374c252b5f662138c3ff",
+        "size_bytes": 70082
+      },
+      "ada": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/ada.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/ada.joblib",
+        "sha256": "e63934100842793b60036e6cbb2a2ad8659a1f2a690b1bd2842fce9205c4f621",
+        "size_bytes": 400246
+      },
+      "svr_gaussian": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/svr_gaussian.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/svr_gaussian.joblib",
+        "sha256": "6fecca7c389054bd6d3238b8f63579f846dd9a6dbbafb776da932e2a4db390ae",
+        "size_bytes": 135106
+      },
+      "knn": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/models/knn.joblib",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/models/knn.joblib",
+        "sha256": "296d89de05994ed16e1c5ee37ecc7e6f76d1f70b809dc75aa36f254499f09f10",
+        "size_bytes": 141778
+      }
+    },
+    "predictions": {
+      "rf": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/rf.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/rf.csv",
+        "sha256": "b9953f6dc6d8778299f7c29a2f637f5c3d6bff2e2fec90cebff65b8f669257ae",
+        "size_bytes": 588
+      },
+      "lgbm": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/lgbm.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/lgbm.csv",
+        "sha256": "505943c258942081e5880ef4b6447d1314f0db35fa60a66eb2e5c64fd1e84c66",
+        "size_bytes": 589
+      },
+      "xgb": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/xgb.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/xgb.csv",
+        "sha256": "d5d6fa4a910b54a219a1ba87618551da5f335d79e120057556948cfd061d7743",
+        "size_bytes": 521
+      },
+      "gbrt": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/gbrt.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/gbrt.csv",
+        "sha256": "9212997d293723463f24876a130ad5ba721731bdd67bc57a51c791179dec8050",
+        "size_bytes": 587
+      },
+      "mlp": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/mlp.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/mlp.csv",
+        "sha256": "cdb0b23f34df9510372587c0dd8fda89e65f48b9c67808f28dfaec6626e3c3f5",
+        "size_bytes": 589
+      },
+      "ada": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/ada.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/ada.csv",
+        "sha256": "d39f4d21f4aa9912160ec598b8e1324968dcc95a505b285f0a9ca2fdc72cd351",
+        "size_bytes": 590
+      },
+      "svr_gaussian": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/svr_gaussian.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/svr_gaussian.csv",
+        "sha256": "0497da79d26dc13283db2e8211f83758fce65d0203de5746d61062212b5da29e",
+        "size_bytes": 584
+      },
+      "knn": {
+        "resolved_path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/predictions/knn.csv",
+        "exists": true,
+        "project_relative_path": "position_resolved/training_runs/20260906_144733_646541/predictions/knn.csv",
+        "sha256": "52f9eb877e4018868f451a2467f10511db33fcd12d4520b2e57ee6e38e70809b",
+        "size_bytes": 590
+      }
+    }
+  }
+}

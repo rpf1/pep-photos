@@ -1,0 +1,8 @@
+PFPEPTOIDS CAMPAIGN AUDIT COMPLETE
+Report: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/campaign_state/audit_20260906_134015/campaign_audit_report.txt
+CSV:    /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/campaign_state/audit_20260906_134015/campaign_stage_state.csv
+Canonical acquisitions: 68
+Physical directories represented: 178
+Actionable canonical stage rows: 70
+Lineage assertion failures: 1
+No simulations, analyses, database rows, model files, selections, or Slurm jobs were changed.

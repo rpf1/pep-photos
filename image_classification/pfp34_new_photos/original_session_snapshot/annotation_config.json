@@ -1,0 +1,74 @@
+{
+  "annotation_protocol": "One label per molecule × bilayer_type × run. Inspect the available views. Use uncertain when evidence is ambiguous. Membranes are independent. Bulge implies interaction; flat/curved describes the surrounding membrane. Use pore_formed for a visible formed pore. Existing labels are not automatically reclassified.",
+  "backup_before_edit": true,
+  "backup_every_decisions": 10,
+  "bilayer_to_membrane_role": {
+    "POPC60CHOL40_W_WF": "mammalian_like",
+    "POPC80POPS20_W_WF": "POPC80POPS20",
+    "POPE75POPG25_W_WF": "bacterial_like"
+  },
+  "classes": [
+    {
+      "description": "Apply the agreed manual classification protocol.",
+      "key": "1",
+      "name": "flat_no_interaction"
+    },
+    {
+      "description": "Apply the agreed manual classification protocol.",
+      "key": "2",
+      "name": "flat_interaction"
+    },
+    {
+      "name": "bulge_flat",
+      "key": "3",
+      "description": "Local bulge with an otherwise flat membrane; interaction is implied."
+    },
+    {
+      "description": "Apply the agreed manual classification protocol.",
+      "key": "4",
+      "name": "curved"
+    },
+    {
+      "name": "bulge_curved",
+      "key": "5",
+      "description": "Local bulge with a curved surrounding membrane; interaction is implied."
+    },
+    {
+      "name": "pore_formed",
+      "key": "6",
+      "description": "A visible pore has formed; use this specific class when present."
+    }
+  ],
+  "confirm_relabel": true,
+  "decision_cooldown_ms": 300,
+  "default_view": "fit",
+  "image_root": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photos",
+  "included_bilayers": [
+    "POPC60CHOL40_W_WF",
+    "POPC80POPS20_W_WF",
+    "POPE75POPG25_W_WF"
+  ],
+  "keyboard_shortcuts": {
+    "next_picture": "bracketright",
+    "previous_picture": "bracketleft"
+  },
+  "order_mode": "ordered",
+  "output_dir": "membrane_session",
+  "random_seed": 34,
+  "show_notes": true,
+  "supported_image_extensions": [
+    ".png",
+    ".jpg",
+    ".jpeg",
+    ".tif",
+    ".tiff",
+    ".bmp"
+  ],
+  "targets": [
+    "system"
+  ],
+  "window_size": [
+    1400,
+    950
+  ]
+}

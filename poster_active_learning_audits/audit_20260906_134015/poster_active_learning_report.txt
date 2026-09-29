@@ -1,0 +1,142 @@
+PFPEPTOIDS ACTIVE-LEARNING POSTER AUDIT
+Generated UTC: 2026-09-06T12:40:44.204995+00:00
+Safety: read-only scientific inspection; only this new audit folder was written.
+Output directory: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015
+
+SCIENTIFIC DEFINITIONS
+FULL_MEASURED = both POPE75POPG25 and POPC60CHOL40 have valid analysed 100 ns masterdata rows.
+SYNCED = the real paired observation is preferred in active_learning.db.
+The fixed 8 benchmark molecules are not relabelled as prospective active-learning tests.
+
+COHORT COUNTS BY CYCLE
+Cycle 1: selected=38; full+synced=33; full masterdata not synced=0; partial one-system=0; no valid pair=5
+Cycle 2: selected=30; full+synced=0; full masterdata not synced=0; partial one-system=0; no valid pair=30
+
+COHORT COUNTS BY CYCLE/STRATEGY
+Cycle 1A: selected=15; full measured=15
+Cycle 1B: selected=15; full measured=14
+Cycle 1C: selected=15; full measured=11
+Cycle 1D: selected=15; full measured=15
+Cycle 1E: selected=15; full measured=12
+Cycle 2A: selected=15; full measured=0
+Cycle 2D: selected=15; full measured=0
+
+SIMULATION STAGE ROWS TO REVIEW BEFORE ANY SUBMISSION
+Rows: 18
+Cycle 2 Ne-Nm-Nfn | POPC60CHOL40_W_WF Pull | INCOMPLETE_RESUMABLE | RESUME_PULL_FROM_CHECKPOINT | 20.5 ns
+Cycle 2 Nfe-Nfnap-Nl | POPC60CHOL40_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 16.0 ns
+Cycle 2 Nfex-Nfnap-Nk | POPC60CHOL40_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 22.1 ns
+Cycle 2 Ni-Nfnap-Nl | POPE75POPG25_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 19.3 ns
+Cycle 2 Ni-Nfnap-Nl | POPC60CHOL40_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 20.2 ns
+Cycle 2 Nk-Nfex-Nfnap | POPE75POPG25_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 20.7 ns
+Cycle 2 Nk-Nfex-Nfnap | POPC60CHOL40_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 16.4 ns
+Cycle 2 Nk-Nfnap-Nl | POPE75POPG25_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 19.7 ns
+Cycle 2 Nk-Nv-Nwe | POPC60CHOL40_W_WF Relax | INCOMPLETE_RESUMABLE | RESUME_RELAX_FROM_CHECKPOINT | 17.5 ns
+Cycle 2 Nk-Nw-Nk | POPE75POPG25_W_WF Pull | INCOMPLETE_RESUMABLE | RESUME_PULL_FROM_CHECKPOINT | 23.0 ns
+Cycle 2 Nk-Nw-Nwe | POPC60CHOL40_W_WF Pull | INCOMPLETE_RESUMABLE | RESUME_PULL_FROM_CHECKPOINT | 40.3768 ns
+Cycle 2 Nl-Nfnap-Nfe | POPE75POPG25_W_WF Relax | SETUP_REQUIRED | SETUP_RELAX_REQUIRED |  ns
+Cycle 2 Nl-Nfnap-Nfe | POPC60CHOL40_W_WF Relax | SETUP_REQUIRED | SETUP_RELAX_REQUIRED |  ns
+Cycle 2 Nl-Nfnap-Nk | POPE75POPG25_W_WF Relax | SETUP_REQUIRED | SETUP_RELAX_REQUIRED |  ns
+Cycle 2 Nl-Nfnap-Nk | POPC60CHOL40_W_WF Relax | SETUP_REQUIRED | SETUP_RELAX_REQUIRED |  ns
+Cycle 2 Nm-Nse-Nfn | POPC60CHOL40_W_WF Pull | INCOMPLETE_RESUMABLE | RESUME_PULL_FROM_CHECKPOINT | 21.5 ns
+Cycle 2 Nv-Nfnap-Nk | POPE75POPG25_W_WF Relax | SETUP_REQUIRED | SETUP_RELAX_REQUIRED |  ns
+Cycle 2 Nv-Nfnap-Nk | POPC60CHOL40_W_WF Relax | SETUP_REQUIRED | SETUP_RELAX_REQUIRED |  ns
+
+ANALYSIS/SYNC ACTION ROWS (DO NOT RESUBMIT THESE AS SIMULATIONS)
+Rows: 52
+Cycle 1 Nf-Nfe-Nm | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nfe-Nm | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nfex-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nfex-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Ni-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Ni-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nl-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nl-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nw-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 1 Nf-Nw-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Ne-Nm-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nfe-Nfnap-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nfe-Nw-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nfe-Nw-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nfex-Nfnap-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Ni-Nfnap-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Ni-Nfnap-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Nfe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Nfe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Ni | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Ni | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nfnap-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nk-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nk-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nv-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nw-Nk | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nw-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nw-Nl | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nk-Nw-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nl-Nv-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nl-Nv-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nm-Nse-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-NfeB4-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-NfeB4-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-Nfnap-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-Nfnap-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-Nw-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-Nw-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-Nwe-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nn-Nwe-Nwe | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nse-Na-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nse-Na-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nse-Nfn-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nse-Nfn-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nse-Nm-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nse-Nm-Nfn | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nwe-Nw-Na | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nwe-Nw-Na | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nwe-Nwe-Na | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+Cycle 2 Nwe-Nwe-Na | RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE | Pull and Relax are complete for this membrane; masterdata is not yet valid.
+
+TOP EXISTING FIGURE CANDIDATES (filename relevance only; visual inspection still required)
+score= 39 | 2069x2066 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/shap/Model0_global_xgb_20260827_001410/figures/03_benchmark_actual_vs_predicted.png
+score= 22 | 5430x2996 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/09_selection_rank_map.png
+score= 22 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/09_selection_rank_map.pdf
+score= 22 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/09_selection_rank_map.svg
+score= 22 | 6350x3953 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/09_selection_rank_map.png
+score= 22 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/09_selection_rank_map.pdf
+score= 22 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/09_selection_rank_map.svg
+score= 22 | 7015x4040 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/09_selection_rank_map.png
+score= 22 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/09_selection_rank_map.pdf
+score= 22 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/09_selection_rank_map.svg
+score= 22 | 7015x4040 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/deleteafterwards_powerpoint/09_selection_rank_map.png
+score= 18 | 3993x2950 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/04b_benchmark_residuals_vs_measured.png
+score= 18 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/04b_benchmark_residuals_vs_measured.pdf
+score= 18 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/04b_benchmark_residuals_vs_measured.svg
+score= 18 | 4785x3620 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/04b_benchmark_residuals_vs_measured.png
+score= 18 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/04b_benchmark_residuals_vs_measured.pdf
+score= 18 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/04b_benchmark_residuals_vs_measured.svg
+score= 18 | 5683x4321 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/04b_benchmark_residuals_vs_measured.png
+score= 18 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/04b_benchmark_residuals_vs_measured.pdf
+score= 18 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_121306_Model0/04b_benchmark_residuals_vs_measured.svg
+score= 16 | 2669x1916 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/shap/Model0_global_xgb_20260827_001410/figures/10_signed_shap_distribution_top_features.png
+score= 16 | 4708x3042 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/07_full_prediction_distribution.png
+score= 16 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/07_full_prediction_distribution.pdf
+score= 16 | vector | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_112058_Model0/07_full_prediction_distribution.svg
+score= 16 | 5577x3759 px | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/analysis_runs/scientific_figures/analysis_20260828_113955_Model0/07_full_prediction_distribution.png
+
+RECOMMENDED POSTER FIGURE
+Use one two-panel active-learning result figure if the completed prospective cohort is large enough:
+A) ranked/full-space predicted DDAPL landscape (32,768 candidates), with selected acquisitions highlighted by strategy;
+B) pre-simulation predicted DDAPL versus subsequently measured DDAPL for full prospective acquisitions, with y=x, n, MAE and RMSE.
+Do not present the fixed 8-molecule benchmark as the new prospective active-learning test cohort.
+If an exact existing figure does not contain both panels, regenerate only these panels from stored predictions/selection decisions/outcomes.
+
+PROVENANCE
+Campaign audit script: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/audit_pfpeptoids_campaign_state.py
+Campaign audit exit code: 1 (0=all assertions passed; 1=lineage assertion warning)
+Campaign report: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/campaign_state/audit_20260906_134015/campaign_audit_report.txt
+Campaign detailed CSV: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/campaign_state/audit_20260906_134015/campaign_stage_state.csv
+Figure inventory: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/poster_figure_inventory.csv
+Figure scripts: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/poster_figure_script_inventory.csv
+Acquisition cohorts: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/poster_acquisition_cohorts.csv
+Pending actions: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/poster_active_learning_audits/audit_20260906_134015/poster_pending_stage_actions.csv

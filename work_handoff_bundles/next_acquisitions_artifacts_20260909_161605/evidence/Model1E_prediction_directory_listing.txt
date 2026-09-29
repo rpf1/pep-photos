@@ -1,0 +1,9 @@
+ROOT: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/prediction_runs/20260908_111331_training-20260906_144736_449864_global_molecular_mlp
+EXISTS: True
+
+FILE	1710	feature_columns_used.csv
+FILE	234030	model_used_mlp.joblib
+FILE	359427	prediction_ids_used.csv
+FILE	2674903	predictions.csv
+FILE	3912	run_info.json
+FILE	5616	run_manifest.json

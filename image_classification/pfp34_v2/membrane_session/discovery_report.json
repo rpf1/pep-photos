@@ -1,6 +1,6 @@
 {
-  "already_labelled_count": 0,
-  "already_labelled_systems": 0,
+  "already_labelled_count": 1,
+  "already_labelled_systems": 1,
   "audit_basis": "Provided hierarchy; actual dataset must be checked on its host.",
   "changed_source_records": [
     {
@@ -2737,7 +2737,7 @@
     "<none>": 3
   },
   "files_in_multiple_groups": [],
-  "generated_at": "2026-09-28T09:22:54.464+00:00",
+  "generated_at": "2026-09-28T10:13:06.317+00:00",
   "image_root": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photos",
   "images_found": 596,
   "images_per_system_distribution": {
@@ -4547,7 +4547,9 @@
   "registered_annotation_units": 523,
   "root_available": true,
   "saved_annotation_status_counts": {
-    "unlabelled": 523
+    "labelled": 1,
+    "uncertain": 2,
+    "unlabelled": 520
   },
   "saved_records_with_missing_sources": [],
   "systems_by_bilayer_type": {
@@ -4577,8 +4579,8 @@
     "POPE75POPG25_20Az",
     "STACKED"
   ],
-  "unlabelled_current_units": 523,
-  "unlabelled_systems": 523,
+  "unlabelled_current_units": 520,
+  "unlabelled_systems": 520,
   "unreadable_image_details": [],
   "unreadable_images": 0
 }

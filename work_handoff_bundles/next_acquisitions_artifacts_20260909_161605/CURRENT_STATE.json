@@ -1,0 +1,48 @@
+{
+  "collected_at_local": "2026-09-09T16:16:28.334270+01:00",
+  "purpose": "Finish 2B / 2E / 1F selections and resolve Model1C -> 2C",
+  "coordinator_state": {
+    "latest_sync_completed": true,
+    "latest_sync_complete_pair_records": 104,
+    "latest_sync_preferred_unique_real_peptoids": 104,
+    "latest_sync_prediction_outcomes_resolvable": 188,
+    "latest_sync_canonical_simulation_queue_cycles": 2,
+    "d_provenance_resolved": true,
+    "masterdata_rows_after_cleanup": 327,
+    "simulation_submission": "NOT AUTHORIZED FOR WORK AGENT"
+  },
+  "prediction_artifacts": {
+    "Model1B": {
+      "directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/prediction_runs/20260908_111323_training-20260906_142256_275557_global_molecular_mlp",
+      "exists": true,
+      "files": {
+        "predictions.csv": true,
+        "run_manifest.json": true
+      }
+    },
+    "Model1E": {
+      "directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/prediction_runs/20260908_111331_training-20260906_144736_449864_global_molecular_mlp",
+      "exists": true,
+      "files": {
+        "predictions.csv": true,
+        "run_manifest.json": true
+      }
+    },
+    "Model1F": {
+      "directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/prediction_runs/20260908_111333_training-20260906_144739_319815_global_molecular_svr_gaussian",
+      "exists": true,
+      "files": {
+        "predictions.csv": true,
+        "run_manifest.json": true
+      }
+    }
+  },
+  "model1c_training_run_id": "20260906_144733_646541",
+  "model1c_metadata_files_collected": [
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/training_runs/20260906_144733_646541/results.csv",
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/global_molecular/training_runs/20260906_144733_646541/run_manifest.json",
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/results.csv",
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/position_resolved/training_runs/20260906_144733_646541/run_manifest.json"
+  ],
+  "model1c_prediction_files_collected": []
+}

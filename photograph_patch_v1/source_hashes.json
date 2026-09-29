@@ -1,0 +1,18 @@
+{
+  "Photograph.py": {
+    "original_sha256": "ee5f86c20e8f43d358ca9b7d04cda20aa1e7967e39404f31f7dd4327e884f67b",
+    "patched_sha256": "2e3bf61e1f72d6dc6765a3a324858c15557af9e5ebc31f42e2d745f4f4026616"
+  },
+  "Photograph.tcl": {
+    "original_sha256": "e01a92332bf766357e6d63cefbffbd6e441bc4137da075fff4a12224f7dcfa1c",
+    "patched_sha256": "cfce970cb05cbd72ede40b69a135cd3ed3238a1ea5746f62ccbd70003c21b7b7"
+  },
+  "Photograph_components.py": {
+    "original_sha256": "019c03812167fcafc384abda9d1b30f7f2b4f63496c317b0c2891f0ed68e1f46",
+    "patched_sha256": "20b13729c6066478f177312cb89c866554594d934b0bf517e2eb72abcd5c899c"
+  },
+  "Photograph_components.tcl": {
+    "original_sha256": "7434718a40f1074d0bb6f0c1706398a8f80b9c13d894fadd5670647e7ace47db",
+    "patched_sha256": "bb3b7c233d54c09948207da267c5dd0bd181e017735779b4d63260801442cfa0"
+  }
+}

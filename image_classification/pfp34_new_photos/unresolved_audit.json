@@ -1,0 +1,3120 @@
+[
+  {
+    "system_key": "11e955d634ae25d258f664195120b47e16d09ae088d624a05de134d643a2fb15",
+    "molecule": "FFPYGWKG",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/FFPYGWKG_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "FFPYGWKG/POPC60CHOL40_W_WF/run_0/FFPYGWKG__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/FFPYGWKG_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "632ca9d0dd879595318978fdc82c7a4591ab8525971b694f4a8a2a28e1def2d4",
+    "molecule": "FFPYGWKG",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FFPYGWKG_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "FFPYGWKG/POPE75POPG25_W_WF/run_0/FFPYGWKG__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FFPYGWKG_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "50d2ff20b2238eff06f8d6db43858f34fee814295164cd034388639b36e81881",
+    "molecule": "FGCFFWRW",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/FGCFFWRW_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "FGCFFWRW/POPC60CHOL40_W_WF/run_0/FGCFFWRW__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/FGCFFWRW_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "ae79bf0aa782e52dea68693adde595245f1f5a5e2c7fa4d1df5da23b5059edd5",
+    "molecule": "FGCFFWRW",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FGCFFWRW_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "FGCFFWRW/POPE75POPG25_W_WF/run_0/FGCFFWRW__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FGCFFWRW_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "ba45579823ac8d9ea5b640263342e7f17c6fa89517f8292aaa3d84f682091294",
+    "molecule": "FGYVLIRI",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/FGYVLIRI_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "FGYVLIRI/POPC60CHOL40_W_WF/run_0/FGYVLIRI__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/FGYVLIRI_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "3473984edb769cf2111a71dd2325942a75a54f18d7169b7a918d1caeb8de8faf",
+    "molecule": "FGYVLIRI",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "FGYVLIRI/POPC80POPS20_W_WF/run_0/FGYVLIRI__nmol_80__POPC80POPS20_W_WF__run_0.png",
+      "FGYVLIRI/POPC80POPS20_W_WF/run_0/FGYVLIRI__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "270f7fbb65746805deb315a83491718b338fbebda7ebb0bc8115aa159aaa45dc",
+    "molecule": "FGYVLIRI",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FGYVLIRI_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "FGYVLIRI/POPE75POPG25_W_WF/run_0/FGYVLIRI__nmol_80__POPE75POPG25_W_WF__run_0.png",
+      "FGYVLIRI/POPE75POPG25_W_WF/run_0/FGYVLIRI__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FGYVLIRI_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "32a9575d22f6789111fca0adbd5e657a29f3205c6ced071bf2b09bfd31055773",
+    "molecule": "GIALKIVW",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GIALKIVW_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GIALKIVW/POPC60CHOL40_W_WF/run_0/GIALKIVW__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GIALKIVW_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "3a66366c76a46ff150dd108846db61a3cfe942dd2df22248ca48a6cbe19c0a77",
+    "molecule": "GIALKIVW",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GIALKIVW_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GIALKIVW/POPE75POPG25_W_WF/run_0/GIALKIVW__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GIALKIVW_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "b0856980e8412c6ef26e020bf92a8914768d366ee03970794afd7cd5f27cd0ae",
+    "molecule": "GKKFWWIM",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GKKFWWIM_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GKKFWWIM/POPC60CHOL40_W_WF/run_0/GKKFWWIM__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GKKFWWIM_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "1f546f3756ced9f1df9bcd692e4d1399059f167c2d015d2eb9d106a8b9f95a4f",
+    "molecule": "GKKFWWIM",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GKKFWWIM_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GKKFWWIM/POPE75POPG25_W_WF/run_0/GKKFWWIM__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GKKFWWIM_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "b156b656c79e02c62defcc90809df14435b0d72d6163f4a18da2c8949e5592fb",
+    "molecule": "GMFFWGKY",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GMFFWGKY_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GMFFWGKY/POPC60CHOL40_W_WF/run_0/GMFFWGKY__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GMFFWGKY_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "9f3b4771d467062ddc088d67bb7bb6c11eff765949c154048287da625059607c",
+    "molecule": "GMFFWGKY",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GMFFWGKY_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GMFFWGKY/POPE75POPG25_W_WF/run_0/GMFFWGKY__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GMFFWGKY_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c80d97d691a43695a7b696f3e787efe6a6a4cbc53d6c9353d6b4cc797749c729",
+    "molecule": "GSGTGSGT",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GSGTGSGT_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GSGTGSGT/POPC60CHOL40_W_WF/run_0/GSGTGSGT__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/GSGTGSGT_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "cac70e4d0990cb73db8dfe4bb4e138755798d45d437661a1c1fbd154ca224722",
+    "molecule": "GSGTGSGT",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GSGTGSGT_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "GSGTGSGT/POPE75POPG25_W_WF/run_0/GSGTGSGT__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GSGTGSGT_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "2f43e250821a4895d98d23747e3f170e8590019e1b1a1d5de8d0b8dae6bae5a5",
+    "molecule": "HGLFWWRF",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY', 'HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/HGLFWWRF_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "HGLFWWRF/POPC60CHOL40_W_WF/run_0/HGLFWWRF__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/HGLFWWRF_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "8a90064b5d74e64cd7378badc79d44e246d9dd38f15985d5187d771220db57d2",
+    "molecule": "HGLFWWRF",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY', 'HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/HGLFWWRF_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "HGLFWWRF/POPE75POPG25_W_WF/run_0/HGLFWWRF__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/HGLFWWRF_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c90565fa4e5a5e5eeece66e082c339a8f0933b92525958c03c2b04ac19a3d3a9",
+    "molecule": "IGFIRVLY",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/IGFIRVLY_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "IGFIRVLY/POPC60CHOL40_W_WF/run_0/IGFIRVLY__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/IGFIRVLY_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "7d6d78b3f906e558b53807a6a9cabfb6d7e850ef8604414dda953ba563a7c8f5",
+    "molecule": "IGFIRVLY",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/IGFIRVLY_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "IGFIRVLY/POPE75POPG25_W_WF/run_0/IGFIRVLY__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/IGFIRVLY_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "5c92e4304a1c0db44b0659f1e4cd7f7e138401ac373fc9831ac2e0b772fe09be",
+    "molecule": "LFVHKVLT",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/LFVHKVLT_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "LFVHKVLT/POPC60CHOL40_W_WF/run_0/LFVHKVLT__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/LFVHKVLT_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "e3dfc077cb2ba03a64b95a33eaca5a33c7629ad4f268f89c855915a9f12adc5f",
+    "molecule": "LFVHKVLT",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/LFVHKVLT_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "LFVHKVLT/POPE75POPG25_W_WF/run_0/LFVHKVLT__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/LFVHKVLT_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "18d81edcbcde619ef84f3078ccb3a97a83b51ef0ec89b3156ba0377b2eada91d",
+    "molecule": "LVIKVFTH",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/LVIKVFTH_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "LVIKVFTH/POPC60CHOL40_W_WF/run_0/LVIKVFTH__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/LVIKVFTH_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "6ad37f4141f7a60167bde4fe9c3faea87fa7b4b0805e850687f1444eed3e5d61",
+    "molecule": "LVIKVFTH",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/LVIKVFTH_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "LVIKVFTH/POPE75POPG25_W_WF/run_0/LVIKVFTH__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/LVIKVFTH_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "9f0696fecb54f7ac3281c390db0c2c02ca5fa592d24fd9b3b3173f7e78741a3b",
+    "molecule": "MFIFFSRF",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "MFIFFSRF/POPC80POPS20_W_WF/run_0/MFIFFSRF__nmol_80__POPC80POPS20_W_WF__run_0.png",
+      "MFIFFSRF/POPC80POPS20_W_WF/run_0/MFIFFSRF__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "5920dc36c916f0c8ca8f6d85cff7ac3a31b0b9e5fddd34eca21ac934d006510f",
+    "molecule": "Nab-Ni-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nab-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nab-Ni-Nfnap__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nab-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "5a6235cef69364b9f51e26f9b6e0c42465496dae9d624caa2c093648aaf6e04f",
+    "molecule": "Nab-Ni-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nab-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nab-Ni-Nfnap__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nab-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "6cbea4c5df06628ad344938cddb847dce251c76d9bdd932716db798b4ad5dc96",
+    "molecule": "Ne-Nm-Nfn",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_01",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Ne-Nm-Nfn/POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nm-Nfn__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_01__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80",
+        "run": "run_ML_cycle_02",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "42607f61824d927089798e7f18d418accf65e9f7e6dd81ec027333e8b372d867",
+    "molecule": "Nf-Nf-Nf-Nl-Ns-Nr-Ni-Nf",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Nf-Nf-Nl-Ns-Nr-Ni-Nf/POPC80POPS20_W_WF/run_0/Nf-Nf-Nf-Nl-Ns-Nr-Ni-Nf__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "bde0673b2dacf546b0d409cf8bae7e68d41895691e1ac6e18db9de41710e5c38",
+    "molecule": "Nf-Nf-Nkeqm",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_01",
+    "status": "deferred",
+    "reason": "Nkeqm excluded by request",
+    "old_images": [
+      "Nf-Nf-Nkeqm/POPC60CHOL40_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_01__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "e3b8fcbc47eec5d7010520383f233dc033ed244fbf554251e47021aab429a479",
+    "molecule": "Nf-Nf-Nkeqm",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_01",
+    "status": "deferred",
+    "reason": "Nkeqm excluded by request",
+    "old_images": [
+      "Nf-Nf-Nkeqm/POPE75POPG25_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_01__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "dca7b610a1d2794f914290dd1307f9614a246c2484b0ab55c7e54a540925c168",
+    "molecule": "Nf-Nf-Nm-Ns-Ni-Nr-Nf-Nf",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Nf-Nm-Ns-Ni-Nr-Nf-Nf/POPC80POPS20_W_WF/run_0/Nf-Nf-Nm-Ns-Ni-Nr-Nf-Nf__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "f9cc77ec3c912aad1563a330060b69d7d5846baa8926597c1ac1a1113213ff40",
+    "molecule": "Nf-Nfnap-Nf",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Nfnap-Nf/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nf-Nfnap-Nf__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nf-Nfnap-Nf_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "88dadd80699b4051167bb1a9ae4ff22348b4459fa20eeda7f1521999740affd3",
+    "molecule": "Nf-Nfnap-Nf",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Nfnap-Nf/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nf-Nfnap-Nf__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nf-Nfnap-Nf_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "7ce8c633b25f30f8af8704aee1fb57d578e6b3921bc7b73e3d9ce5cb3741cb60",
+    "molecule": "Nf-Nfnap-Nfe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Nfnap-Nfe/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nf-Nfnap-Nfe__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nf-Nfnap-Nfe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "ac905ba118ed005c70ddb28bad914c61355d37654eb81d08b012e5ac103537e8",
+    "molecule": "Nf-Nfnap-Nfe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Nfnap-Nfe/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nf-Nfnap-Nfe__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nf-Nfnap-Nfe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "183c51c5c9672ed0259411eec5115279e07572f4191d710f5b8a0d6d43dd3b4e",
+    "molecule": "Nf-Ns-Nv-Nl-Nf-Nf-Nr-Nw",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nf-Ns-Nv-Nl-Nf-Nf-Nr-Nw/POPC80POPS20_W_WF/run_0/Nf-Ns-Nv-Nl-Nf-Nf-Nr-Nw__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "12dda95063cad7d31252b066019234ea2aa8171466767eec44456f0944fa89f1",
+    "molecule": "Nfe-Nfnap-Nf",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfe-Nfnap-Nf/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfe-Nfnap-Nf__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfe-Nfnap-Nf_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "0f6a9b93f40e96a7ad1d464e7191c85cdd5c1d9d945e76bfefd279ff638ef38a",
+    "molecule": "Nfe-Nfnap-Nf",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfe-Nfnap-Nf/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfe-Nfnap-Nf__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfe-Nfnap-Nf_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "0a095ff44a9bba8591664bcbab07fe3360faa69935f5c28e86815516362037bf",
+    "molecule": "Nfe-Nfnap-Nfe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfe-Nfnap-Nfe/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfe-Nfnap-Nfe__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfe-Nfnap-Nfe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "d944cfd97c7c8929a8860da17c4417b6be65091d549cd8f583c78404e745d89f",
+    "molecule": "Nfe-Nfnap-Nfe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfe-Nfnap-Nfe/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfe-Nfnap-Nfe__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfe-Nfnap-Nfe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "af8b786ecb4acf0af2b244fd5b6fc8f7c5f9b166fa066d25901d660f80104c9f",
+    "molecule": "Nfex-Ni-Nw",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfex-Ni-Nw/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfex-Ni-Nw__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfex-Ni-Nw_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "2a7a553bcc7362d2f129f22ccdc55cce4b230abe0dc96eb30483d3c7ead42832",
+    "molecule": "Nfex-Ni-Nw",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfex-Ni-Nw/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfex-Ni-Nw__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfex-Ni-Nw_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "9ea58da4600a91a1a9aa3f0fe0fa9ff2051d4b76c9705980582cf9c50d9cbf2a",
+    "molecule": "Nfex-Ni-Nwe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfex-Ni-Nwe/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfex-Ni-Nwe__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfex-Ni-Nwe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "45613cfdfcdadef47cf3c880a309fef6d09a172d19f90e9f1b1edab375ff4031",
+    "molecule": "Nfex-Ni-Nwe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfex-Ni-Nwe/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfex-Ni-Nwe__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfex-Ni-Nwe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "29dbf6eccc1edbfa5b98b5299a385af2aced487632a2173ec2632599b93d8b89",
+    "molecule": "Nfex-Nv-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfex-Nv-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfex-Nv-Nfnap__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfex-Nv-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "5cf9320780e50efdd75e9323469e5d43bc768101ab7667f9ae0ff10de7c06b00",
+    "molecule": "Nfex-Nv-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfex-Nv-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfex-Nv-Nfnap__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfex-Nv-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "1102ec6b59ca68f2a61f462cd733771b2b17c1406e96e04c3aa1faba06267705",
+    "molecule": "Nfn-Ni-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfn-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfn-Ni-Nfnap__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfn-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "b4f5371e7ef0ddf9bf2fadce321d8b2dd1389ad7ce20c25393467621bc243414",
+    "molecule": "Nfn-Ni-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfn-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfn-Ni-Nfnap__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfn-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "64bd8544caad6d32227509aa74b93d2b8dac00c76ed4b77a9c3108e1542f9932",
+    "molecule": "Nfnap-Ni-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfnap-Ni-Nfex/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfnap-Ni-Nfex__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nfnap-Ni-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "cc95443f403fe685a3870cb1a2f66c1e3640cdc4362e741d80836a15531b804b",
+    "molecule": "Nfnap-Ni-Nfex",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nfnap-Ni-Nfex/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nfnap-Ni-Nfex__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfnap-Ni-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "a829eba26bfb770f6b06e1e78ec3dab26375f4aee84cfa3aa348c15cee22c95a",
+    "molecule": "Ni-Ni-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Ni-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Ni-Ni-Nfnap__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Ni-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "3923fb93093fef278070989c64db5274263eacb15da8411ef4a3fdd5d38c2a05",
+    "molecule": "Ni-Ni-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Ni-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Ni-Ni-Nfnap__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Ni-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "db7cb755211f962b8c3b147a4f8c3b3de00c30524d842a738b8cfdd398dfa15d",
+    "molecule": "Ni-Nk-Nk-Nf-Ny-Ny-Ny-Ny",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Ni-Nk-Nk-Nf-Ny-Ny-Ny-Ny/POPC80POPS20_W_WF/run_0/Ni-Nk-Nk-Nf-Ny-Ny-Ny-Ny__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c24f3bff235b0abc9f49459c844b36c3c7a8898109cf4054a589229498f19c10",
+    "molecule": "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+    "old_images": [
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_20__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_40__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "6f16f65feafd6bd0d1814561dad7a8b09943c4cca848c576f86900fe8d2eff45",
+    "molecule": "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_length_effect",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+    "old_images": [
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_40__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "317b514eea650fac2119dd31a7814414028be7d519c3d5b422bcbfb47c435856",
+    "molecule": "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+    "old_images": [
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_20__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_40__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "0b8abf88dcb88ce143aed83d3127aeae909efbe38eddd0c0dd97451ee7d24438",
+    "molecule": "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_length_effect",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+    "old_images": [
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_160__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_40__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "ca5931da5a02d4e3223be53d9156c491542298e2743f5043c6326416dcf84cbb",
+    "molecule": "Nk-Nfex-Nfex-Nk-Nfex-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_80, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+    "old_images": [
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_20__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_40__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "167b89cb2d01c423e2bffd5df36bdce81b181fd1aa39f6e0a229857843bb22d1",
+    "molecule": "Nk-Nfex-Nfex-Nk-Nfex-Nfex",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_length_effect",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_80, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+    "old_images": [
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_160__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_40__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nk-Nfex-Nfex-Nk-Nfex-Nfex/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_80__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nk-Nfex-Nfex-Nk-Nfex-Nfex_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "95f7d94bb59d7eb141a21ae04fc4c3f41d09b1f88b61c6e84ba756c2a7c95917",
+    "molecule": "Nk-Nfnap-Nk",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nfnap-Nk/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nk__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "bd8abe3a5af3f2d32ae4afbe146ca2a64dcbc5e2108344cd5adb471d27bd4b36",
+    "molecule": "Nk-Nfnap-Nk",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nfnap-Nk/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nk__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "884246d9d996591db316bba27e1d61a5e326522cf691a2852686341cdd5a13e9",
+    "molecule": "Nk-Ni-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nk-Ni-Nfnap__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "71e85d9c522d39bcc030c23b7572d6b8a046265649197de171ac0dd1d5e2e3b8",
+    "molecule": "Nk-Ni-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nk-Ni-Nfnap__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nk-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "0e5dd94dfa0b204d73893fc1e363f5fc160eaa6fb26d87d6623982422f4d938d",
+    "molecule": "Nk-Nk-Nwe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_01",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nk-Nwe/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nk-Nwe__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_01__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nk-Nwe_80",
+        "run": "run_ML_cycle_02",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "027edcc4914c5615c411f629173f34ef6586aa8d2806ff950a4617a83857e551",
+    "molecule": "Nk-Nn-Ns",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nn-Ns/POPC60CHOL40_W_WF/run_0/Nk-Nn-Ns__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "Nk-Nn-Ns/POPC60CHOL40_W_WF/run_0/Nk-Nn-Ns__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "3038b28f21d6b3c9e73b570d28b6e5f1540ab634ac1602d98dd544ef2ec3cd35",
+    "molecule": "Nk-Nn-Ns",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nn-Ns/POPC80POPS20_W_WF/run_0/Nk-Nn-Ns__nmol_80__POPC80POPS20_W_WF__run_0.png",
+      "Nk-Nn-Ns/POPC80POPS20_W_WF/run_0/Nk-Nn-Ns__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "30dbdac8ba077a46fdbbbea9ffce533e20e03ad7f3e1d991e8913d75d6137460",
+    "molecule": "Nk-Nn-Ns",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nn-Ns/POPE75POPG25_W_WF/run_0/Nk-Nn-Ns__nmol_80__POPE75POPG25_W_WF__run_0.png",
+      "Nk-Nn-Ns/POPE75POPG25_W_WF/run_0/Nk-Nn-Ns__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "1ff39917eba00e33bd7c43dbbe5dbc39342904aeecf147d6e29a558c2dc2e849",
+    "molecule": "Nk-Nw-Nk",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nw-Nk/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nw-Nk__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nw-Nk_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "19274bbcf6aa6f29f82cd219740b356402854a7e2c60b43266fdc1db08fda7b9",
+    "molecule": "Nk-Nw-Nwe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nk-Nw-Nwe/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nw-Nwe__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nw-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "5844af312b44f49ba612d18105db347433ce378d8926dead0ae78fd33ffaf32d",
+    "molecule": "Nl-Ni-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "b5fcba17e81228b0bddee9b1350095a52ef9ab168a9a1058ce8f4b3274e38481",
+    "molecule": "Nl-Ni-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nl-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "6501149bea831ef3276e8c40501431009e84745215b8a6cc2b976f839e468aa7",
+    "molecule": "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_20",
+    "old_images": [
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_20__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_40__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "b7405d86c1247bca33e37931ce2c2166548b9b74e5c0431b68d280ec1330b134",
+    "molecule": "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_length_effect",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_20",
+    "old_images": [
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_160__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_40__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_80__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "7074757a3c6163ed05309d1513ae5784f80b56ee02d57deb86d7a451ad3b9242",
+    "molecule": "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf/POPC80POPS20_W_WF/run_0/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "d5c661581b41e21cbec203063985cdd08d8e9754153bbe16e9ca27638532025d",
+    "molecule": "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_160",
+    "old_images": [
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_20__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_40__POPC60CHOL40_W_WF__run_0__bilayer_z025.png",
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "8f2b3e8c73b3d9535f79ee5643fded9fb55f625874150610e2d16f736217e35d",
+    "molecule": "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_length_effect",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 4: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_20, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_40, /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_160",
+    "old_images": [
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_160__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_40__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png",
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_80__POPC60CHOL40_W_WF__run_length_effect__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_160",
+        "run": "run_0",
+        "nmol": 160,
+        "exact_run": false,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_20",
+        "run": "run_0",
+        "nmol": 20,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_40",
+        "run": "run_0",
+        "nmol": 40,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_160",
+        "run": "run_length_effect",
+        "nmol": 160,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_20",
+        "run": "run_length_effect",
+        "nmol": 20,
+        "exact_run": true,
+        "relax_gro": false,
+        "relax_xtc": false,
+        "count_seen_in_old_filename": false
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_40",
+        "run": "run_length_effect",
+        "nmol": 40,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      },
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80",
+        "run": "run_length_effect",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "de34a5f16ef23bc37d813f88384103048fa48e229f6c36af3d13a8987ec8c7b0",
+    "molecule": "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC80POPS20_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_80__POPC80POPS20_W_WF__run_0.png",
+      "Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm/POPC80POPS20_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "7847681d6c63d9c123b1a025cab1e5dc3ad1273a5ce1ad3655ffc2d2b6a7e002",
+    "molecule": "Nm-Nf-Ni-Nf-Nf-Ns-Nr-Nf",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nm-Nf-Ni-Nf-Nf-Ns-Nr-Nf/POPC80POPS20_W_WF/run_0/Nm-Nf-Ni-Nf-Nf-Ns-Nr-Nf__nmol_80__POPC80POPS20_W_WF__run_0.png",
+      "Nm-Nf-Ni-Nf-Nf-Ns-Nr-Nf/POPC80POPS20_W_WF/run_0/Nm-Nf-Ni-Nf-Nf-Ns-Nr-Nf__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "79b9ba1870f921c0782c5e750c071540222b3c9cce28924b7f676caf01b9247c",
+    "molecule": "Nm-Ni-Nm-Nf-Ny-Nm-Nr-Ny",
+    "bilayer": "POPC80POPS20_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nm-Ni-Nm-Nf-Ny-Nm-Nr-Ny/POPC80POPS20_W_WF/run_0/Nm-Ni-Nm-Nf-Ny-Nm-Nr-Ny__nmol_80__POPC80POPS20_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "b1f6da6698c70721884b1f02dc5bc1a4517c80fb8299ed768c192dc79048c2e8",
+    "molecule": "Nm-Nse-Nfn",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nm-Nse-Nfn/POPE75POPG25_W_WF/run_ML_cycle_02/Nm-Nse-Nfn__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nm-Nse-Nfn_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "320f938f36c6835120213f0d679684d7615c074ca185709a4c8c1d8ddd5e8efd",
+    "molecule": "Nn-Nfnap-Nwe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nn-Nfnap-Nwe/POPC60CHOL40_W_WF/run_ML_cycle_02/Nn-Nfnap-Nwe__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "946a0bfcf37bf6ed14a96c7d0707fe9691df3dda297eaaf4d1f401db4bab7105",
+    "molecule": "Nn-Nfnap-Nwe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nn-Nfnap-Nwe/POPE75POPG25_W_WF/run_ML_cycle_02/Nn-Nfnap-Nwe__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c23efd1ea1f1d19e4f52b18c1448bbc10b89e9b852842acf5313d68247ea8023",
+    "molecule": "Nn-Nw-Nwe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nn-Nw-Nwe/POPC60CHOL40_W_WF/run_ML_cycle_02/Nn-Nw-Nwe__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nw-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "227456a82d95265054c6f4a8cdde6244c17af5dba83b0dc8820454811b11b059",
+    "molecule": "Nn-Nw-Nwe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nn-Nw-Nwe/POPE75POPG25_W_WF/run_ML_cycle_02/Nn-Nw-Nwe__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nw-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "45849975c2488682be1198c7b69ea62e6fb8ba49be25ce81369da5643b4d3e3c",
+    "molecule": "Nn-Nwe-Nwe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nn-Nwe-Nwe/POPC60CHOL40_W_WF/run_ML_cycle_02/Nn-Nwe-Nwe__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nwe-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "699988c435a3d6a098783a216420174efceb9143bb831015b29b8ea115e4d812",
+    "molecule": "Nn-Nwe-Nwe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nn-Nwe-Nwe/POPE75POPG25_W_WF/run_ML_cycle_02/Nn-Nwe-Nwe__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nwe-Nwe_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "bca62697302aaf7637fbc3929f66ab0423d93830530a2522be6ec8a9819b0674",
+    "molecule": "Nse-Na-Nfn",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nse-Na-Nfn/POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Na-Nfn__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "99a01fd7502a27f7a7b1a2c6355bc2de700bde8f12446f4d7314926e92f41bff",
+    "molecule": "Nse-Na-Nfn",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nse-Na-Nfn/POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Na-Nfn__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "3ee80f7c27132694291779ee5cb60fe2019b80f092df014f433c3d573bbb5d54",
+    "molecule": "Nse-Nfn-Nfn",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nse-Nfn-Nfn/POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Nfn-Nfn__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Nfn-Nfn_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "bcedc07c6c5be3a6a1c85496e6eb5272b9309b261bed440b47656f7f2ae3ab27",
+    "molecule": "Nse-Nfn-Nfn",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nse-Nfn-Nfn/POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Nfn-Nfn__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Nfn-Nfn_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "f656466be303cdff071bf7f2903da27741125c027442b2a1136f2b9c358510b9",
+    "molecule": "Nse-Nm-Nfn",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_01",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nse-Nm-Nfn/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Nm-Nfn__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_01__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Nm-Nfn_80",
+        "run": "run_ML_cycle_02",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "41b8f6e58d6845ccc771e1d8f85e8df510587276147641812a5617c2d6fb4a4b",
+    "molecule": "Nt-Ni-Nfnap",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nt-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nt-Ni-Nfnap__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nt-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "f41b622ea082c3b29901d60601bc174e38f3610ecb0942f0634a46877dda5f69",
+    "molecule": "Nt-Ni-Nfnap",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nt-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nt-Ni-Nfnap__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nt-Ni-Nfnap_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c4b69de743ba38c88285ea47b2de67a272b1c8edaf09901063edd05bbc20f101",
+    "molecule": "Nw-Nfnap-Nfe",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nw-Nfnap-Nfe/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada/Nw-Nfnap-Nfe__nmol_80__POPC60CHOL40_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nw-Nfnap-Nfe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "be54ca9b95145fcd75f6ad44ba106bdee9b0f99d09a0d87a6051f26a6d093ee2",
+    "molecule": "Nw-Nfnap-Nfe",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_First_predictions-20260813_190947_583893_ada",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nw-Nfnap-Nfe/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada/Nw-Nfnap-Nfe__nmol_80__POPE75POPG25_W_WF__run_First_predictions-20260813_190947_583893_ada__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nw-Nfnap-Nfe_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "42de2e29690504fa2409cebbe4e4405a02bf033f50c0acde232c32e7214b4e0c",
+    "molecule": "Nwe-Nw-Na",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nwe-Nw-Na/POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nw-Na__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "fbc3cc9fb66dd57ecbbb054458d96b61b523aec4dd03ac6587b4508378eef0ea",
+    "molecule": "Nwe-Nw-Na",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nwe-Nw-Na/POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nw-Na__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "d84596f50aeca42efb0edc0256308aaad724ce150036f4ad82b84b2afb8ba245",
+    "molecule": "Nwe-Nwe-Na",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nwe-Nwe-Na/POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nwe-Na__nmol_80__POPC60CHOL40_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c5010c6a32d10cdd60af07961b869ff0dc031768bb10d1008b130179672b8ad2",
+    "molecule": "Nwe-Nwe-Na",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_ML_cycle_02",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "Nwe-Nwe-Na/POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nwe-Na__nmol_80__POPE75POPG25_W_WF__run_ML_cycle_02__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80",
+        "run": "run_ML_cycle_01",
+        "nmol": 80,
+        "exact_run": false,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "87648539eab5f99d363ee45cf44b1c4021764e31677fc55ea4f274688e0ccd93",
+    "molecule": "QWCIKSKG",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/QWCIKSKG_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "QWCIKSKG/POPC60CHOL40_W_WF/run_0/QWCIKSKG__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/QWCIKSKG_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "2e5b3d35b40e70f64dc7f59576eb0ccb148cdddfec1ec20a2f1170980aa9c7f0",
+    "molecule": "QWCIKSKG",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['GLY'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/QWCIKSKG_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "QWCIKSKG/POPE75POPG25_W_WF/run_0/QWCIKSKG__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/QWCIKSKG_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "c47d475d336ffaf90d241949a5f4cbbe18baca06105f3d349f3a751b3c7de680",
+    "molecule": "RFR",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RFR/POPE75POPG25_W_WF/run_0/RFR__nmol_80__POPE75POPG25_W_WF__run_0.png",
+      "RFR/POPE75POPG25_W_WF/run_0/RFR__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "ec16cf5229c2c0ca666b9836e6bf73f4b0116116e026572ffadea4d5b34bdb18",
+    "molecule": "RRW",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRW/POPC60CHOL40_W_WF/run_0/RRW__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "RRW/POPC60CHOL40_W_WF/run_0/RRW__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "19b55eda8f4487789f1392d2c0bbd1e25a41589217def7b50e177b221f86afd6",
+    "molecule": "RRW",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRW/POPE75POPG25_W_WF/run_0/RRW__nmol_80__POPE75POPG25_W_WF__run_0.png",
+      "RRW/POPE75POPG25_W_WF/run_0/RRW__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "7a1d2a54275cfad07aedec379d0b17e7953c3a94ed862ced22d94ad1d08be737",
+    "molecule": "RRWRRW",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRWRRW/POPC60CHOL40_W_WF/run_0/RRWRRW__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "RRWRRW/POPC60CHOL40_W_WF/run_0/RRWRRW__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "9a1e6299dafc71db4ee401ada1805ebb18d72dd3bbf009517058d0755d9ce2bb",
+    "molecule": "RRWRRW",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRWRRW/POPE75POPG25_W_WF/run_0/RRWRRW__nmol_80__POPE75POPG25_W_WF__run_0.png",
+      "RRWRRW/POPE75POPG25_W_WF/run_0/RRWRRW__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "0bfd874cd52a7b4dbcaea0189247b2b216a186b5fb9917a86d3e6be7cc544c89",
+    "molecule": "RRWRRWRRW",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRWRRWRRW/POPC60CHOL40_W_WF/run_0/RRWRRWRRW__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "RRWRRWRRW/POPC60CHOL40_W_WF/run_0/RRWRRWRRW__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "826c13f4fce8e44b84f81887f610296868b2f40efbc438d0b81e1b764ee5003e",
+    "molecule": "RRWRRWRRW",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRWRRWRRW/POPE75POPG25_W_WF/run_0/RRWRRWRRW__nmol_80__POPE75POPG25_W_WF__run_0.png",
+      "RRWRRWRRW/POPE75POPG25_W_WF/run_0/RRWRRWRRW__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "5827cd21785e9b6f51118ea609bc30d4cfdc363f8542d3e6afe7a88a67fee14c",
+    "molecule": "RRWRRWRRWRRW",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "Expected one simulation directory; found 0: ",
+    "old_images": [
+      "RRWRRWRRWRRW/POPC60CHOL40_W_WF/run_0/RRWRRWRRWRRW__nmol_80__POPC60CHOL40_W_WF__run_0.png",
+      "RRWRRWRRWRRW/POPC60CHOL40_W_WF/run_0/RRWRRWRRWRRW__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "9028c7e2d90e16e47b61fecdf193bfa82dbafd72ba347d4476c2bdbb69dc894d",
+    "molecule": "RVHIRLWI",
+    "bilayer": "POPC60CHOL40_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/RVHIRLWI_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "RVHIRLWI/POPC60CHOL40_W_WF/run_0/RVHIRLWI__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/RVHIRLWI_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  },
+  {
+    "system_key": "d86b3f8ca03c6d047f899e91b4dffb90ebb59d746d26ebb9e3fadd71fa2a03ff",
+    "molecule": "RVHIRLWI",
+    "bilayer": "POPE75POPG25_W_WF",
+    "run": "run_0",
+    "status": "blocked",
+    "reason": "FATAL unsupported GRO residues ['HIS'] in /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/RVHIRLWI_80/Relax.gro; rendering blocked. Nkeqm is intentionally unsupported; no residue may be omitted.",
+    "old_images": [
+      "RVHIRLWI/POPE75POPG25_W_WF/run_0/RVHIRLWI__nmol_80__POPE75POPG25_W_WF__run_0__bilayer_z025.png"
+    ],
+    "candidate_directories": [
+      {
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/RVHIRLWI_80",
+        "run": "run_0",
+        "nmol": 80,
+        "exact_run": true,
+        "relax_gro": true,
+        "relax_xtc": true,
+        "count_seen_in_old_filename": true
+      }
+    ],
+    "topology_evidence": [],
+    "action": "Review only: no substitutions or rendering performed"
+  }
+]

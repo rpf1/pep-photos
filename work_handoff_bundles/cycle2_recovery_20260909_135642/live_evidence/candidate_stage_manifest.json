@@ -1,0 +1,1250 @@
+[
+  {
+    "peptoid": "Ne-Nm-Nfn",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Pull",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/Pull.cpt",
+        "size": 653016,
+        "mtime": 1788527767.7725623,
+        "sha256": "c932ce872a7a2aae01c31f3bdabce943b046bb7a7bbbebd93774a1136a1d8433"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/Pull.log",
+        "size": 141006,
+        "mtime": 1788527767.626654,
+        "sha256": "ff618ed38e1c3a8d6730978e2cd489dd48d0d9b30c6e64634b556496bdd1d6ae"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788268424.0825453,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/Pull.tpr",
+        "size": 696176,
+        "mtime": 1788268424.8823233,
+        "sha256": "9ebf1c3c6267c4d48723092086004faca0662fe0a36ef500df10d2fc3a1d0906"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/Pull_prev.cpt",
+        "size": 653016,
+        "mtime": 1788527767.7836895,
+        "sha256": "b961e1dd32f20077a4c362cdd1bd928d73f8862f5c9e56e8f61c675d7c6133e3"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/index.ndx",
+        "size": 458727,
+        "mtime": 1788268422.9384878,
+        "sha256": "07fc1a89a91a9fa217cde779ce5c9ebd8a68d3895565bd7359236da4087b9bc0"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/topol.top",
+        "size": 1003,
+        "mtime": 1788268424.0820725,
+        "sha256": "52be149539a8a171f6a5e73a9127175df10405b7d8a2282bfae1a261a229194a"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nfe-Nfnap-Nl",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Pull.cpt",
+        "size": 661496,
+        "mtime": 1788231190.1610916,
+        "sha256": "7ed43296a6ffcddbaecea8432d2b0fd516fd9fa0c3d2fbe39b744130ba17c06f"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Pull.gro",
+        "size": 1897525,
+        "mtime": 1788231190.218354,
+        "sha256": "7bc2e371ac578d0ed5319ac005c8e19a5205f9a97bd140ce31c66035624d892b"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Pull.log",
+        "size": 572975,
+        "mtime": 1788231190.2243893,
+        "sha256": "9c8ab95d956e2007d24a37ac3241c4325006972b9bb1ff695035664bb0c5ee78"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788195314.6103826,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Pull.tpr",
+        "size": 707384,
+        "mtime": 1788195315.3164191,
+        "sha256": "f2bc51912a012fc2c013322ec6fd7ae71614139fb1f35f1b2ec3aab3d28f9085"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Pull_prev.cpt",
+        "size": 661496,
+        "mtime": 1788231190.1659563,
+        "sha256": "44f6354f80f3a320739a067d37605d341ae0e7870973c9dbda2b16a7351dc9ac"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Relax.cpt",
+        "size": 661228,
+        "mtime": 1788527975.7583022,
+        "sha256": "5922c81e7987488747a494784790fef566094ecd347732000e602753ec28679a"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Relax.log",
+        "size": 116235,
+        "mtime": 1788528212.3692737,
+        "sha256": "fdf16717a5cf74d710aa87b9ef66c75bf8df220cdf3ce3978f0cdaa65516a2f0"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269796.4256082,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Relax.tpr",
+        "size": 673048,
+        "mtime": 1788269797.1762955,
+        "sha256": "0488606514d7358f034a8fadf58938485c4885770fc06f6ec941e0aa9f28fea4"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/Relax_prev.cpt",
+        "size": 661924,
+        "mtime": 1788527975.772574,
+        "sha256": "2d0fe1a22df8226eb17b00146ce27cbb1f2d1612c192c74061a465f7a1844219"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/index.ndx",
+        "size": 465084,
+        "mtime": 1788195313.4589303,
+        "sha256": "6267f332015473d62cfcc9a028e92a017eab18314491e5b89fb455f98570aff5"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80/topol.top",
+        "size": 1009,
+        "mtime": 1788269796.424749,
+        "sha256": "07d080dda1460cf3ce32060b04a6b8f98ce632d94b8f0e11a785c40574a4e601"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nfex-Nfnap-Nk",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Pull.cpt",
+        "size": 660768,
+        "mtime": 1788231626.78826,
+        "sha256": "3efc5385cae33d59b4befb862a1a85bacefaaf60c587a3d16e2f1440694c0442"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Pull.gro",
+        "size": 1895455,
+        "mtime": 1788231626.8464096,
+        "sha256": "6bd8fb19921f534634f46e8e91a2104e1a2a8de4abee840e673e9c22a6484f17"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Pull.log",
+        "size": 542718,
+        "mtime": 1788231626.8527195,
+        "sha256": "b0ff1951863aad5680257bcc3c9d05a6c565d67a62bb76545807ee9ff9b244f3"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788195795.8714287,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Pull.tpr",
+        "size": 706680,
+        "mtime": 1788195796.5829964,
+        "sha256": "5bd801c8076a88a7967782ca30e6c9f6c1643b3640fe293a08df457227fc2dc9"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Pull_prev.cpt",
+        "size": 660768,
+        "mtime": 1788231626.793665,
+        "sha256": "81f4804fe8d5af987170c2157ac8ebd38d14b45e77e37fb6e5f49b964fc1777d"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Relax.cpt",
+        "size": 661180,
+        "mtime": 1788528236.824674,
+        "sha256": "dee5d7fae9564979f4d2fa025b26213b457b67a0da6351b5551238eb84a6ca99"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Relax.log",
+        "size": 140658,
+        "mtime": 1788528236.7172658,
+        "sha256": "35bf65ebeec1a424ae4e267fb51b8d87aad4188e9e6719814576574c928e3944"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269810.6299686,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Relax.tpr",
+        "size": 672344,
+        "mtime": 1788269811.3833232,
+        "sha256": "0f33f4b926a10f10d6add5f311e0e2c99d418a6ab3d8e416883f657535835c44"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/Relax_prev.cpt",
+        "size": 661180,
+        "mtime": 1788528236.829726,
+        "sha256": "098a9b6fcd73d7de46dc686e0b19c61a091573a5a127355a24ed110b8261ce3d"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/index.ndx",
+        "size": 464545,
+        "mtime": 1788195794.7206004,
+        "sha256": "b5787328874988da6c4ef53e7304a82f11ed813e8a82e56a50fab64aa0a64499"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80/topol.top",
+        "size": 1011,
+        "mtime": 1788269810.6296742,
+        "sha256": "b1ea8955b5b4d11cc68a1adf258e19dd24fe0f4c08327f91ec43db8543dd64db"
+      }
+    ]
+  },
+  {
+    "peptoid": "Ni-Nfnap-Nl",
+    "system": "POPE75POPG25_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.cpt",
+        "size": 628632,
+        "mtime": 1788242824.5048673,
+        "sha256": "d45f0cd19f79f203e3975d4885002e554b93df8d9eb962b371b4466dc078cfe4"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.gro",
+        "size": 1803064,
+        "mtime": 1788242824.5486825,
+        "sha256": "aa79f22c2ae745d13f0017d76873c783b3e0c6ae7626c29ae68d33a8406b5d6a"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.log",
+        "size": 542316,
+        "mtime": 1788242824.5546815,
+        "sha256": "864b9b2a9e690d18db858958155f43dea0a4be83c7081abd8a3c44348adfcc44"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788196296.51344,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.tpr",
+        "size": 666572,
+        "mtime": 1788196297.23811,
+        "sha256": "5c1adcd24c640b8700259fce0658283f95e1b6688b2faab2597ac3e800f32dd0"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull_prev.cpt",
+        "size": 628632,
+        "mtime": 1788242824.5097735,
+        "sha256": "8d90c96cd5def4fd98496aa210350417a9aec5fba14fab97b63a651735cb44cd"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.cpt",
+        "size": 629044,
+        "mtime": 1788527640.211447,
+        "sha256": "6c560c8c32cf059ffb4eba8461043ea86c093f033dfbe924145ed17c15c5845c"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.log",
+        "size": 126421,
+        "mtime": 1788527639.987779,
+        "sha256": "385bba66c266bcf3f64fe2f16f3543f7b8654aed551e28dbca930f280a79af01"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269828.8086157,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.tpr",
+        "size": 638568,
+        "mtime": 1788269829.519849,
+        "sha256": "e91fe698b504ecdb942eccccd9b9fb23cdf166bd3b446012bdb2f0169639cb35"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax_prev.cpt",
+        "size": 629044,
+        "mtime": 1788527640.2268648,
+        "sha256": "8ce823127f8b434f054a06baa74eae0208b494e9433a2bb22f84c423587de443"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/index.ndx",
+        "size": 440449,
+        "mtime": 1788196295.3755126,
+        "sha256": "d7e8ad3dc724f87140207a2c2e441403d413a02fa62417411ec9cc88f414468e"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/topol.top",
+        "size": 1018,
+        "mtime": 1788269828.808298,
+        "sha256": "19182567d886df006b76dc3c29b7914d7bf20d9cd0865dc9ab40bbadb191ca3c"
+      }
+    ]
+  },
+  {
+    "peptoid": "Ni-Nfnap-Nl",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.cpt",
+        "size": 657072,
+        "mtime": 1788238308.4521997,
+        "sha256": "5cff9099e20c7fb82d34db579b7c1e4975026eaa9c2c73ec533cc8ba8224d2f6"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.gro",
+        "size": 1884829,
+        "mtime": 1788238308.5103307,
+        "sha256": "ef5d811826d7f0c30eaecb600655078f1a07e6e483a02b04368a409017d4a6db"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.log",
+        "size": 543155,
+        "mtime": 1788238308.5177016,
+        "sha256": "3e3a69dbee33a316ded0adf6365159fe957802c37909cab26a757461ada28f96"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788196282.7338536,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull.tpr",
+        "size": 701276,
+        "mtime": 1788196283.4428344,
+        "sha256": "6f7b46b1d5f40bb0ec2e4b35348a6aae0a5be2c075e4017aba19cd7584360196"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Pull_prev.cpt",
+        "size": 657072,
+        "mtime": 1788238308.4577477,
+        "sha256": "b134d3efe75bff7fdb4f5ec21508036ef2482b17d1905597fa697871fca4c8b4"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.cpt",
+        "size": 657484,
+        "mtime": 1788527636.1376925,
+        "sha256": "dc44c7babed78d2069c3e793f0fb804745322ac490e68d28ebc9717dcc5a53bf"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.log",
+        "size": 131445,
+        "mtime": 1788527635.9782565,
+        "sha256": "9abeff79c08d904f9084f9576ed2b4a0aaafdd01f8fd528bb7e075706a130064"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269825.183605,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax.tpr",
+        "size": 667900,
+        "mtime": 1788269825.930363,
+        "sha256": "e4e91898a9f6a8c994b4d2194a1f8b26fdb3ef34286ce02c2e4871f3b72ef21d"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/Relax_prev.cpt",
+        "size": 657484,
+        "mtime": 1788527636.1450915,
+        "sha256": "f54428b150707dee8af048061cf855993063f0dc9166a83abd4047124bd82552"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/index.ndx",
+        "size": 461771,
+        "mtime": 1788196281.5870855,
+        "sha256": "0a83f547b695d4680129c4b995449e2b2bab0b17cc1f9f454f4899209c0404c2"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80/topol.top",
+        "size": 1007,
+        "mtime": 1788269825.1832976,
+        "sha256": "3f7236c50da160bc1b253e9d23b07111854ef61be30af6f28e4e474f505d4b79"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nk-Nfex-Nfnap",
+    "system": "POPE75POPG25_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.cpt",
+        "size": 632400,
+        "mtime": 1788240212.8338041,
+        "sha256": "a5fe5df8818c08ad6270e01e8b5a6c25fc68ba0d93df6519bfa0598b9ea01443"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.gro",
+        "size": 1813897,
+        "mtime": 1788240212.8884242,
+        "sha256": "23b3fb5410526fe845ec576f917ebf6fde35f15cbbbaadb1287ee77029304db1"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.log",
+        "size": 542115,
+        "mtime": 1788240212.8957226,
+        "sha256": "343d5f60c4193017efc051758bbb263c6855b49db1ca687c2fb2a18b3d32b6f1"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788196492.0864704,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.tpr",
+        "size": 671952,
+        "mtime": 1788196492.79366,
+        "sha256": "9d71af54b0346c7311468c5ddcacbb785a3ab681cd054a44f03c198146570665"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull_prev.cpt",
+        "size": 632400,
+        "mtime": 1788240212.8380127,
+        "sha256": "c0d528ccf38fea76031eadb8e346d225da91baa5f6a66a0805cf10cb1097befb"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.cpt",
+        "size": 632812,
+        "mtime": 1788527634.9569035,
+        "sha256": "2d0b7d9910017f51a94a16f349c7dcb29ae951e3cefc55d01f24a95b09530619"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.log",
+        "size": 133165,
+        "mtime": 1788527634.8534198,
+        "sha256": "c67bfa6666692e33e1ed7cb3ce35e397333df19f79fb6859b6d35dc2e55801ff"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269835.639026,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.tpr",
+        "size": 642988,
+        "mtime": 1788269836.3445377,
+        "sha256": "3aa9f4c4e9177a335b61ade181891140e1b2d6b78cdc6efeb91075f10e4a98b2"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax_prev.cpt",
+        "size": 632812,
+        "mtime": 1788527634.960791,
+        "sha256": "487560886de3eec4d46f13a51d98f35106a9bb2f574028b9420ccd9f41a7b80d"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/index.ndx",
+        "size": 443277,
+        "mtime": 1788196490.945858,
+        "sha256": "bb9e2a1903cbb27d22d352461bbef5ebaf3fe4f32656245b5a1cb4081102fb46"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/topol.top",
+        "size": 1022,
+        "mtime": 1788269835.638639,
+        "sha256": "31e4c79aad9f4a91d32cb69a9521bbe1f0aa656de4a3804459a47299a66fbbec"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nk-Nfex-Nfnap",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.cpt",
+        "size": 661368,
+        "mtime": 1788240251.7484906,
+        "sha256": "90cfabc17668db694854b4e64960c4dd49d91b1fde2ce37a35aa42a624aa7158"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.gro",
+        "size": 1897180,
+        "mtime": 1788240251.7979944,
+        "sha256": "6115811bd52830d3477035f983ba38f63cff906b426ff6c67f7f20a25cde5e15"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.log",
+        "size": 543286,
+        "mtime": 1788240251.8032224,
+        "sha256": "047315d8dd7fc1d479aa9e1807cf22500b066a7267ed3461af3d421487201ffb"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788196446.410147,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull.tpr",
+        "size": 707280,
+        "mtime": 1788196447.1211934,
+        "sha256": "9d4289fc8d461932130aed5ec662ae335e7ca5d4516a712a6600343b6a5a7b0e"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Pull_prev.cpt",
+        "size": 661368,
+        "mtime": 1788240251.7534125,
+        "sha256": "e6f9071fbf0f20deb917432715fdc895a5207fdaad77643dd15f7301c1f93aba"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.cpt",
+        "size": 661780,
+        "mtime": 1788527636.428959,
+        "sha256": "64146a4566cac0aa317a2735f481992bd46c0f0146cf04215d8ba91232dd57e2"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.log",
+        "size": 113164,
+        "mtime": 1788527636.3126538,
+        "sha256": "646cbb3646724340ab2d17c83123203e3c06e9b7e2b4a0c330f561bae70a37d8"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269832.2534947,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax.tpr",
+        "size": 672944,
+        "mtime": 1788269832.962114,
+        "sha256": "1dab9e3d5b3868dfd491a92b80579ad7b675180edd07c63378011d98b83b9894"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/Relax_prev.cpt",
+        "size": 661780,
+        "mtime": 1788527636.4338205,
+        "sha256": "a3986920fcbbdc9d2af7182954ba25188f9462a131d83d6fc23937a83d68a787"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/index.ndx",
+        "size": 464995,
+        "mtime": 1788196445.2573643,
+        "sha256": "c765f6f165ca35fd35d26d3c52ac61c6264ad137414440fb3cfd43b87b47acaa"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80/topol.top",
+        "size": 1011,
+        "mtime": 1788269832.2531898,
+        "sha256": "512687ce656f92ccdcbfe789124edf5059e0044bd3734cd12624f39b4cfe3469"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nk-Nfnap-Nl",
+    "system": "POPE75POPG25_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Pull.cpt",
+        "size": 629592,
+        "mtime": 1788230870.35386,
+        "sha256": "b5c9268a815612dd8e35593d2b60a2a5451561032d11595ea7923086bd26d708"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Pull.gro",
+        "size": 1805824,
+        "mtime": 1788230870.5083263,
+        "sha256": "fea52089f535a58afc7b9ca05281f5b8e5ee6c89a40c7abe73797744015f5ee6"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Pull.log",
+        "size": 541487,
+        "mtime": 1788230870.538347,
+        "sha256": "7fdb5fc7452d11f3e78bf16f90b85782de9a0fb3ffe6d7a2b54bcdab644170ab"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788196975.4736238,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Pull.tpr",
+        "size": 668212,
+        "mtime": 1788196976.1804779,
+        "sha256": "40637d09c3bc2274c1b20fa32b56bc34ea29bbe5dfc272d9581a6998174e5272"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Pull_prev.cpt",
+        "size": 629592,
+        "mtime": 1788230870.3594356,
+        "sha256": "b1da8d73f01bb300362c9d2e7dfbe3b5ad92aa71a81e4f8b2fd95bec7220b52a"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Relax.cpt",
+        "size": 630004,
+        "mtime": 1788527952.7833157,
+        "sha256": "3de6c0607ec0da3786212a175d571a512bc1cffd85dfd727cbe1d5e2f0582d27"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Relax.log",
+        "size": 128346,
+        "mtime": 1788527952.4307659,
+        "sha256": "9b0faa9513c46e0d55f16c05128017a8f52ebaa4c3ced4e67343fa6dc0be5c77"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269856.9461927,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Relax.tpr",
+        "size": 639888,
+        "mtime": 1788269857.6641853,
+        "sha256": "4bd4cf973f9a7fdc23ac65db714d07a1751918e88cdb8e5a1cb9e7e506b974c6"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/Relax_prev.cpt",
+        "size": 630004,
+        "mtime": 1788527952.7966628,
+        "sha256": "134ec46600fd05e4d3a4567eab1694b677fdbfa1e44c32c0f0279137fe12f4d0"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/index.ndx",
+        "size": 441169,
+        "mtime": 1788196974.3010573,
+        "sha256": "8c46d8481b9eb7a87a743ae1733081bbdf62f2c12fc8c22c0791618a3730502c"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80/topol.top",
+        "size": 1018,
+        "mtime": 1788269856.9455965,
+        "sha256": "93c52057638d58d150f43c8adb29d12966f6a030179c8209ae013f880388224b"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nk-Nv-Nwe",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull.cpt",
+        "size": 659304,
+        "mtime": 1788256917.3616848,
+        "sha256": "89b9dfc05aa98fc5517917952b8e3cfcc9dfa881dde3fe2ccafda261f1dd7804"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull.gro",
+        "size": 1891246,
+        "mtime": 1788256917.4111025,
+        "sha256": "69fa805d9429f19f2e6fa8ba2d3cd712cfd4cf2dd9d0655f25fd3f15b046ea08"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull.log",
+        "size": 543222,
+        "mtime": 1788256917.417087,
+        "sha256": "06ece737c6d5ec3df4def27d74c11732572e3beb553611b662ca79c94248a533"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788197286.206753,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull.tpr",
+        "size": 704980,
+        "mtime": 1788197286.9123905,
+        "sha256": "a7f989382772409d1089842f151bdc8cbd16e75d156c66249bc11631e51c427b"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull_prev.cpt",
+        "size": 659304,
+        "mtime": 1788256917.3667386,
+        "sha256": "a972bbb6a03f5962b15ef9a7a1eaaa41ebf52fb19e1cffebf4d0ddb5dacbc203"
+      },
+      {
+        "name": "Relax.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Relax.cpt",
+        "size": 659716,
+        "mtime": 1788527936.3283403,
+        "sha256": "ae447f69df7c6a894143e2e459de220cf7c9f2c01504cc7f4666364e6adc08aa"
+      },
+      {
+        "name": "Relax.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Relax.log",
+        "size": 118522,
+        "mtime": 1788527936.2246757,
+        "sha256": "c03d55fac2f9751bcb961d18bd2fc9566291010e13397c3be352838a1ffbbee7"
+      },
+      {
+        "name": "Relax.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Relax.mdp",
+        "size": 2074,
+        "mtime": 1788269860.386407,
+        "sha256": "1b79d2ebfba6654dd0cc94065d96b98d67c986f4aeca71fd09fa34c46aab00bc"
+      },
+      {
+        "name": "Relax.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Relax.tpr",
+        "size": 671284,
+        "mtime": 1788269861.116639,
+        "sha256": "4b5b7cb790fe7b930cd2567fde4e6283c30088dc310c64ae0343bc032c6fba8c"
+      },
+      {
+        "name": "Relax_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Relax_prev.cpt",
+        "size": 659716,
+        "mtime": 1788527936.3333285,
+        "sha256": "774997a8dcf64670f7a0c3943939eda77aecfe2b34fb890b5206394eb156d9a7"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/index.ndx",
+        "size": 463443,
+        "mtime": 1788197285.0583408,
+        "sha256": "a1650986a8c074fed4d85522cc89bded8baa7c3b7490f087f67db96305681f91"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/topol.top",
+        "size": 1003,
+        "mtime": 1788269860.385867,
+        "sha256": "8c080d0934a92c5ec559e06dc260260d5f35e66d405ea0e479ec0c4a6491edb1"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nl-Nfnap-Nfe",
+    "system": "POPE75POPG25_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.cpt",
+        "size": 632888,
+        "mtime": 1788272087.6327856,
+        "sha256": "f7280e2a49a1d9777fad3cee222c255d037b2883e32102c166c282a43201bd7c"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.gro",
+        "size": 1815277,
+        "mtime": 1788272087.679434,
+        "sha256": "c50932cc21504e8eb243ba009cb773dd37dda09ea26c766f1bc1f7f8412c6933"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.log",
+        "size": 572251,
+        "mtime": 1788272087.6859753,
+        "sha256": "64845ff9e34b0d581b5d6a6ee834284770460ee6ab089f29666ab026b61f5893"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788197781.9420226,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.tpr",
+        "size": 672668,
+        "mtime": 1788197782.6444485,
+        "sha256": "a3ecb3dd94ec352631c1df2a8a78b8b01ea0d0e06b9edec2c5dab112079f05b8"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull_prev.cpt",
+        "size": 632888,
+        "mtime": 1788272087.636719,
+        "sha256": "25adc7fa349deb5663b2059cb39aa34c3454929e4f7520374be3a4fd20d8fa63"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/index.ndx",
+        "size": 443636,
+        "mtime": 1788197780.804721,
+        "sha256": "259173f484dc5123438fa1a8d5d17fbfd002a23b97d50e9058cf883478547a71"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/topol.top",
+        "size": 1020,
+        "mtime": 1788197781.9414546,
+        "sha256": "49356e6487266ed43699a9172c571a844a658e3df422f658f3a10b2dc3dee175"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nl-Nfnap-Nfe",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.cpt",
+        "size": 661568,
+        "mtime": 1788254735.9449453,
+        "sha256": "1585d0a9599376ff0abc435d77f6a1dd90728bc505c8057fdda38542267ce3b3"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.gro",
+        "size": 1897732,
+        "mtime": 1788254735.9918272,
+        "sha256": "99e023552e29a494c596fd72b194b2b3f5115add0fb0d50cd19dac8907f9cbad"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.log",
+        "size": 572407,
+        "mtime": 1788254735.9973257,
+        "sha256": "eee7dd9b8843d6d8d6ea0f2db8f4c2e0db2c5fde5cb7d33cab7573f530a398bd"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788197768.3556314,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull.tpr",
+        "size": 707456,
+        "mtime": 1788197769.0665362,
+        "sha256": "fa15ff3f627b3f8bbd0630c8a134656f217ba1832653d1c57594d735bf19c6cc"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/Pull_prev.cpt",
+        "size": 661568,
+        "mtime": 1788254735.9500477,
+        "sha256": "217ed95be8b52d5f0d4af3d98cd3ac8b980377c18476f68800773d773175080d"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/index.ndx",
+        "size": 465138,
+        "mtime": 1788197767.2073338,
+        "sha256": "745637460277090068f056a4865d7700f38f2ea68f54f15964b5dc42e9f04bd8"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80/topol.top",
+        "size": 1009,
+        "mtime": 1788197768.355053,
+        "sha256": "5ec0a59f6b62eae7f18989751817974903dc5924f71babec4fe5c0b96ad3a306"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nl-Nfnap-Nk",
+    "system": "POPE75POPG25_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.cpt",
+        "size": 629376,
+        "mtime": 1788269653.483654,
+        "sha256": "e60d057091096b2d6c9194645187603d5d02178fb5014eac165bdccc8cefac0e"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.gro",
+        "size": 1805203,
+        "mtime": 1788269653.537912,
+        "sha256": "5fc615595b7ee97be3adeb07037e189a446bae7c748575f86c3367c2ea33f570"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.log",
+        "size": 541803,
+        "mtime": 1788269653.5442092,
+        "sha256": "3cfbbf4694e9ec79f4da76ac7bc8e9ee9a9e1e06d256fa7f47489627346f37aa"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788197940.9829934,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.tpr",
+        "size": 667996,
+        "mtime": 1788197941.6845767,
+        "sha256": "a4b928e4fe22d3c224bb549ba4b69fee17686fbc4f00530c4937f4be72cb558e"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull_prev.cpt",
+        "size": 629376,
+        "mtime": 1788269653.4884608,
+        "sha256": "b0ca65e54ab238bd3b0037052de62edd538cefffe46767734275b04ab1717fd2"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/index.ndx",
+        "size": 441007,
+        "mtime": 1788197939.84524,
+        "sha256": "325c9d747e8f28ab3a3fa187b22e1a87e188affe7af7fd42e7b30f7335232bee"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/topol.top",
+        "size": 1018,
+        "mtime": 1788197940.9823987,
+        "sha256": "2af2d1ec0237149c1a70cef1256aa078cdc8eebd0445f23873775aeecc5078a0"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nl-Nfnap-Nk",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.cpt",
+        "size": 658416,
+        "mtime": 1788266341.2466466,
+        "sha256": "b5f974714db5413d0b952c1ecacf5ce8be39f2f83de70dcd527b9423b755db6e"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.gro",
+        "size": 1888693,
+        "mtime": 1788266341.293349,
+        "sha256": "ea7053eac8c9486aa13697d844c6f2508e540c8df26ab2e656b7c47b8c711d41"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.log",
+        "size": 542715,
+        "mtime": 1788266341.299121,
+        "sha256": "d30daf127ee13e6f1a364b4583badedec7ced91c132ac479d08aca2c979672b8"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788197927.5542815,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull.tpr",
+        "size": 703396,
+        "mtime": 1788197928.2606392,
+        "sha256": "6b5f0b64dcc1d81c80738c04575100e96f9c483e57146df5d25710a170b9f203"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/Pull_prev.cpt",
+        "size": 658416,
+        "mtime": 1788266341.2520494,
+        "sha256": "684f118cbb5031800bdfaf7ee63076e4c29f7cafc03e515ae560a7c45e42b927"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/index.ndx",
+        "size": 462779,
+        "mtime": 1788197926.4096584,
+        "sha256": "5b1a372b3fa9cfab18d1e4b9ddee2294dad147c19ce4a770495cb773a7935f91"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80/topol.top",
+        "size": 1007,
+        "mtime": 1788197927.5537417,
+        "sha256": "052da3fac7565ebce4e112eb322e2b2a9ea242aea81efa843fb81a455c16b239"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nv-Nfnap-Nk",
+    "system": "POPE75POPG25_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.cpt",
+        "size": 629592,
+        "mtime": 1788271249.3530173,
+        "sha256": "37107116667f67ace0a51ec2198df453ea6dd3c92c894708db89f9176751ea15"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.gro",
+        "size": 1805824,
+        "mtime": 1788271249.4070694,
+        "sha256": "c0ee65d286057a5b7d4fc2cbcf504abc0f016efcb9552d0cdb36a6779bd9c2ed"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.log",
+        "size": 541803,
+        "mtime": 1788271249.4131815,
+        "sha256": "f0e88ddb197c213f5f5efcbe88060fa7026b7dcd82ec31796d66540f22a43546"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788198259.1354706,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.tpr",
+        "size": 668464,
+        "mtime": 1788198259.8364272,
+        "sha256": "326e7e710b80dfe8e0bbd72217170f03a4797882fbdcfde64b95a09935bf20c8"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull_prev.cpt",
+        "size": 629592,
+        "mtime": 1788271249.3576198,
+        "sha256": "c61bd2a7567d3a58f41437ef008152c241d5f72ca6f4a7693d2c5f70d11ab253"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/index.ndx",
+        "size": 441169,
+        "mtime": 1788198257.998765,
+        "sha256": "00d3eeb1343a0db35c338493d144d0f065be4147a89d550350650f2a4dcdacf5"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/topol.top",
+        "size": 1018,
+        "mtime": 1788198259.1350453,
+        "sha256": "4a34e7b7c9f4ecb0bccdfd702bde2e7c201be8e25e8114cddc342f5f85f374db"
+      }
+    ]
+  },
+  {
+    "peptoid": "Nv-Nfnap-Nk",
+    "system": "POPC60CHOL40_W_WF",
+    "stage": "Relax",
+    "physical_directory": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80",
+    "directory_exists": true,
+    "files": [
+      {
+        "name": "Pull.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.cpt",
+        "size": 658416,
+        "mtime": 1788267273.0792341,
+        "sha256": "99be532627475f0050773dfb7f5d675fff32bfc16294cc89e0dc8d3e63357731"
+      },
+      {
+        "name": "Pull.gro",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.gro",
+        "size": 1888693,
+        "mtime": 1788267273.135739,
+        "sha256": "4c86865a7faf05424fde8dd759d9a67132a5723eb85c8e363aa07d6a271223c9"
+      },
+      {
+        "name": "Pull.log",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.log",
+        "size": 542651,
+        "mtime": 1788267273.1426818,
+        "sha256": "89f44b0ef4d8ce7015e8a62e6b0b929f78b1c3c828d0e72f3f7686080def2348"
+      },
+      {
+        "name": "Pull.mdp",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.mdp",
+        "size": 3021,
+        "mtime": 1788198245.1810632,
+        "sha256": "35d025d81198e401a7b4d16333d1265e5f3a7db0476c4b44952f1b0b82855a9f"
+      },
+      {
+        "name": "Pull.tpr",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull.tpr",
+        "size": 703744,
+        "mtime": 1788198245.8878684,
+        "sha256": "a7ab398a03997eb2f0f1465832b1b4eafd961a47424ad61bb7d3ed1193788137"
+      },
+      {
+        "name": "Pull_prev.cpt",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/Pull_prev.cpt",
+        "size": 658416,
+        "mtime": 1788267273.083944,
+        "sha256": "277f8e88834e6c38a4d563aff824ce6da6d295fdaf28d66641060a601fbbbe38"
+      },
+      {
+        "name": "index.ndx",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/index.ndx",
+        "size": 462779,
+        "mtime": 1788198244.0343397,
+        "sha256": "30244f1ea7e9b412a2a2a6115f6557220cf6dba4faa56a79e4b0e091e73307d0"
+      },
+      {
+        "name": "topol.top",
+        "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80/topol.top",
+        "size": 1007,
+        "mtime": 1788198245.1804616,
+        "sha256": "cdc7904e8b71d838aa03cf31c9b640f47b744c97235c7f7cf94788ac53291248"
+      }
+    ]
+  }
+]

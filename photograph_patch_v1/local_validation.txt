@@ -1,0 +1,2 @@
+PASS: GRO coverage/rejection, aliases, both Tcl orientation sequences, nine-panel set, 2970x372 layout without title.
+NOT TESTED: VMD rendering, actual datasets, visual bead coverage or original camera equivalence.

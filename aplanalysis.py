@@ -104,7 +104,7 @@ TARGET_SELECTION_MODE = "run"  # "run", "custom", or "all_runs"
 # For normal ML-cycle analysis change ONLY this value between cycles.
 # Both "ML_cycle_01" and "run_ML_cycle_01" are accepted; internally the
 # leading "run_" is removed before paths are constructed.
-ANALYSIS_RUN = "ML_cycle_01"
+ANALYSIS_RUN = "ML_cycle_02"
 
 # Bilayers that form the DDAPL pair used by the active-learning workflow.
 # Additional bilayers can be added deliberately if required later.
@@ -2565,6 +2565,10 @@ REQUIRED_SYSTEM_FILES = [
 
 def is_valid_system_folder(system_dir: Path) -> bool:
     if not system_dir.is_dir():
+        return False
+
+    # Quarantined/duplicate simulations must never enter scientific analysis.
+    if "accidental_duplicates" in system_dir.parts:
         return False
 
     if not all((system_dir / name).exists() for name in REQUIRED_SYSTEM_FILES):

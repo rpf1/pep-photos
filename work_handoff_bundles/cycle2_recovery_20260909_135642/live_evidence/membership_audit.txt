@@ -1,0 +1,600 @@
+COMMAND:
+python /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/audit_and_quarantine_noncanonical_peptoid_runs.py
+
+RETURN CODE:
+0
+
+STDOUT:
+==============================================================================================================
+PFPEPTOIDS RUN DIRECTORY MEMBERSHIP / QUARANTINE AUDIT
+==============================================================================================================
+Project root: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids
+Database:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/shared_data/active_learning/active_learning.db
+Masterdata:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/masterdataanalysis.csv
+
+MODE: READ ONLY
+
+==============================================================================================================
+CANONICAL EXPECTED COUNTS
+==============================================================================================================
+run_0                  40 unique peptoids
+run_ML_cycle_01        44 unique peptoids
+run_ML_cycle_02        55 unique peptoids
+
+==============================================================================================================
+NONCANONICAL PEPTOID DIRECTORIES
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Ne-Nm-Nfn
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nm-Nfn_80
+Masterdata ref:True
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Ne-Nm-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nfnap-Nk
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nfnap-Nk_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nk-Nwe
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nk-Nwe_80
+Masterdata ref:False
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_UNREFERENCED
+Action:        SAFE_TO_QUARANTINE_UNREFERENCED
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nk-Nwe_80
+RESULT:        DRY RUN ONLY
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nw-Nk
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nw-Nk_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nw-Nk_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nw-Nwe
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nw-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nw-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nm-Nse-Nfn
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nm-Nse-Nfn_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nm-Nse-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-NfeB4-Nwe
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+Masterdata ref:False
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_UNREFERENCED
+Action:        SAFE_TO_QUARANTINE_UNREFERENCED
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+RESULT:        DRY RUN ONLY
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-Nfnap-Nwe
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-Nw-Nwe
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nw-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-Nw-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-Nwe-Nwe
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nwe-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-Nwe-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nse-Na-Nfn
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nse-Na-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nse-Nfn-Nfn
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Nfn-Nfn_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nse-Nfn-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nse-Nm-Nfn
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Nm-Nfn_80
+Masterdata ref:False
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_UNREFERENCED
+Action:        SAFE_TO_QUARANTINE_UNREFERENCED
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nse-Nm-Nfn_80
+RESULT:        DRY RUN ONLY
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nwe-Nw-Na
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nwe-Nw-Na_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nwe-Nwe-Na
+Bilayer:       POPE75POPG25_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nwe-Nwe-Na_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Na-Na-Na
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_0
+Expected run(s): run_ML_cycle_01
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Na-Na-Na_80
+Masterdata ref:False
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_UNREFERENCED
+Action:        SAFE_TO_QUARANTINE_UNREFERENCED
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_0/Na-Na-Na_80
+RESULT:        DRY RUN ONLY
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Ne-Nm-Nfn
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nm-Nfn_80
+Masterdata ref:False
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_UNREFERENCED
+Action:        SAFE_TO_QUARANTINE_UNREFERENCED
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Ne-Nm-Nfn_80
+RESULT:        DRY RUN ONLY
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nfnap-Nk
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nfnap-Nk_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nk-Nwe
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nk-Nwe_80
+Masterdata ref:True
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nk-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nw-Nk
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nw-Nk_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nw-Nk_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nk-Nw-Nwe
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nw-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nk-Nw-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nm-Nse-Nfn
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nm-Nse-Nfn_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nm-Nse-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-NfeB4-Nwe
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+Masterdata ref:False
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_UNREFERENCED
+Action:        SAFE_TO_QUARANTINE_UNREFERENCED
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+RESULT:        DRY RUN ONLY
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-Nfnap-Nwe
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-Nw-Nwe
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nw-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-Nw-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nn-Nwe-Nwe
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nwe-Nwe_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-Nwe-Nwe_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nse-Na-Nfn
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nse-Na-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nse-Nfn-Nfn
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Nfn-Nfn_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nse-Nfn-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nse-Nm-Nfn
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Nm-Nfn_80
+Masterdata ref:True
+Database ref:  False
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nse-Nm-Nfn_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nwe-Nw-Na
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nwe-Nw-Na_80
+RESULT:        NOT MOVED
+
+--------------------------------------------------------------------------------------------------------------
+Peptoid:       Nwe-Nwe-Na
+Bilayer:       POPC60CHOL40_W_WF
+Current run:   run_ML_cycle_01
+Expected run(s): run_ML_cycle_02
+Directory:     /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+Masterdata ref:True
+Database ref:  True
+Active jobs:   none
+Classification:NONCANONICAL_REFERENCED_PROVENANCE
+Action:        BLOCK_MOVE_REQUIRES_PROVENANCE_MIGRATION
+Destination:   /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nwe-Nwe-Na_80
+RESULT:        NOT MOVED
+
+==============================================================================================================
+CANONICAL DIRECTORY CHECK
+==============================================================================================================
+
+POPE75POPG25_W_WF
+
+  run_0
+    canonical dirs present: 40
+    noncanonical dirs present: 0
+    canonical IDs without a directory here: 0
+
+  run_ML_cycle_01
+    canonical dirs present: 44
+    noncanonical dirs present: 15
+    canonical IDs without a directory here: 0
+    unexpected:
+        Ne-Nm-Nfn
+        Nk-Nfnap-Nk
+        Nk-Nk-Nwe
+        Nk-Nw-Nk
+        Nk-Nw-Nwe
+        Nm-Nse-Nfn
+        Nn-NfeB4-Nwe
+        Nn-Nfnap-Nwe
+        Nn-Nw-Nwe
+        Nn-Nwe-Nwe
+        Nse-Na-Nfn
+        Nse-Nfn-Nfn
+        Nse-Nm-Nfn
+        Nwe-Nw-Na
+        Nwe-Nwe-Na
+
+  run_ML_cycle_02
+    canonical dirs present: 30
+    noncanonical dirs present: 0
+    canonical IDs without a directory here: 25
+    no directory in this run (may legitimately reuse older physical data):
+        Na-Na-Ne
+        Na-Na-Nkeqm
+        Na-Nd-Nfn
+        Na-Nd-Ni
+        Na-Ne-Nwe
+        Na-Nfe-Nfnap
+        Nd-Nfn-Nk
+        Nd-NmO-Nv
+        Nf-Nf-Nfnap
+        Nf-Nfex-Nfnap
+        Nfe-Na-Nk
+        NfeB4-Nfnap-Nkeqm
+        NfeB4-Nkeqm-Nfnap
+        Nfex-Nfnap-Nfe
+        Nfn-Nf-Nfnap
+        Nfnap-Nfex-Nkeqm
+        Nfnap-Nfnap-Nkeqm
+        Nfnap-Nkeqm-Nfnap
+        Nk-Nfnap-Nkeqm
+        Nk-Nkeqm-Nfnap
+        Nk-Nkeqm-Nk
+        Nkeqm-Nfex-Nfnap
+        Nkeqm-Nfnap-Nfnap
+        Nkeqm-Nfnap-Nk
+        Nwe-Nfnap-Nkeqm
+
+POPC60CHOL40_W_WF
+
+  run_0
+    canonical dirs present: 40
+    noncanonical dirs present: 1
+    canonical IDs without a directory here: 0
+    unexpected:
+        Na-Na-Na
+
+  run_ML_cycle_01
+    canonical dirs present: 44
+    noncanonical dirs present: 15
+    canonical IDs without a directory here: 0
+    unexpected:
+        Ne-Nm-Nfn
+        Nk-Nfnap-Nk
+        Nk-Nk-Nwe
+        Nk-Nw-Nk
+        Nk-Nw-Nwe
+        Nm-Nse-Nfn
+        Nn-NfeB4-Nwe
+        Nn-Nfnap-Nwe
+        Nn-Nw-Nwe
+        Nn-Nwe-Nwe
+        Nse-Na-Nfn
+        Nse-Nfn-Nfn
+        Nse-Nm-Nfn
+        Nwe-Nw-Na
+        Nwe-Nwe-Na
+
+  run_ML_cycle_02
+    canonical dirs present: 30
+    noncanonical dirs present: 0
+    canonical IDs without a directory here: 25
+    no directory in this run (may legitimately reuse older physical data):
+        Na-Na-Ne
+        Na-Na-Nkeqm
+        Na-Nd-Nfn
+        Na-Nd-Ni
+        Na-Ne-Nwe
+        Na-Nfe-Nfnap
+        Nd-Nfn-Nk
+        Nd-NmO-Nv
+        Nf-Nf-Nfnap
+        Nf-Nfex-Nfnap
+        Nfe-Na-Nk
+        NfeB4-Nfnap-Nkeqm
+        NfeB4-Nkeqm-Nfnap
+        Nfex-Nfnap-Nfe
+        Nfn-Nf-Nfnap
+        Nfnap-Nfex-Nkeqm
+        Nfnap-Nfnap-Nkeqm
+        Nfnap-Nkeqm-Nfnap
+        Nk-Nfnap-Nkeqm
+        Nk-Nkeqm-Nfnap
+        Nk-Nkeqm-Nk
+        Nkeqm-Nfex-Nfnap
+        Nkeqm-Nfnap-Nfnap
+        Nkeqm-Nfnap-Nk
+        Nwe-Nfnap-Nkeqm
+
+==============================================================================================================
+SUMMARY
+==============================================================================================================
+Noncanonical directories:       31
+Safe unreferenced quarantine:   6
+Blocked/requires review:         25
+Directories actually moved:      0
+
+READ-ONLY audit complete.
+Do NOT run --execute-unreferenced until the reported move set has been reviewed.
+
+No directories classified as referenced provenance were moved automatically.
+
+
+STDERR:

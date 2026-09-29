@@ -1,0 +1,67 @@
+PFPEPTOIDS GROMACS PERFORMANCE AUDIT
+================================================================================
+Generated UTC: 2026-09-04T11:19:03+00:00
+Read-only scan root: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids
+Log files inspected: 1030
+Stages: {'Pull': 575, 'Relax': 455}
+Cycles: {1: 232, 2: 140, None: 658}
+Statuses: {'completed': 963, 'failed': 10, 'running_or_incomplete': 57}
+Logs with performance values: 963
+Overall median ns/day: 227.966
+Flagged rows: 72
+
+COMPARABLE-GROUP SUMMARY
+--------------------------------------------------------------------------------
+stage=Pull | bilayer=POPC1_W_WF | cores=8 | n=20/20 | median=197.861 ns/day | range=161.947–238.593 ns/day | median_atoms=27532.5
+stage=Pull | bilayer=POPC60CHOL40 | cores=8 | n=0/10 | median=None ns/day | range=None–None ns/day | median_atoms=None
+stage=Pull | bilayer=POPC60CHOL40_W_WF | cores=4 | n=1/1 | median=123.947 ns/day | range=123.947–123.947 ns/day | median_atoms=27796.0
+stage=Pull | bilayer=POPC60CHOL40_W_WF | cores=8 | n=234/259 | median=221.628 ns/day | range=104.443–329.904 ns/day | median_atoms=27409.0
+stage=Pull | bilayer=POPC60CHOL40_W_WF | cores=40 | n=5/5 | median=376.285 ns/day | range=373.034–381.381 ns/day | median_atoms=27361.0
+stage=Pull | bilayer=POPC80POPS20_W_WF | cores=8 | n=26/26 | median=240.595 ns/day | range=206.945–286.54 ns/day | median_atoms=23408.0
+stage=Pull | bilayer=POPC80POPS20_W_WF | cores=40 | n=1/1 | median=448.559 ns/day | range=448.559–448.559 ns/day | median_atoms=23345.0
+stage=Pull | bilayer=POPC80POPS20_W_WF.2 | cores=8 | n=30/32 | median=271.62 ns/day | range=236.385–360.762 ns/day | median_atoms=23667.0
+stage=Pull | bilayer=POPE75POPG25 | cores=8 | n=0/2 | median=None ns/day | range=None–None ns/day | median_atoms=None
+stage=Pull | bilayer=POPE75POPG25_W_WF | cores=8 | n=206/214 | median=216.8595 ns/day | range=170.256–327.63 ns/day | median_atoms=26207.5
+stage=Pull | bilayer=POPE75POPG25_W_WF | cores=40 | n=5/5 | median=394.118 ns/day | range=387.193–404.688 ns/day | median_atoms=26186.0
+stage=Relax | bilayer=POPC1_W_WF | cores=8 | n=12/12 | median=198.702 ns/day | range=191.716–236.178 ns/day | median_atoms=27969.5
+stage=Relax | bilayer=POPC60CHOL40_W_WF | cores=8 | n=187/197 | median=223.881 ns/day | range=182.976–320.661 ns/day | median_atoms=27429.0
+stage=Relax | bilayer=POPC60CHOL40_W_WF | cores=40 | n=8/8 | median=415.1025 ns/day | range=404.359–419.57 ns/day | median_atoms=27410.0
+stage=Relax | bilayer=POPC80POPS20_W_WF | cores=8 | n=26/26 | median=263.6235 ns/day | range=216.247–373.424 ns/day | median_atoms=23408.0
+stage=Relax | bilayer=POPC80POPS20_W_WF | cores=40 | n=1/1 | median=490.676 ns/day | range=490.676–490.676 ns/day | median_atoms=23345.0
+stage=Relax | bilayer=POPC80POPS20_W_WF.2 | cores=8 | n=21/21 | median=268.99 ns/day | range=236.609–371.753 ns/day | median_atoms=23647.0
+stage=Relax | bilayer=POPE75POPG25_W_WF | cores=4 | n=1/1 | median=138.509 ns/day | range=138.509–138.509 ns/day | median_atoms=26544.0
+stage=Relax | bilayer=POPE75POPG25_W_WF | cores=8 | n=171/181 | median=231.278 ns/day | range=187.207–348.299 ns/day | median_atoms=26225.0
+stage=Relax | bilayer=POPE75POPG25_W_WF | cores=40 | n=8/8 | median=446.62 ns/day | range=430.094–475.343 ns/day | median_atoms=26180.0
+
+TWENTY SLOWEST COMPLETED LOG RECORDS
+--------------------------------------------------------------------------------
+104.443 ns/day | Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm | POPC60CHOL40_W_WF | Pull | cycle=None | cores=8 | atoms=23961 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPC60CHOL40_W_WF/run_0/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80/Pull.log
+123.947 ns/day | None | POPC60CHOL40_W_WF | Pull | cycle=None | cores=4 | atoms=27796 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/YYACAYY_80/Pull.log
+138.509 ns/day | None | POPE75POPG25_W_WF | Relax | cycle=None | cores=4 | atoms=26544 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/YYACAYY_80/Relax.log
+161.947 ns/day | Nk-Nfex-Nfex | POPC1_W_WF | Pull | cycle=None | cores=8 | atoms=28078 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC1_W_WF/run_length_effect/Nk-Nfex-Nfex_160/Pull.log
+162.125 ns/day | Nk-Nfex-Nfex | POPC60CHOL40_W_WF | Pull | cycle=None | cores=8 | atoms=23484 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex_80/Pull.log
+169.876 ns/day | Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf | POPC1_W_WF | Pull | cycle=None | cores=8 | atoms=28088 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC1_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_80/Pull.log
+170.256 ns/day | Nm-Nse-Nfn | POPE75POPG25_W_WF | Pull | cycle=1 | cores=8 | atoms=25972 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nm-Nse-Nfn_80/Pull.log
+170.549 ns/day | None | POPE75POPG25_W_WF | Pull | cycle=None | cores=8 | atoms=26564 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/LVIKVFTH_80/Pull.log
+172.302 ns/day | Nse-Na-Nfn | POPE75POPG25_W_WF | Pull | cycle=2 | cores=8 | atoms=25895 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Na-Nfn_80/Pull.log
+173.773 ns/day | None | POPE75POPG25_W_WF | Pull | cycle=None | cores=8 | atoms=26752 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/FSVLFFRW_80/Pull.log
+174.235 ns/day | None | POPE75POPG25_W_WF | Pull | cycle=None | cores=8 | atoms=26578 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/IGFIRVLY_80/Pull.log
+175.2 ns/day | None | POPE75POPG25_W_WF | Pull | cycle=None | cores=8 | atoms=26723 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/GKKFWWIM_80/Pull.log
+177.416 ns/day | Nfnap-Nfe-Nm | POPE75POPG25_W_WF | Pull | cycle=None | cores=8 | atoms=26289 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfnap-Nfe-Nm_80/Pull.log
+177.882 ns/day | Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex | POPC60CHOL40_W_WF | Pull | cycle=None | cores=8 | atoms=27597 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex_80/Pull.log
+177.993 ns/day | Nd-Nw-Nfnap | POPE75POPG25_W_WF | Pull | cycle=1 | cores=8 | atoms=26285 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nd-Nw-Nfnap_80/Pull.log
+178.024 ns/day | Nk-Nv-Nwe | POPE75POPG25_W_WF | Pull | cycle=2 | cores=8 | atoms=26180 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nv-Nwe_80/Pull.log
+178.63 ns/day | Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf | POPC1_W_WF | Pull | cycle=None | cores=8 | atoms=28810 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC1_W_WF/run_length_effect/Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf_160/Pull.log
+178.852 ns/day | Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm | POPC60CHOL40_W_WF | Pull | cycle=None | cores=8 | atoms=27780 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_length_effect/Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm_80/Pull.log
+181.745 ns/day | Nd-Nfn-Nk | POPE75POPG25_W_WF | Pull | cycle=2 | cores=8 | atoms=26027 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/machinelearning/17082026_cleanup/_cleanup_review/cycle2B_stale_pre_nkeqm/POPE75POPG25_W_WF/run_ML_cycle_02/Nd-Nfn-Nk_80/Pull.log
+181.927 ns/day | Nk-Nw-Nl | POPE75POPG25_W_WF | Pull | cycle=2 | cores=8 | atoms=26118 | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nw-Nl_80/Pull.log
+
+INTERPRETATION RULES
+--------------------------------------------------------------------------------
+Compare ns/day only between equivalent stages, similar bilayers/system sizes,
+the same core layout and preferably the same CPU/node type.
+The latest Performance line is used when a log contains multiple run segments.
+Charge per peptoid is reported only when a matching TPR can be parsed and
+the polymer residues can be identified; no charge is guessed from the sequence.
+A running log normally lacks a final Performance line and is not automatically
+evidence of poor performance.

@@ -1,0 +1,32 @@
+usage: scientific_figures.py [-h] [--model MODEL] [--set {core,full}]
+                             [--output-dir OUTPUT_DIR] [--include-3d]
+                             [--include-interesting-slices]
+                             [--figure-mode {all,missing,selected}]
+                             [--figures FIGURES]
+
+Generate PFPeptoids scientific figures from authoritative run data.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --model MODEL         Logical model ID, e.g. Model0, Model1A
+  --set {core,full}     core = fast presentation figures; full = paper-
+                        oriented descriptor/chemical-space analyses too
+  --output-dir OUTPUT_DIR
+                        Optional explicit output directory. Default is a
+                        timestamped analysis run.
+  --include-3d          Also generate the dense 3D triplet map. Kept as
+                        optional exploratory functionality, not part of the
+                        default full set.
+  --include-interesting-slices
+                        Generate an optional focused slice figure using an
+                        objective shortlist of interesting monomers.
+  --figure-mode {all,missing,selected}
+                        all = create a new timestamped analysis and regenerate
+                        the requested figure set; missing = reuse the latest
+                        analysis directory and generate only missing figure
+                        groups; selected = reuse the latest analysis directory
+                        and regenerate only groups named by --figures.
+  --figures FIGURES     Comma-separated figure groups for --figure-mode
+                        selected, e.g. '07,08,18,18b,19,19c'. Group 19
+                        regenerates all pairwise heatmaps; 19c regenerates
+                        only the combined pairwise panel.

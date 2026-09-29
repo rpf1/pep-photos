@@ -1,0 +1,515 @@
+============================================================
+PFPEPTOIDS PHOTOGRAPH PIPELINE — TARGETED INVESTIGATION
+============================================================
+
+Molecule : Nfnap-NfeC4-NfeC4
+Bilayer  : POPE75POPG25_W_WF
+Run      : run_0
+System   : /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+
+============================================================
+1. CANONICAL PHOTOGRAPH SOURCE FILES
+============================================================
+[FOUND] /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py
+[FOUND] /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl
+[FOUND] /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py
+[FOUND] /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl
+
+============================================================
+2. TARGET SYSTEM FILES
+============================================================
+Box.gro
+Min.gro
+Min.tpr
+Min.trr
+Photograph.tcl
+Pull.gro
+PullMinCOM.gro
+Pull.tpr
+Pull.xtc
+Relax.gro
+Relax.tpr
+Relax.xtc
+
+============================================================
+3. CURRENT SNAPSHOT / IMAGE OUTPUTS
+============================================================
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:11:Batch-generate VMD snapshot panels for PFPeptoids systems.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:30:5. Runs VMD to render:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:31:   snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:32:   snapshot_side_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:33:   snapshot_top.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:34:   snapshot_side.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:35:   snapshot_bottom.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:36:   snapshot_water.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:47:VMD snapshots often contain large white borders/background margins.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:125:# Rendering command
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:148:# Top title for the all-bilayers stacked image.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:189:# Fixed canvas sizes for the six snapshot types.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:192:    "snapshot_top_bilayer.png":  (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:193:    "snapshot_side_bilayer.png": (330, 250),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:194:    "snapshot_top.png":          (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:195:    "snapshot_side.png":         (330, 250),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:196:    "snapshot_bottom.png":       (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:197:    "snapshot_water.png":        (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:229:# system image: {molecule}__nmol_{nmol}__{bilayer}__{run}.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:230:# molecule stack: {molecule}__ALL_BILAYERS__{run}.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:232:# Sort order for stacked bilayer overview
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:240:SNAPSHOT_ORDER = [
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:241:    ("snapshot_top_bilayer.png", "Top bilayer"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:242:    ("snapshot_side_bilayer.png", "Side bilayer"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:243:    ("snapshot_top.png", "Top"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:244:    ("snapshot_side.png", "Side"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:245:    ("snapshot_bottom.png", "Bottom"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:246:    ("snapshot_water.png", "Water"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:628:    Build the title shown above the all-bilayers stacked image.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:739:    Add a short label above one VMD snapshot panel.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:795:    Each VMD snapshot is first placed on a fixed-size canvas, so all systems
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:878:def collect_snapshot_paths(system_dir: Path):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:880:    for fname, label in SNAPSHOT_ORDER:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:883:            raise FileNotFoundError(f"Expected VMD snapshot missing: {p}")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:892:    return f"{sanitize(molecule_name)}__nmol_{nmol}__{sanitize(bilayer)}__{sanitize(run_name)}{tag}.png"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:895:def stacked_image_name(molecule_name: str, run_name: str):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:897:    return f"{sanitize(molecule_name)}__ALL_BILAYERS__{sanitize(run_name)}{tag}.png"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:920:    n_snapshot_failed = 0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:983:            snapshot_paths = collect_snapshot_paths(system_dir)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:985:            n_snapshot_failed += 1
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:986:            print(f"FAILED snapshot collection {system_dir}: {exc}")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1005:        make_horizontal_panel(snapshot_paths, final_panel_path, title=title)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1009:        for fname, _ in SNAPSHOT_ORDER:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1043:        stack_dir = active_photo_root / sanitize(molecule_name) / "STACKED"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1046:        stack_path = stack_dir / stacked_image_name(molecule_name, run_name)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1059:    print(f"Snapshot collection failed: {n_snapshot_failed}")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:116:render snapshot snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:118:render snapshot snapshot_side_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:184:render snapshot snapshot_top.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:186:render snapshot snapshot_side.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:188:render snapshot snapshot_bottom.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:207:render snapshot snapshot_water.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:11:Create the same standard VMD views as Photograph.py, but render each
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:130:# is not silently rendered.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:621:def diagnostic_snapshot_paths(out_dir):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:624:        for filename, _ in photo.SNAPSHOT_ORDER
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:628:def check_existing_raw_snapshots(out_dir):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:631:        for path in diagnostic_snapshot_paths(out_dir)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:642:            "Diagnostic raw snapshots already exist and would be "
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:650:def collect_snapshot_paths(out_dir):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:652:    Validate the six expected VMD snapshots and optionally trim them.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:654:    Raw snapshots are RETAINED after panel generation.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:659:    for filename, label in photo.SNAPSHOT_ORDER:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:665:                f"Expected VMD snapshot missing:\n{path}"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:702:        f"__{suffix}.png"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:727:        f"__{suffix}.png"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:818:    n_rendered = 0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:935:            check_existing_raw_snapshots(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:970:            snapshots = collect_snapshot_paths(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1011:                image_paths=snapshots,
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1023:            n_rendered += 1
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1069:            / "STACKED"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1130:        f"New panels rendered: {n_rendered}"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:427:render snapshot snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:431:render snapshot snapshot_side_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:568:render snapshot snapshot_top.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:572:render snapshot snapshot_side.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:576:render snapshot snapshot_bottom.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:617:render snapshot snapshot_water.png
+
+============================================================
+4. CURRENT CAMERA / ROTATION LOGIC
+============================================================
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:186:# It prevents different bilayers appearing shifted/scaled after trimming.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:6:    return [vecscale [expr 1.0 / [$selection num]] $gc]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:117:rotate x by -90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:119:rotate x by 90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:185:rotate x by -90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:187:rotate x by -90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:189:rotate x by 90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:8:    return [vecscale [expr 1.0 / [$selection num]] $gc]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:429:rotate x by -90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:433:rotate x by 90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:570:rotate x by -90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:574:rotate x by -90
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:578:rotate x by 90
+
+============================================================
+5. CURRENT SELECTION / REPRESENTATION LOGIC
+============================================================
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:11:Batch-generate VMD snapshot panels for PFPeptoids systems.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:15:1. Scans the current PFPeptoids folder layout:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:103:MANUAL_MOLECULE_NAME = "manual_system"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:106:MANUAL_RUN_NAME = "run_manual"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:107:MANUAL_STAGE_NAME = "Manual"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:110:SCRIPT_DIR = Path("/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:111:DATA_ROOT = Path("/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:249:# Peptoid residue categories
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:250:# Edit these to match the exact residue names in your .gro files
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:251:#NOTE - the following residues are not 100% perfectly place or are middle points between bins:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:254:PEPTOID_RESIDUES = {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:276:PHOSPHOLIPID_RESNAMES = {"POPC", "POPS", "POPE", "POPG"}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:277:CHOL_RESNAMES = {"CHOL"}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:307:                run_name = run_dir.name
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:348:            run_name = system_dir.parent.name
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:351:            run_name = MANUAL_RUN_NAME
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:488:    phospholipid_sel = "resname " + " ".join(sorted(PHOSPHOLIPID_RESNAMES))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:489:    chol_sel = "resname " + " ".join(sorted(CHOL_RESNAMES))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:491:    phospholipids = u.select_atoms(phospholipid_sel).residues
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:492:    chol = u.select_atoms(chol_sel).residues
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:494:    n_phospholipids = phospholipids.n_residues
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:495:    n_chol = chol.n_residues
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:580:    Convert raw folder bilayer name into a shorter display label.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:933:        molecule_name = target["molecule_name"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:936:        run_name = target["run_name"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:952:        panel_name = system_image_name(molecule_name, nmol, bilayer, run_name)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1037:                BILAYER_PRIORITY.index(x[0]) if x[0] in BILAYER_PRIORITY else 999,
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:1:proc geom_center {selection} {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:3:    foreach coord [$selection get {x y z}] {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:6:    return [vecscale [expr 1.0 / [$selection num]] $gc]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:25:set bilayer_resnames {POPC POPS POPE POPG DPPC DTPC CHOL}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:26:set water_resnames   {H2O W SW TW WF}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:27:set ion_resnames     {NA CL NA+ CL- ION}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:29:# Peptide residue groups
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:37:# Peptoid residue groups
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:45:set peptide_resnames [concat \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:53:set peptoid_resnames [concat \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:60:set all_polymer_resnames [concat $peptide_resnames $peptoid_resnames]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:62:# Useful atom selections
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:63:set Bilayer [atomselect top "resname [join $bilayer_resnames { }]"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:64:set W       [atomselect top "resname [join $water_resnames { }]"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:65:set All     [atomselect top "all"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:66:set Polymer [atomselect top "resname [join $all_polymer_resnames { }]"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:70:    set box_z [lindex $boxinfo 2]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:74:        set bilayer_z [lindex $bilayer_center 2]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:88:        pbc wrap -all -compound residue
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:110:mol selection "resname [join $bilayer_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:112:mol representation QuickSurf 1.2 0.3 1.0 2
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:123:# Draw full residues, not just backbone beads
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:127:mol selection "resname [join [concat $pep_hydrophobic $pto_hydrophobic] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:129:mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:134:mol selection "resname [join $pep_proline { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:136:mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:142:    mol selection "resname [join [concat $pep_polar $pto_polar] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:144:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:151:    mol selection "resname [join [concat $pep_negative $pto_negative] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:153:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:160:    mol selection "resname [join [concat $pep_aromatic $pto_aromatic] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:162:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:169:    mol selection "resname [join [concat $pep_positive $pto_positive] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:171:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:178:mol selection "(resname [join $all_polymer_resnames { }]) and (name BB BAS)"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:180:mol representation VDW 1.25 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:201:mol selection "resname [join $water_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:203:mol representation VDW 1.2 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:7:Selective component-coloured membrane photography for PFPeptoids.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:204:def component_style(resname):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:205:    if resname not in COMPONENT_STYLES:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:208:            f"{resname!r}"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:211:    return COMPONENT_STYLES[resname]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:255:        finds every folder whose parsed molecule name exactly matches.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:352:        for molecule_name in molecules:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:354:            for run_name in runs:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:488:            f"resname {component}"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:491:        residue_count = atoms.residues.n_residues
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:493:        counts[component] = int(residue_count)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:495:        if residue_count == 0:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:498:                f"Expected component {component!r}, but zero residues "
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:541:        "__COMPONENT_1_RESNAME__":
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:544:        "__COMPONENT_2_RESNAME__":
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:763:        f"  resname: {component_1}\n"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:764:        f"  residues: {counts[component_1]}\n"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:770:        f"  resname: {component_2}\n"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:771:        f"  residues: {counts[component_2]}\n"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:821:    for index, target in enumerate(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:827:        molecule_name = target["molecule_name"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:830:        run_name = target["run_name"]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:843:            f"[{index}/{len(targets)}] "
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:932:                    f"{count} residues"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1054:                photo.BILAYER_PRIORITY.index(item[0])
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:1:proc geom_center {selection} {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:4:    foreach coord [$selection get {x y z}] {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:8:    return [vecscale [expr 1.0 / [$selection num]] $gc]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:32:# REMOVE DEFAULT VMD REPRESENTATION
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:42:# Full set of membrane residue names used by PFPeptoids.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:43:set bilayer_resnames {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:53:set water_resnames {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:61:set ion_resnames {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:74:set component_1_resnames {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:75:    __COMPONENT_1_RESNAME__
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:78:set component_2_resnames {
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:79:    __COMPONENT_2_RESNAME__
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:96:# PEPTIDE RESIDUE GROUPS
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:176:# PEPTOID RESIDUE GROUPS
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:226:set peptide_resnames [concat \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:234:set peptoid_resnames [concat \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:241:set all_polymer_resnames [concat \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:242:    $peptide_resnames \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:243:    $peptoid_resnames]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:247:# USEFUL ATOM SELECTIONS
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:251:    atomselect top \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:252:    "resname [join $bilayer_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:256:    atomselect top \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:257:    "resname [join $water_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:261:    atomselect top "all"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:265:    atomselect top \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:266:    "resname [join $all_polymer_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:281:        lindex $boxinfo 2
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:295:            lindex $bilayer_center 2
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:326:            -compound residue
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:367:# The standard Photograph.tcl uses ONE representation:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:369:#     all membrane residues
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:372:# Here we create TWO independent QuickSurf representations:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:393:mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:394:    "resname [join $component_1_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:399:mol representation \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:409:mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:410:    "resname [join $component_2_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:415:mol representation \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:437:# POLYMER REPRESENTATIONS
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:442:# The component-coloured bilayer representations remain active underneath.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:448:mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:449:    "resname [join [concat $pep_hydrophobic $pto_hydrophobic] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:453:mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:462:mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:463:    "resname [join $pep_proline { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:467:mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:480:    mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:481:        "resname [join [concat $pep_polar $pto_polar] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:485:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:499:    mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:500:        "resname [join [concat $pep_negative $pto_negative] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:504:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:518:    mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:519:        "resname [join [concat $pep_aromatic $pto_aromatic] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:523:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:537:    mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:538:        "resname [join [concat $pep_positive $pto_positive] { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:542:    mol representation VDW 1.4 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:552:mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:553:    "(resname [join $all_polymer_resnames { }]) and (name BB BAS)"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:557:mol representation VDW 1.25 12.0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:585:# Delete every current representation so the water image remains equivalent
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:605:mol selection \
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:606:    "resname [join $water_resnames { }]"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:610:mol representation VDW 1.2 12.0
+
+============================================================
+6. TARGET RESIDUE / ALIAS REFERENCES
+============================================================
+
+----- Nfnap -----
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:92:        "molecule": ["Nfnap-Nfnap-Nfex", "Nd-Nw-Nwe", "Nk-Nm-Nke", "Nwe-Nn-Na"],
+
+----- Nfnaph -----
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:41:set pto_aromatic    {Nf Nfn Nfe Nfex Nw Nwe Ny Nfe4Cl Nfe4Br Nfnaph}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:212:    Nfnaph
+
+----- NfeC4 -----
+NOT FOUND
+
+----- Nfe4Cl -----
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:41:set pto_aromatic    {Nf Nfn Nfe Nfex Nw Nwe Ny Nfe4Cl Nfe4Br Nfnaph}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:210:    Nfe4Cl
+
+----- NfeB4 -----
+NOT FOUND
+
+----- Nfe4Br -----
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:41:set pto_aromatic    {Nf Nfn Nfe Nfex Nw Nwe Ny Nfe4Cl Nfe4Br Nfnaph}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:211:    Nfe4Br
+
+----- Na -----
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:256:        "Na", "Nab", "Ni", "Nl", "Nm", "Nv"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:38:set pto_hydrophobic {Na Nab Ni Nl Nm Nv}
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:92:        "molecule": ["Nfnap-Nfnap-Nfex", "Nd-Nw-Nwe", "Nk-Nm-Nke", "Nwe-Nn-Na"],
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:180:    Na
+
+----- Nx -----
+NOT FOUND
+
+============================================================
+7. IMPORTANT PYTHON FUNCTIONS
+============================================================
+
+Image assembly/cropping references:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:31:   snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:32:   snapshot_side_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:33:   snapshot_top.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:34:   snapshot_side.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:35:   snapshot_bottom.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:36:   snapshot_water.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:43:   b) One vertical stack per molecule/run combining all bilayers
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:148:# Top title for the all-bilayers stacked image.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:149:SHOW_STACK_TITLE = True
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:178:PANEL_LABEL_BAND_HEIGHT = 42
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:192:    "snapshot_top_bilayer.png":  (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:193:    "snapshot_side_bilayer.png": (330, 250),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:194:    "snapshot_top.png":          (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:195:    "snapshot_side.png":         (330, 250),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:196:    "snapshot_bottom.png":       (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:197:    "snapshot_water.png":        (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:202:# Vertical stack row alignment.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:205:STACK_ROW_ALIGNMENT = "left"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:210:    SHOW_STACK_TITLE = True
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:230:# molecule stack: {molecule}__ALL_BILAYERS__{run}.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:232:# Sort order for stacked bilayer overview
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:240:SNAPSHOT_ORDER = [
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:241:    ("snapshot_top_bilayer.png", "Top bilayer"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:242:    ("snapshot_side_bilayer.png", "Side bilayer"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:243:    ("snapshot_top.png", "Top"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:244:    ("snapshot_side.png", "Side"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:245:    ("snapshot_bottom.png", "Bottom"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:246:    ("snapshot_water.png", "Water"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:568:def text_width(draw, text, font):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:573:def text_height(draw, text, font):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:626:def build_stack_title(molecule_name, run_name):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:628:    Build the title shown above the all-bilayers stacked image.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:633:def wrap_title_to_width(draw, title, font, max_width):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:646:        if text_width(draw, candidate, font) <= max_width:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:654:                wrapped = textwrap.wrap(part, width=40)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:664:def truncate_line_to_width(draw, text, font, max_width):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:666:    Truncate a line so it cannot run past the image width.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:670:    if text_width(draw, text, font) <= max_width:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:674:    while text and text_width(draw, text + suffix, font) > max_width:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:680:def choose_title_font_and_lines(draw, title, max_width):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:682:    Choose a font size and wrapped title that fits inside the image width.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:686:        lines = wrap_title_to_width(draw, title, font, max_width)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:693:    lines = wrap_title_to_width(draw, title, font, max_width)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:698:    lines = [truncate_line_to_width(draw, line, font, max_width) for line in lines]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:709:    width, height = img.size
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:711:    dummy = Image.new("RGB", (width, 100), "white")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:714:    max_text_width = width - 2 * LABEL_PADDING
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:715:    font, lines = choose_title_font_and_lines(draw, title, max_text_width)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:717:    line_h = text_height(draw, "Ag", font)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:718:    band_height = (
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:724:    new_img = Image.new("RGB", (width, height + band_height), "white")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:725:    new_img.paste(img, (0, band_height))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:744:    width, height = img.size
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:745:    new_img = Image.new("RGB", (width, height + PANEL_LABEL_BAND_HEIGHT), "white")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:746:    new_img.paste(img, (0, PANEL_LABEL_BAND_HEIGHT))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:751:    label = truncate_line_to_width(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:755:        max_width=width - 2 * LABEL_PADDING,
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:782:    canvas = Image.new("RGB", (canvas_w, canvas_h), "white")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:787:    canvas.paste(fitted, (x, y))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:801:        img = Image.open(img_path).convert("RGB")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:813:    total_width = sum(img.size[0] for img in panels)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:814:    max_height = max(img.size[1] for img in panels)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:816:    stitched = Image.new("RGB", (total_width, max_height), "white")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:820:        y = (max_height - img.size[1]) // 2
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:821:        stitched.paste(img, (x, y))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:837:def make_vertical_stack(image_paths, output_path: Path, title: str):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:839:    Stack system panels vertically.
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:841:    STACK_ROW_ALIGNMENT = "left" is recommended because it keeps all bilayer rows
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:844:    rows = [Image.open(p).convert("RGB") for p in image_paths]
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:846:    max_width = max(img.size[0] for img in rows)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:847:    total_height = sum(img.size[1] for img in rows)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:849:    stitched = Image.new("RGB", (max_width, total_height), "white")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:853:        if STACK_ROW_ALIGNMENT == "center":
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:854:            x = (max_width - img.size[0]) // 2
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:858:        stitched.paste(img, (x, y))
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:864:        show_title=SHOW_STACK_TITLE,
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:878:def collect_snapshot_paths(system_dir: Path):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:880:    for fname, label in SNAPSHOT_ORDER:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:895:def stacked_image_name(molecule_name: str, run_name: str):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:920:    n_snapshot_failed = 0
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:983:            snapshot_paths = collect_snapshot_paths(system_dir)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:985:            n_snapshot_failed += 1
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1005:        make_horizontal_panel(snapshot_paths, final_panel_path, title=title)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1009:        for fname, _ in SNAPSHOT_ORDER:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1043:        stack_dir = active_photo_root / sanitize(molecule_name) / "STACKED"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1044:        stack_dir.mkdir(parents=True, exist_ok=True)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1046:        stack_path = stack_dir / stacked_image_name(molecule_name, run_name)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1048:        title = build_stack_title(molecule_name, run_name)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1049:        make_vertical_stack(panel_paths, stack_path, title=title)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1051:        print(f"SAVED STACK {stack_path}")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:1059:    print(f"Snapshot collection failed: {n_snapshot_failed}")
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:29:    * vertical stacks
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:621:def diagnostic_snapshot_paths(out_dir):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:624:        for filename, _ in photo.SNAPSHOT_ORDER
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:631:        for path in diagnostic_snapshot_paths(out_dir)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:650:def collect_snapshot_paths(out_dir):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:659:    for filename, label in photo.SNAPSHOT_ORDER:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:706:def component_stack_name(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:970:            snapshots = collect_snapshot_paths(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1040:    # STACK SELECTED BILAYERS
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1066:        stack_dir = (
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1069:            / "STACKED"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1072:        stack_dir.mkdir(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1077:        stack_path = (
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1078:            stack_dir
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1079:            / component_stack_name(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1086:            stack_path.exists()
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1091:                f"SKIP existing stack:\n"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1092:                f"  {stack_path}"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1097:        stack_title = (
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1098:            f"{photo.build_stack_title(molecule_name, run_name)} "
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1102:        photo.make_vertical_stack(
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1104:            output_path=stack_path,
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1105:            title=stack_title,
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1110:            f"SAVED STACK:\n"
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.py:1111:            f"  {stack_path}"
+
+============================================================
+8. EXISTING Y-SIDE / SECOND-SIDE SUPPORT
+============================================================
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:31:   snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:32:   snapshot_side_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:192:    "snapshot_top_bilayer.png":  (330, 330),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:193:    "snapshot_side_bilayer.png": (330, 250),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:241:    ("snapshot_top_bilayer.png", "Top bilayer"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:242:    ("snapshot_side_bilayer.png", "Side bilayer"),
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:878:def collect_snapshot_paths(system_dir: Path):
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.py:983:            snapshot_paths = collect_snapshot_paths(system_dir)
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:116:render snapshot snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph.tcl:118:render snapshot snapshot_side_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:427:render snapshot snapshot_top_bilayer.png
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/Photograph_components.tcl:431:render snapshot snapshot_side_bilayer.png
+
+============================================================
+9. TARGET GRO CONTENTS
+============================================================
+
+------------------------------------------------------------
+GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80/Box.gro
+------------------------------------------------------------
+
+Unique residue names:
+CL
+ION
+NA
+NfeC4
+Nfnap
+POPE
+POPG
+W
+WF
+
+Unique atom/bead names:
+BB
+C1A
+C1B
+C2B
+C3A
+C3B
+C4A
+C4B
+CL
+D2A
+GL0
+GL1
+GL2
+NA
+NA+
+NH3
+PO4
+SC1
+SC2
+SC3
+SC4
+SC5
+W
+WF
+
+Target-like residues and their atom/bead names:
+awk: cmd. line:10:                 if (
+awk: cmd. line:10:                     ^ unexpected newline or end of string
+awk: cmd. line:14:                 ) {
+awk: cmd. line:14:                 ^ syntax error

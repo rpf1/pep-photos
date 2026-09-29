@@ -1172,29 +1172,30 @@ class AnnotationGUI:
         ).pack(side="left")
 
         decision_frame = ttk.Frame(root)
+        # Six-class layout: flat variants first, curved variants and pore second.
         decision_frame.pack(fill="x", padx=8, pady=6)
+        for column in range(3):
+            decision_frame.columnconfigure(column, weight=1, uniform="classes")
         self.class_buttons = []
-        for definition in self.config["classes"]:
+        for index, definition in enumerate(self.config["classes"]):
             button = ttk.Button(
                 decision_frame,
                 text=f"{definition['key']}: {definition['name']}",
-                command=lambda name=definition["name"]: self.decide(
-                    name, "labelled"
-                ),
+                command=lambda name=definition["name"]: self.decide(name, "labelled"),
                 takefocus=False,
             )
-            button.pack(side="left", fill="x", expand=True, padx=3)
+            button.grid(row=index // 3, column=index % 3, sticky="ew", padx=3, pady=3)
             self.class_buttons.append(button)
+        workflow_frame = ttk.Frame(root)
+        workflow_frame.pack(fill="x", padx=8, pady=(0, 6))
         self.uncertain_button = ttk.Button(
-            decision_frame, text="U: uncertain",
-            command=lambda: self.decide("", "uncertain"),
-            takefocus=False,
+            workflow_frame, text="U: uncertain",
+            command=lambda: self.decide("", "uncertain"), takefocus=False,
         )
         self.uncertain_button.pack(side="left", padx=3)
         ttk.Button(
-            decision_frame, text="S: skip",
-            command=lambda: self.decide("", "skipped"),
-            takefocus=False,
+            workflow_frame, text="S: skip",
+            command=lambda: self.decide("", "skipped"), takefocus=False,
         ).pack(side="left", padx=3)
 
         ttk.Label(

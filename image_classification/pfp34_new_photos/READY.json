@@ -1,0 +1,16 @@
+{
+  "systems": 523,
+  "versions": {
+    "NEW10": 412,
+    "LEGACY": 109,
+    "BLOCKED": 2
+  },
+  "annotation_status_counts": {
+    "uncertain": 2,
+    "labelled": 211,
+    "unlabelled": 310
+  },
+  "old_session": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_v2/membrane_session",
+  "new_session": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_new_photos/session",
+  "historical_events_preserved": 228
+}

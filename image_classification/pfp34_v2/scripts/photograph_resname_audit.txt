@@ -1,0 +1,1018 @@
+==============================================================================
+PFPEPTOIDS PHOTOGRAPH RESIDUE-NAME AUDIT
+==============================================================================
+
+Systems inspected: 769
+
+Recognised N* names:
+  Photograph.tcl            : 29
+  Photograph_components.tcl : 29
+  Photograph.py             : 25
+
+Dataset N* names:
+  Actually present in GROs  : 28
+  Present in molecule names : 27
+
+==============================================================================
+1. ACTUAL N* RESIDUE NAMES PRESENT IN REPRESENTATIVE GRO FILES
+==============================================================================
+Na              1 systems
+Nab            21 systems
+Nd             20 systems
+Ne             34 systems
+Nf            139 systems
+Nfe            68 systems
+NfeB4          23 systems
+NfeC4          26 systems
+Nfex          217 systems
+Nfn            40 systems
+Nfnap         131 systems
+Ni            100 systems
+Nk            264 systems
+Nke            33 systems
+Nkeqm           2 systems
+Nl             97 systems
+Nm            109 systems
+NmO            23 systems
+Nn             36 systems
+Nr             76 systems
+Ns             69 systems
+Nse            24 systems
+Nt             40 systems
+Nv             45 systems
+Nw             69 systems
+Nwe           167 systems
+Nx             61 systems
+Ny             14 systems
+
+==============================================================================
+2. ACTUAL GRO NAMES NOT RECOGNISED BY Photograph.tcl
+==============================================================================
+
+NfeB4  (23 systems)
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../2x - 3x PME ERROR/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPC80POPS20_W_WF.2/run_0/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_0/Nwe-NfeB4-Nke_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nd-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/NfeB4-Nk-Nn_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nn-NfeB4-Nwe_80
+    POPC80POPS20_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPC80POPS20_W_WF/run_0/Nwe-NfeB4-Nke_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_0/Nwe-NfeB4-Nke_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nd-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/NfeB4-Nk-Nn_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nn-NfeB4-Nwe_80
+
+NfeC4  (26 systems)
+    POPC60CHOL40_W_WF/run_0/NfeC4-Nf-NmO_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPC60CHOL40_W_WF/run_0/Nm-NfeC4-Ni_80
+    POPC60CHOL40_W_WF/run_0/Nw-NfeC4-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-NfeC4-Nfn_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-NfeC4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nke-Ni-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+    POPC80POPS20_W_WF/run_0/NfeC4-Nf-NmO_80
+    POPC80POPS20_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPC80POPS20_W_WF/run_0/Nm-NfeC4-Ni_80
+    POPC80POPS20_W_WF/run_0/Nw-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_0/NfeC4-Nf-NmO_80
+    POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_0/Nm-NfeC4-Ni_80
+    POPE75POPG25_W_WF/run_0/Nw-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-NfeC4-Nfn_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-NfeC4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nke-Ni-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+
+Nfnap  (131 systems)
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPC80POPS20_W_WF.2/run_0/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    Old Bilayers/POPE75POPG25_W_WF_22ATall/run_22ATall/Nfex-Nfnap-Nv_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nk-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nn-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_0/Nab-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nf-Nfe-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nf-Nfnap-Nf_80
+    POPC60CHOL40_W_WF/run_0/Nf-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_0/Nfe-Nfnap-Nf_80
+    POPC60CHOL40_W_WF/run_0/Nfe-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_0/Nfex-Nfnap-Nv_80
+    POPC60CHOL40_W_WF/run_0/Nfex-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nfex-Nv-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nfn-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-Nfe-Nm_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-Ni-Nfex_80
+    POPC60CHOL40_W_WF/run_0/Ni-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nk-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nk-Nv-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nl-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nt-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nw-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nd-Nw-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nfe-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ni-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ni-Nfn-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nl-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Ne-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nfex_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nw-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfex_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Ni_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nfex_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nw-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nwe-Nfnap_80
+    POPC80POPS20_W_WF/run_0/Nf-Nfe-Nfnap_80
+    POPC80POPS20_W_WF/run_0/Nfe-Nfnap-Nfe_80
+    POPC80POPS20_W_WF/run_0/Nfex-Nfnap-Nv_80
+    POPC80POPS20_W_WF/run_0/Nfex-Ni-Nfnap_80
+    POPC80POPS20_W_WF/run_0/Nfnap-Nfe-Nm_80
+    POPC80POPS20_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nk-Nfnap-Nk_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nn-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_0/Nab-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nf-Nfe-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nf-Nfnap-Nf_80
+    POPE75POPG25_W_WF/run_0/Nf-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_0/Nfe-Nfnap-Nf_80
+    POPE75POPG25_W_WF/run_0/Nfe-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_0/Nfex-Nfnap-Nv_80
+    POPE75POPG25_W_WF/run_0/Nfex-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nfex-Nv-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nfn-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nfnap-Nfe-Nm_80
+    POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_0/Nfnap-Ni-Nfex_80
+    POPE75POPG25_W_WF/run_0/Ni-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nk-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nk-Nv-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nl-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nt-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nw-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nd-Nw-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nfe-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ni-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ni-Nfn-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nl-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Ne-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nfex_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nw-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfex_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Ni_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nfex_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nw-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nwe-Nfnap_80
+
+Nkeqm  (2 systems)
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm_80
+
+Nx  (61 systems)
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPC80POPS20_W_WF.2/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80
+    POPC60CHOL40_W_WF/run_0/Na-Na-Na_80
+    POPC60CHOL40_W_WF/run_0/Na-Nab-Ni_80
+    POPC60CHOL40_W_WF/run_0/Nf-Na-Nfex_80
+    POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Nd_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nf-Nm-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Na-Nd_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80
+    POPC80POPS20_W_WF/run_0/Na-Nab-Ni_80
+    POPC80POPS20_W_WF/run_0/Nf-Na-Nfex_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80
+    POPE75POPG25_W_WF/run_0/Na-Nab-Ni_80
+    POPE75POPG25_W_WF/run_0/Nf-Na-Nfex_80
+    POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Nd_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nf-Nm-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Na-Nd_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80
+
+==============================================================================
+3. ACTUAL GRO NAMES NOT RECOGNISED BY Photograph_components.tcl
+==============================================================================
+
+NfeB4  (23 systems)
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../2x - 3x PME ERROR/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPC80POPS20_W_WF.2/run_0/Nke-NfeB4-Nwe_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_0/Nwe-NfeB4-Nke_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nd-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-NfeB4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/NfeB4-Nk-Nn_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nn-NfeB4-Nwe_80
+    POPC80POPS20_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPC80POPS20_W_WF/run_0/Nwe-NfeB4-Nke_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_01/Nn-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_0/Nke-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_0/Nwe-NfeB4-Nke_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nd-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-NfeB4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/NfeB4-Nk-Nn_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nn-NfeB4-Nwe_80
+
+NfeC4  (26 systems)
+    POPC60CHOL40_W_WF/run_0/NfeC4-Nf-NmO_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPC60CHOL40_W_WF/run_0/Nm-NfeC4-Ni_80
+    POPC60CHOL40_W_WF/run_0/Nw-NfeC4-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-NfeC4-Nfn_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-NfeC4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nke-Ni-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+    POPC80POPS20_W_WF/run_0/NfeC4-Nf-NmO_80
+    POPC80POPS20_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPC80POPS20_W_WF/run_0/Nm-NfeC4-Ni_80
+    POPC80POPS20_W_WF/run_0/Nw-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_0/NfeC4-Nf-NmO_80
+    POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_0/Nm-NfeC4-Ni_80
+    POPE75POPG25_W_WF/run_0/Nw-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-NfeC4-Nfn_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-NfeC4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nke-Ni-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+
+Nfnap  (131 systems)
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPC80POPS20_W_WF.2/run_0/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nfex-Nfnap-Nv_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    Old Bilayers/POPE75POPG25_W_WF_22ATall/run_22ATall/Nfex-Nfnap-Nv_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nk-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nn-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_0/Nab-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nf-Nfe-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nf-Nfnap-Nf_80
+    POPC60CHOL40_W_WF/run_0/Nf-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_0/Nfe-Nfnap-Nf_80
+    POPC60CHOL40_W_WF/run_0/Nfe-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_0/Nfex-Nfnap-Nv_80
+    POPC60CHOL40_W_WF/run_0/Nfex-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nfex-Nv-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nfn-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-Nfe-Nm_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPC60CHOL40_W_WF/run_0/Nfnap-Ni-Nfex_80
+    POPC60CHOL40_W_WF/run_0/Ni-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nk-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nk-Nv-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nl-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nt-Ni-Nfnap_80
+    POPC60CHOL40_W_WF/run_0/Nw-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nd-Nw-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nfe-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ni-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Ni-Nfn-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nk-Nl-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Ne-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nfex_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nw-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfex_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Ni_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nk-Nfnap-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nfex_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nw-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nwe-Nfnap_80
+    POPC80POPS20_W_WF/run_0/Nf-Nfe-Nfnap_80
+    POPC80POPS20_W_WF/run_0/Nfe-Nfnap-Nfe_80
+    POPC80POPS20_W_WF/run_0/Nfex-Nfnap-Nv_80
+    POPC80POPS20_W_WF/run_0/Nfex-Ni-Nfnap_80
+    POPC80POPS20_W_WF/run_0/Nfnap-Nfe-Nm_80
+    POPC80POPS20_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nk-Nfnap-Nk_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nn-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_0/Nab-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nf-Nfe-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nf-Nfnap-Nf_80
+    POPE75POPG25_W_WF/run_0/Nf-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_0/Nfe-Nfnap-Nf_80
+    POPE75POPG25_W_WF/run_0/Nfe-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_0/Nfex-Nfnap-Nv_80
+    POPE75POPG25_W_WF/run_0/Nfex-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nfex-Nv-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nfn-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nfnap-Nfe-Nm_80
+    POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+    POPE75POPG25_W_WF/run_0/Nfnap-Ni-Nfex_80
+    POPE75POPG25_W_WF/run_0/Ni-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nk-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nk-Nv-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nl-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nt-Ni-Nfnap_80
+    POPE75POPG25_W_WF/run_0/Nw-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nd-Nw-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nfe-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ni-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Ni-Nfn-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nk-Nl-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nn-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ne-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfe-Nfnap-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfex-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Ne-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nfex_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nw-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfex_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nwe-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Ni_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nl_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nfnap-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nfe_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nl-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nv-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nfex_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nfnap-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nw-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nwe-Nfnap_80
+
+Nkeqm  (2 systems)
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nf-Nf-Nkeqm_80
+
+Nx  (61 systems)
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPC80POPS20_W_WF.2/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    Old Bilayers/POPE75POPG25_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80
+    POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80
+    POPC60CHOL40_W_WF/run_0/Na-Na-Na_80
+    POPC60CHOL40_W_WF/run_0/Na-Nab-Ni_80
+    POPC60CHOL40_W_WF/run_0/Nf-Na-Nfex_80
+    POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Nd_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nf-Nm-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Na-Nd_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+    POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80
+    POPC80POPS20_W_WF/run_0/Na-Nab-Ni_80
+    POPC80POPS20_W_WF/run_0/Nf-Na-Nfex_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80
+    POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80
+    POPE75POPG25_W_WF/run_0/Na-Nab-Ni_80
+    POPE75POPG25_W_WF/run_0/Nf-Na-Nfex_80
+    POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Nd_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nf-Nm-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Na-Nd_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+    POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80
+
+==============================================================================
+4. ACTUAL GRO NAMES NOT PRESENT IN Photograph.py CONFIG
+==============================================================================
+NfeB4          23 systems
+NfeC4          26 systems
+Nfnap         131 systems
+Nkeqm           2 systems
+Nx             61 systems
+
+==============================================================================
+5. SYSTEMS WHERE MOLECULE FOLDER NAMES AND GRO RESNAMES DIFFER
+==============================================================================
+
+Old Bilayers/POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80/Box.gro
+  molecule-name tokens : Na Nf Nr Ns Nw
+  actual GRO N* names  : Nf Nr Ns Nw Nx
+  expected but absent  : Na
+
+Old Bilayers/POPC60CHOL40_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPC60CHOL40_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80/Box.gro
+  molecule-name tokens : Na Ne Nfe Nfnap Nk Nn Nw Ny
+  actual GRO N* names  : Ne Nfe Nfnap Nk Nn Nw Nx Ny
+  expected but absent  : Na
+
+Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPC60CHOL40_W_WF/run_0/failed..../NON STARTERS/post linear vs helical/POPC60CHOL40/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80/Box.gro
+  molecule-name tokens : Na Nf Nr Ns Nw
+  actual GRO N* names  : Nf Nr Ns Nw Nx
+  expected but absent  : Na
+
+Old Bilayers/POPC80POPS20_W_WF.2/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPC80POPS20_W_WF.2/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80/Pull.gro
+  molecule-name tokens : Na Nf Nr Ns Nw
+  actual GRO N* names  : Nf Nr Ns Nw Nx
+  expected but absent  : Na
+
+Old Bilayers/POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80/Pull.gro
+  molecule-name tokens : Na Nf Nr Ns Nw
+  actual GRO N* names  : Nf Nr Ns Nw Nx
+  expected but absent  : Na
+
+Old Bilayers/POPE75POPG25_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/Old Bilayers/POPE75POPG25_W_WF/run_0/Nw-Nfe-Nk-Nn-Ne-Na-Nfnap-Ny_80/Box.gro
+  molecule-name tokens : Na Ne Nfe Nfnap Nk Nn Nw Ny
+  actual GRO N* names  : Ne Nfe Nfnap Nk Nn Nw Nx Ny
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80/Relax.gro
+  molecule-name tokens : Na Nfn Nse
+  actual GRO N* names  : Nfn Nse Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80/Relax.gro
+  molecule-name tokens : Na Nw Nwe
+  actual GRO N* names  : Nw Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80/Relax.gro
+  molecule-name tokens : Na Nwe
+  actual GRO N* names  : Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_0/Na-Na-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Na-Na-Na_80/Box.gro
+  molecule-name tokens : Na
+  actual GRO N* names  : Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_0/Na-Nab-Ni_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Na-Nab-Ni_80/Relax.gro
+  molecule-name tokens : Na Nab Ni
+  actual GRO N* names  : Nab Ni Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_0/Nf-Na-Nfex_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Nf-Na-Nfex_80/Relax.gro
+  molecule-name tokens : Na Nf Nfex
+  actual GRO N* names  : Nf Nfex Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80/Relax.gro
+  molecule-name tokens : Na Nf Nr Ns Nw
+  actual GRO N* names  : Nf Nr Ns Nw Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Na_80/Relax.gro
+  molecule-name tokens : Na
+  actual GRO N* names  : Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Nd_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Na-Nd_80/Relax.gro
+  molecule-name tokens : Na Nd
+  actual GRO N* names  : Nd Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80/Relax.gro
+  molecule-name tokens : Na Nf Nwe
+  actual GRO N* names  : Nf Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80/Relax.gro
+  molecule-name tokens : Na Nfe Nwe
+  actual GRO N* names  : Nfe Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80/Relax.gro
+  molecule-name tokens : Na NfeB4
+  actual GRO N* names  : NfeB4 Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nk
+  actual GRO N* names  : NfeC4 Nk Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nwe
+  actual GRO N* names  : NfeC4 Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80/Relax.gro
+  molecule-name tokens : Na Nfex Nfnap
+  actual GRO N* names  : Nfex Nfnap Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80/Relax.gro
+  molecule-name tokens : Na Nfnap
+  actual GRO N* names  : Nfnap Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nw
+  actual GRO N* names  : NfeC4 Nw Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80/Relax.gro
+  molecule-name tokens : Na Nfn Nse
+  actual GRO N* names  : Nfn Nse Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80/Relax.gro
+  molecule-name tokens : Na Nw Nwe
+  actual GRO N* names  : Nw Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80/Relax.gro
+  molecule-name tokens : Na Nwe
+  actual GRO N* names  : Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Nf-Nm-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nf-Nm-Na_80/Relax.gro
+  molecule-name tokens : Na Nf Nm
+  actual GRO N* names  : Nf Nm Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80/Relax.gro
+  molecule-name tokens : Na Nfnap Nn
+  actual GRO N* names  : Nfnap Nn Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80/Relax.gro
+  molecule-name tokens : Na Nfnap Ni
+  actual GRO N* names  : Nfnap Ni Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Na-Nd_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nse-Na-Nd_80/Relax.gro
+  molecule-name tokens : Na Nd Nse
+  actual GRO N* names  : Nd Nse Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80/Relax.gro
+  molecule-name tokens : Na Ne Nwe
+  actual GRO N* names  : Ne Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nwe
+  actual GRO N* names  : NfeC4 Nwe Nx
+  expected but absent  : Na
+
+POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80/Relax.gro
+  molecule-name tokens : Na Nn Nwe
+  actual GRO N* names  : Nn Nwe Nx
+  expected but absent  : Na
+
+POPC80POPS20_W_WF/run_0/Na-Nab-Ni_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC80POPS20_W_WF/run_0/Na-Nab-Ni_80/Relax.gro
+  molecule-name tokens : Na Nab Ni
+  actual GRO N* names  : Nab Ni Nx
+  expected but absent  : Na
+
+POPC80POPS20_W_WF/run_0/Nf-Na-Nfex_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC80POPS20_W_WF/run_0/Nf-Na-Nfex_80/Relax.gro
+  molecule-name tokens : Na Nf Nfex
+  actual GRO N* names  : Nf Nfex Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nse-Na-Nfn_80/Relax.gro
+  molecule-name tokens : Na Nfn Nse
+  actual GRO N* names  : Nfn Nse Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nw-Na_80/Relax.gro
+  molecule-name tokens : Na Nw Nwe
+  actual GRO N* names  : Nw Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/accidental_duplicates/run_ML_cycle_02/Nwe-Nwe-Na_80/Relax.gro
+  molecule-name tokens : Na Nwe
+  actual GRO N* names  : Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_0/Na-Nab-Ni_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Na-Nab-Ni_80/Relax.gro
+  molecule-name tokens : Na Nab Ni
+  actual GRO N* names  : Nab Ni Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_0/Nf-Na-Nfex_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nf-Na-Nfex_80/Relax.gro
+  molecule-name tokens : Na Nf Nfex
+  actual GRO N* names  : Nf Nfex Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Ns-Na-Nf-Nw-Nw-Nf-Nr-Nf_80/Relax.gro
+  molecule-name tokens : Na Nf Nr Ns Nw
+  actual GRO N* names  : Nf Nr Ns Nw Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Na_80/Relax.gro
+  molecule-name tokens : Na
+  actual GRO N* names  : Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Nd_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Na-Nd_80/Relax.gro
+  molecule-name tokens : Na Nd
+  actual GRO N* names  : Nd Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nf-Nwe_80/Relax.gro
+  molecule-name tokens : Na Nf Nwe
+  actual GRO N* names  : Nf Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfe-Nwe_80/Relax.gro
+  molecule-name tokens : Na Nfe Nwe
+  actual GRO N* names  : Nfe Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeB4-NfeB4_80/Relax.gro
+  molecule-name tokens : Na NfeB4
+  actual GRO N* names  : NfeB4 Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nk_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nk
+  actual GRO N* names  : NfeC4 Nk Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-NfeC4-Nwe_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nwe
+  actual GRO N* names  : NfeC4 Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfex-Nfnap_80/Relax.gro
+  molecule-name tokens : Na Nfex Nfnap
+  actual GRO N* names  : Nfex Nfnap Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nfnap-Nfnap_80/Relax.gro
+  molecule-name tokens : Na Nfnap
+  actual GRO N* names  : Nfnap Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Na-Nw-NfeC4_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nw
+  actual GRO N* names  : NfeC4 Nw Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nse-Na-Nfn_80/Relax.gro
+  molecule-name tokens : Na Nfn Nse
+  actual GRO N* names  : Nfn Nse Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nw-Na_80/Relax.gro
+  molecule-name tokens : Na Nw Nwe
+  actual GRO N* names  : Nw Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Nwe-Nwe-Na_80/Relax.gro
+  molecule-name tokens : Na Nwe
+  actual GRO N* names  : Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Nf-Nm-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nf-Nm-Na_80/Relax.gro
+  molecule-name tokens : Na Nf Nm
+  actual GRO N* names  : Nf Nm Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nfnap-Nn-Na_80/Relax.gro
+  molecule-name tokens : Na Nfnap Nn
+  actual GRO N* names  : Nfnap Nn Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ni-Nfnap-Na_80/Relax.gro
+  molecule-name tokens : Na Nfnap Ni
+  actual GRO N* names  : Nfnap Ni Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Na-Nd_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nse-Na-Nd_80/Relax.gro
+  molecule-name tokens : Na Nd Nse
+  actual GRO N* names  : Nd Nse Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Ne-Na_80/Relax.gro
+  molecule-name tokens : Na Ne Nwe
+  actual GRO N* names  : Ne Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-NfeC4-Na_80/Relax.gro
+  molecule-name tokens : Na NfeC4 Nwe
+  actual GRO N* names  : NfeC4 Nwe Nx
+  expected but absent  : Na
+
+POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80
+  GRO: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nwe-Nn-Na_80/Relax.gro
+  molecule-name tokens : Na Nn Nwe
+  actual GRO N* names  : Nn Nwe Nx
+  expected but absent  : Na
+
+Systems with folder/GRO naming differences: 61
+
+==============================================================================
+6. KNOWN / SUSPECTED ALIAS CHECKS
+==============================================================================
+
+Nfnap  <->  Nfnaph
+  dataset GRO contains Nfnap: True
+  dataset GRO contains Nfnaph: False
+  Photograph.tcl contains Nfnap: False
+  Photograph.tcl contains Nfnaph: True
+
+NfeC4  <->  Nfe4Cl
+  dataset GRO contains NfeC4: True
+  dataset GRO contains Nfe4Cl: False
+  Photograph.tcl contains NfeC4: False
+  Photograph.tcl contains Nfe4Cl: True
+
+NfeB4  <->  Nfe4Br
+  dataset GRO contains NfeB4: True
+  dataset GRO contains Nfe4Br: False
+  Photograph.tcl contains NfeB4: False
+  Photograph.tcl contains Nfe4Br: True
+
+Na  <->  Nx
+  dataset GRO contains Na: True
+  dataset GRO contains Nx: True
+  Photograph.tcl contains Na: True
+  Photograph.tcl contains Nx: False
+
+==============================================================================
+7. N* NAMES IN Photograph.tcl BUT NEVER SEEN IN DATASET GROs
+==============================================================================
+NA
+Negative
+Nfe4Br
+Nfe4Cl
+Nfnaph
+Nq
+
+==============================================================================
+8. HIGH-PRIORITY PHOTOGRAPH.tcl MISMATCH SUMMARY
+==============================================================================
+Residue         Affected systems
+--------------------------------
+Nfnap                        131
+Nx                            61
+NfeC4                         26
+NfeB4                         23
+Nkeqm                          2
+
+==============================================================================
+9. TARGET SYSTEM CHECK: Nfnap-NfeC4-NfeC4
+==============================================================================
+
+POPC60CHOL40_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+  Actual GRO names:
+    NfeC4 Nfnap
+  Unrecognised by Photograph.tcl:
+    NfeC4 Nfnap
+
+POPC80POPS20_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+  Actual GRO names:
+    NfeC4 Nfnap
+  Unrecognised by Photograph.tcl:
+    NfeC4 Nfnap
+
+POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80
+  Actual GRO names:
+    NfeC4 Nfnap
+  Unrecognised by Photograph.tcl:
+    NfeC4 Nfnap
+
+==============================================================================
+AUDIT COMPLETE — READ ONLY
+==============================================================================
+
+No project files were modified.

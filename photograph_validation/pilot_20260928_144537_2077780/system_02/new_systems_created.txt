@@ -1,0 +1,1 @@
+Na-Nab-Ni | nmol=80 | POPC60CHOL40_W_WF | run_0 | Relax | /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/photograph_validation/pilot_20260928_144537_2077780/system_02/Na-Nab-Ni/POPC60CHOL40_W_WF/run_0/Na-Nab-Ni__nmol_80__POPC60CHOL40_W_WF__run_0__bilayer_z025.png

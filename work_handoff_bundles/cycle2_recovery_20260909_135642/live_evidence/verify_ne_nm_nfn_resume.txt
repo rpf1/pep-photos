@@ -1,0 +1,245 @@
+COMMAND:
+python /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/verify_ne_nm_nfn_resume.py
+
+RETURN CODE:
+0
+
+STDOUT:
+====================================================================================================
+NE-NM-NFN READ-ONLY RESUME VERIFICATION
+====================================================================================================
+Project root: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids
+Peptoid:      Ne-Nm-Nfn
+
+====================================================================================================
+SYSTEM: POPE75POPG25_W_WF
+====================================================================================================
+
+RUN:       run_ML_cycle_01
+DIRECTORY: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_01/Ne-Nm-Nfn_80
+EXISTS:    True
+
+    STAGE: Pull
+        MDP:        exists=yes size=3,021 modified=2026-09-02T21:22:21.581230+00:00
+        TPR:        exists=yes size=661,292 modified=2026-09-02T21:22:22.287945+00:00
+        LOG:        exists=yes size=512,153 modified=2026-09-03T15:05:54.763175+00:00
+        CPT:        exists=yes size=624,496 modified=2026-09-03T15:05:54.692054+00:00
+        PREV CPT:   exists=yes size=624,496 modified=2026-09-03T15:05:54.698293+00:00
+        GRO:        exists=yes size=1,791,196 modified=2026-09-03T15:05:54.754141+00:00
+        XTC:        exists=yes size=101,063,552 modified=2026-09-03T15:05:54.701118+00:00
+        dt:         0.02 ps
+        nsteps:     5000000
+        max step:   5000000
+        max time:   100000.0 ps
+        progress:   100.0000%
+        complete:   True
+        resumable:  False
+        finished:   True
+        fatal:      False
+        last CPT step: 5000000
+        performance: 183.472 ns/day
+        log modified UTC: 2026-09-03T15:05:54.763175+00:00
+
+    STAGE: Relax
+        MDP:        exists=yes size=2,074 modified=2026-09-03T23:13:16.968849+00:00
+        TPR:        exists=yes size=634,248 modified=2026-09-03T23:13:18.533639+00:00
+        LOG:        exists=yes size=479,436 modified=2026-09-04T09:42:29.548440+00:00
+        CPT:        exists=yes size=624,892 modified=2026-09-04T09:42:29.492889+00:00
+        PREV CPT:   exists=yes size=624,892 modified=2026-09-04T09:42:29.498401+00:00
+        GRO:        exists=yes size=1,791,196 modified=2026-09-04T09:42:29.543388+00:00
+        XTC:        exists=yes size=101,066,452 modified=2026-09-04T09:42:29.500559+00:00
+        dt:         0.02 ps
+        nsteps:     5000000
+        max step:   5000000
+        max time:   100000.0 ps
+        progress:   100.0000%
+        complete:   True
+        resumable:  False
+        finished:   True
+        fatal:      False
+        last CPT step: 5000000
+        performance: 229.087 ns/day
+        log modified UTC: 2026-09-04T09:42:29.548440+00:00
+
+
+RUN:       run_ML_cycle_02
+DIRECTORY: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80
+EXISTS:    True
+
+    STAGE: Pull
+        MDP:        exists=yes size=3,021 modified=2026-09-01T13:13:58.622035+00:00
+        TPR:        exists=yes size=661,148 modified=2026-09-01T13:13:59.330701+00:00
+        LOG:        exists=yes size=511,381 modified=2026-09-02T17:01:36.484564+00:00
+        CPT:        exists=yes size=624,352 modified=2026-09-02T17:01:36.423183+00:00
+        PREV CPT:   exists=yes size=624,352 modified=2026-09-02T17:01:36.429063+00:00
+        GRO:        exists=yes size=1,790,782 modified=2026-09-02T17:01:36.475387+00:00
+        XTC:        exists=yes size=101,043,988 modified=2026-09-02T17:01:36.431610+00:00
+        dt:         0.02 ps
+        nsteps:     5000000
+        max step:   5000000
+        max time:   100000.0 ps
+        progress:   100.0000%
+        complete:   True
+        resumable:  False
+        finished:   True
+        fatal:      False
+        last CPT step: 5000000
+        performance: 234.697 ns/day
+        log modified UTC: 2026-09-02T17:01:36.484564+00:00
+
+    STAGE: Relax
+        MDP:        exists=yes size=2,074 modified=2026-09-03T23:15:54.342360+00:00
+        TPR:        exists=yes size=634,104 modified=2026-09-03T23:15:55.060272+00:00
+        LOG:        exists=yes size=479,377 modified=2026-09-04T14:02:16.196497+00:00
+        CPT:        exists=yes size=624,748 modified=2026-09-04T14:02:16.146630+00:00
+        PREV CPT:   exists=yes size=624,748 modified=2026-09-04T14:02:16.152297+00:00
+        GRO:        exists=yes size=1,790,782 modified=2026-09-04T14:02:16.191640+00:00
+        XTC:        exists=yes size=101,041,300 modified=2026-09-04T14:02:16.154230+00:00
+        dt:         0.02 ps
+        nsteps:     5000000
+        max step:   5000000
+        max time:   100000.0 ps
+        progress:   100.0000%
+        complete:   True
+        resumable:  False
+        finished:   True
+        fatal:      False
+        last CPT step: 5000000
+        performance: 236.701 ns/day
+        log modified UTC: 2026-09-04T14:02:16.196497+00:00
+
+====================================================================================================
+SYSTEM: POPC60CHOL40_W_WF
+====================================================================================================
+
+RUN:       run_ML_cycle_01
+DIRECTORY: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_01/Ne-Nm-Nfn_80
+EXISTS:    True
+
+    STAGE: Pull
+        MDP:        exists=yes size=3,021 modified=2026-09-02T21:22:07.708879+00:00
+        TPR:        exists=yes size=696,272 modified=2026-09-02T21:22:08.414488+00:00
+        LOG:        exists=yes size=85,959 modified=2026-09-04T13:15:07.644286+00:00
+        CPT:        exists=yes size=653,112 modified=2026-09-04T13:15:07.828450+00:00
+        PREV CPT:   exists=yes size=653,112 modified=2026-09-04T13:15:07.832356+00:00
+        GRO:        MISSING
+        XTC:        exists=yes size=11,094,792 modified=2026-09-04T13:12:14.399944+00:00
+        dt:         0.02 ps
+        nsteps:     5000000
+        max step:   530000
+        max time:   10600.0 ps
+        progress:   10.6000%
+        complete:   False
+        resumable:  True
+        finished:   False
+        fatal:      False
+        last CPT step: 530700
+        performance: None ns/day
+        log modified UTC: 2026-09-04T13:15:07.644286+00:00
+
+    STAGE: Relax
+        MDP:        MISSING
+        TPR:        MISSING
+        LOG:        MISSING
+        CPT:        MISSING
+        PREV CPT:   MISSING
+        GRO:        MISSING
+        XTC:        MISSING
+        dt:         None ps
+        nsteps:     None
+        max step:   None
+        max time:   None ps
+        progress:   -
+        complete:   False
+        resumable:  False
+        finished:   False
+        fatal:      False
+        last CPT step: None
+        performance: None ns/day
+        log modified UTC: None
+
+
+RUN:       run_ML_cycle_02
+DIRECTORY: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80
+EXISTS:    True
+
+    STAGE: Pull
+        MDP:        exists=yes size=3,021 modified=2026-09-01T13:13:44.082545+00:00
+        TPR:        exists=yes size=696,176 modified=2026-09-01T13:13:44.882323+00:00
+        LOG:        exists=yes size=141,006 modified=2026-09-04T13:16:07.626654+00:00
+        CPT:        exists=yes size=653,016 modified=2026-09-04T13:16:07.772562+00:00
+        PREV CPT:   exists=yes size=653,016 modified=2026-09-04T13:16:07.783689+00:00
+        GRO:        MISSING
+        XTC:        exists=yes size=21,369,856 modified=2026-09-04T13:11:59.770266+00:00
+        dt:         0.02 ps
+        nsteps:     5000000
+        max step:   1025000
+        max time:   20500.0 ps
+        progress:   20.5000%
+        complete:   False
+        resumable:  True
+        finished:   False
+        fatal:      False
+        last CPT step: 1026340
+        performance: None ns/day
+        log modified UTC: 2026-09-04T13:16:07.626654+00:00
+
+    STAGE: Relax
+        MDP:        MISSING
+        TPR:        MISSING
+        LOG:        MISSING
+        CPT:        MISSING
+        PREV CPT:   MISSING
+        GRO:        MISSING
+        XTC:        MISSING
+        dt:         None ps
+        nsteps:     None
+        max step:   None
+        max time:   None ps
+        progress:   -
+        complete:   False
+        resumable:  False
+        finished:   False
+        fatal:      False
+        last CPT step: None
+        performance: None ns/day
+        log modified UTC: None
+
+====================================================================================================
+CURRENT SLURM JOBS
+====================================================================================================
+No current Slurm jobs matched Ne-Nm-Nfn.
+
+====================================================================================================
+HISTORICAL SLURM JOBS
+====================================================================================================
+8016253|Ne-Nm-Nfn_80-Pull-POPC60CHOL40_W_WF-W_WF_runML_cycle_02-FF2.1|CANCELLED by 6331|0:0|2026-09-02T07:45:58|2026-09-04T14:28:01|2-06:42:03
+8016258|Ne-Nm-Nfn_80-Pull-POPE75POPG25_W_WF-W_WF_runML_cycle_02-FF2.1|COMPLETED|0:0|2026-09-02T07:47:59|2026-09-02T18:01:36|10:13:37
+8024748|Ne-Nm-Nfn_80-Pull-POPC60CHOL40_W_WF-W_WF_runML_cycle_01-FF2.1|CANCELLED by 6331|0:0|2026-09-03T01:44:59|2026-09-04T14:28:01|1-12:43:02
+8024749|Ne-Nm-Nfn_80-Pull-POPE75POPG25_W_WF-W_WF_runML_cycle_01-FF2.1|COMPLETED|0:0|2026-09-03T03:00:59|2026-09-03T16:05:54|13:04:55
+8027036|Ne-Nm-Nfn_80-Relax-POPE75POPG25_W_WF-W_WF_runML_cycle_01-FF2.1|COMPLETED|0:0|2026-09-04T00:13:49|2026-09-04T10:42:29|10:28:40
+8027067|Ne-Nm-Nfn_80-Relax-POPE75POPG25_W_WF-W_WF_runML_cycle_02-FF2.1|COMPLETED|0:0|2026-09-04T04:53:49|2026-09-04T15:02:16|10:08:27
+
+====================================================================================================
+AUTOMATIC COMPARISON
+====================================================================================================
+Cycle-1 POPC Pull progress: 10.6
+Cycle-2 POPC Pull progress: 20.5
+Cycle-2 POPE Pull complete: True
+Cycle-2 POPE Relax complete: True
+
+====================================================================================================
+VERDICT
+====================================================================================================
+PASS: Cycle-2 POPC Pull has an incomplete non-zero trajectory and a usable Pull.cpt.
+PASS: Cycle-2 POPC Pull is further progressed than the accidental Cycle-1 copy.
+
+CANONICAL RESUME CANDIDATE:
+/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_ML_cycle_02/Ne-Nm-Nfn_80/Pull.cpt
+
+PASS: Cycle-2 POPE physical simulation is complete. Do not submit another POPE Pull or Relax job.
+
+No files were modified and no jobs were submitted.
+
+
+STDERR:

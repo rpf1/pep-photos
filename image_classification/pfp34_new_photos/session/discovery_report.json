@@ -1,0 +1,236 @@
+{
+  "already_labelled_count": 461,
+  "already_labelled_systems": 461,
+  "audit_basis": "Provided hierarchy; actual dataset must be checked on its host.",
+  "changed_source_records": [
+    {
+      "problem": "No supported image files in system directory.",
+      "relative_path": "Nl-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada",
+      "target": "system"
+    },
+    {
+      "problem": "No supported image files in system directory.",
+      "relative_path": "Nl-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada",
+      "target": "system"
+    }
+  ],
+  "common_filename_patterns": [
+    [
+      "LEGACY__Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_#__POPC#CHOL#_W_WF__run_length_effect__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nl-Ns-Nf-Nm-Nr-Nf-Nf-Nf__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_#__POPC#CHOL#_W_WF__run_length_effect__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_#__POPC#CHOL#_W_WF__run_length_effect__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_#__POPC#CHOL#_W_WF__run_length_effect__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nl-Nt-Nk-Nf-Nf-Nf-Nm-Nm__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      3
+    ],
+    [
+      "LEGACY__Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex-Nk-Nfex-Nfex__nmol_#__POPC#CHOL#_W_WF__run_length_effect__bilayer_z#.png",
+      2
+    ],
+    [
+      "NEW#__Ne-NfeC#-Nfn__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Ne-NfeC#-Nfn__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nw-Nfnap-Nfe__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "LEGACY__Nw-Nfnap-Nfe__nmol_#__POPC#CHOL#_W_WF__run_First_predictions-#_#_#_ada__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nw-Nfnap-Nfe__nmol_#__POPE#POPG#_W_WF__run_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "LEGACY__Nw-Nfnap-Nfe__nmol_#__POPE#POPG#_W_WF__run_First_predictions-#_#_#_ada__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nk-Nw-Nl__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nk-Nw-Nl__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "LEGACY__RVHIRLWI__nmol_#__POPC#CHOL#_W_WF__run_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "LEGACY__RVHIRLWI__nmol_#__POPE#POPG#_W_WF__run_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nwe-Nfn-Ni__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nwe-Nfn-Ni__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nf-Nw-Nl__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nf-Nw-Nl__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nfnap-Nn-Na__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nfnap-Nn-Na__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nn-Nse-Nv__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nn-Nse-Nv__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nfex-Nfnap-Nk__nmol_#__POPC#CHOL#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ],
+    [
+      "NEW#__Nfex-Nfnap-Nk__nmol_#__POPE#POPG#_W_WF__run_ML_cycle_#__bilayer_z#.png",
+      1
+    ]
+  ],
+  "configured_included_bilayers": [
+    "POPC60CHOL40_W_WF",
+    "POPC80POPS20_W_WF",
+    "POPE75POPG25_W_WF"
+  ],
+  "distinct_bilayer_names": [
+    "POPC60CHOL40_W_WF",
+    "POPC80POPS20_W_WF",
+    "POPE75POPG25_W_WF"
+  ],
+  "distinct_run_names": [
+    "run_0",
+    "run_First_predictions-20260813_190947_583893_ada",
+    "run_ML_cycle_01",
+    "run_ML_cycle_02",
+    "run_Nk-Nfex-Nfex_rerun_test",
+    "run_length_effect"
+  ],
+  "duplicate_logical_records": [],
+  "duplicate_paths": [],
+  "empty_run_directories": [
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_new_photos/images/Nl-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada",
+    "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_new_photos/images/Nl-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada"
+  ],
+  "exact_content_duplicates": [],
+  "excluded_bilayers": [],
+  "excluded_directories": [],
+  "excluded_saved_records": [],
+  "excluded_systems": [],
+  "excluded_systems_found": 0,
+  "extensions_present": {
+    ".png": 559
+  },
+  "files_in_multiple_groups": [],
+  "generated_at": "2026-09-28T16:40:22.434+00:00",
+  "image_root": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_new_photos/images",
+  "images_found": 559,
+  "images_per_system_distribution": {
+    "0": 2,
+    "1": 495,
+    "2": 17,
+    "3": 6,
+    "4": 3
+  },
+  "included_bilayers": [
+    "POPC60CHOL40_W_WF",
+    "POPC80POPS20_W_WF",
+    "POPE75POPG25_W_WF"
+  ],
+  "issues": [
+    {
+      "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_new_photos/images/Nl-Ni-Nfnap/POPC60CHOL40_W_WF/run_First_predictions-20260813_190947_583893_ada",
+      "problem": "No supported image files in system directory."
+    },
+    {
+      "path": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/image_classification/pfp34_new_photos/images/Nl-Ni-Nfnap/POPE75POPG25_W_WF/run_First_predictions-20260813_190947_583893_ada",
+      "problem": "No supported image files in system directory."
+    }
+  ],
+  "legacy_stacked": [],
+  "malformed_paths": [],
+  "molecule_directories": 214,
+  "physical_systems_found": 523,
+  "readable_images": 559,
+  "registered_annotation_units": 523,
+  "root_available": true,
+  "saved_annotation_status_counts": {
+    "labelled": 461,
+    "skipped": 7,
+    "uncertain": 5,
+    "unlabelled": 50
+  },
+  "saved_records_with_missing_sources": [],
+  "systems_by_bilayer_type": {
+    "POPC60CHOL40_W_WF": 245,
+    "POPC80POPS20_W_WF": 38,
+    "POPE75POPG25_W_WF": 240
+  },
+  "systems_by_membrane_role": {
+    "POPC80POPS20": 38,
+    "bacterial_like": 240,
+    "mammalian_like": 245
+  },
+  "systems_by_run": {
+    "run_0": 205,
+    "run_First_predictions-20260813_190947_583893_ada": 30,
+    "run_ML_cycle_01": 113,
+    "run_ML_cycle_02": 167,
+    "run_Nk-Nfex-Nfex_rerun_test": 3,
+    "run_length_effect": 5
+  },
+  "total_candidate_image_files": 559,
+  "unknown_bilayer_types": [],
+  "unlabelled_current_units": 50,
+  "unlabelled_systems": 50,
+  "unreadable_image_details": [],
+  "unreadable_images": 0
+}

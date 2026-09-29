@@ -1,0 +1,107 @@
+{
+  "Nn-Nw-Nwe": {
+    "peptoid": "Nn-Nw-Nwe",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 107
+  },
+  "Nn-Nwe-Nwe": {
+    "peptoid": "Nn-Nwe-Nwe",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 108
+  },
+  "Nn-NfeB4-Nwe": {
+    "peptoid": "Nn-NfeB4-Nwe",
+    "canonical_run": "run_ML_cycle_02",
+    "noncanonical_run": "run_ML_cycle_01",
+    "reason": "NO_PRIOR_PREFERRED_OBSERVATION_KEEP_CORRECTED_D2",
+    "preferred_observation_id": null
+  },
+  "Nwe-Nw-Na": {
+    "peptoid": "Nwe-Nw-Na",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 111
+  },
+  "Nn-Nfnap-Nwe": {
+    "peptoid": "Nn-Nfnap-Nwe",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 106
+  },
+  "Nk-Nw-Nwe": {
+    "peptoid": "Nk-Nw-Nwe",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 104
+  },
+  "Nk-Nk-Nwe": {
+    "peptoid": "Nk-Nk-Nwe",
+    "canonical_run": "run_ML_cycle_02",
+    "noncanonical_run": "run_ML_cycle_01",
+    "reason": "NO_PRIOR_PREFERRED_OBSERVATION_KEEP_CORRECTED_D2",
+    "preferred_observation_id": null
+  },
+  "Nk-Nfnap-Nk": {
+    "peptoid": "Nk-Nfnap-Nk",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 102
+  },
+  "Nwe-Nwe-Na": {
+    "peptoid": "Nwe-Nwe-Na",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 112
+  },
+  "Nk-Nw-Nk": {
+    "peptoid": "Nk-Nw-Nk",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 103
+  },
+  "Nse-Na-Nfn": {
+    "peptoid": "Nse-Na-Nfn",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 109
+  },
+  "Nse-Nfn-Nfn": {
+    "peptoid": "Nse-Nfn-Nfn",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 110
+  },
+  "Nse-Nm-Nfn": {
+    "peptoid": "Nse-Nm-Nfn",
+    "canonical_run": "run_ML_cycle_02",
+    "noncanonical_run": "run_ML_cycle_01",
+    "reason": "NO_PRIOR_PREFERRED_OBSERVATION_KEEP_CORRECTED_D2",
+    "preferred_observation_id": null
+  },
+  "Ne-Nm-Nfn": {
+    "peptoid": "Ne-Nm-Nfn",
+    "canonical_run": "run_ML_cycle_02",
+    "noncanonical_run": "run_ML_cycle_01",
+    "reason": "NO_PRIOR_PREFERRED_OBSERVATION_KEEP_CORRECTED_D2",
+    "preferred_observation_id": null
+  },
+  "Nm-Nse-Nfn": {
+    "peptoid": "Nm-Nse-Nfn",
+    "canonical_run": "run_ML_cycle_01",
+    "noncanonical_run": "run_ML_cycle_02",
+    "reason": "REUSE_EXISTING_PREFERRED_CYCLE1_OBSERVATION",
+    "preferred_observation_id": 105
+  }
+}

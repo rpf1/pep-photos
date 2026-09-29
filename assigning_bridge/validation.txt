@@ -1,0 +1,19 @@
+
+READY — use this launcher from now on:
+bash /tmp/tmprnvc469r/analysis/image_classification/pfp34_new_photos/START_ANNOTATING.sh
+{
+  "systems": 2,
+  "versions": {
+    "NEW10": 1,
+    "LEGACY": 1
+  },
+  "annotation_status_counts": {
+    "labelled": 1,
+    "unlabelled": 1
+  },
+  "old_session": "/tmp/tmprnvc469r/analysis/image_classification/pfp34_v2/membrane_session",
+  "new_session": "/tmp/tmprnvc469r/analysis/image_classification/pfp34_new_photos/session",
+  "historical_events_preserved": 1
+}
+Unresolved audit: /tmp/tmprnvc469r/analysis/image_classification/pfp34_new_photos/unresolved_audit.json
+PASS: clone, mixed NEW10/LEGACY images, labels/notes/order/history unchanged, evidence guards, undo boundary, new decision/undo/save/reopen.

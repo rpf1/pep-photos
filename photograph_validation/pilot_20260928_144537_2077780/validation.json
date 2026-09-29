@@ -1,0 +1,82 @@
+[
+  {
+    "gro": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nfnap-NfeC4-NfeC4_80/Relax.gro",
+    "total_atoms": 26537,
+    "polymer_atoms": 1440,
+    "residues": {
+      "Nfnap": {
+        "category": "pto_aromatic",
+        "atoms": 480
+      },
+      "NfeC4": {
+        "category": "pto_aromatic",
+        "atoms": 960
+      }
+    },
+    "gro_sha256": "7ebce7268899ecdac7076edf4d3fbb6e0137f0988e43c2da95619287cb035057",
+    "ten_panels_verified": true
+  },
+  {
+    "gro": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPC60CHOL40_W_WF/run_0/Na-Nab-Ni_80/Relax.gro",
+    "total_atoms": 27039,
+    "polymer_atoms": 400,
+    "residues": {
+      "Nx": {
+        "category": "pto_hydrophobic",
+        "atoms": 80
+      },
+      "Nab": {
+        "category": "pto_hydrophobic",
+        "atoms": 160
+      },
+      "Ni": {
+        "category": "pto_hydrophobic",
+        "atoms": 160
+      }
+    },
+    "gro_sha256": "4519f3cd648844a702d328091f4d866b35871f9c6d440c1acc93890c4764365b",
+    "ten_panels_verified": true
+  },
+  {
+    "gro": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_0/Nwe-NfeB4-Nke_80/Relax.gro",
+    "total_atoms": 26350,
+    "polymer_atoms": 1120,
+    "residues": {
+      "Nwe": {
+        "category": "pto_aromatic",
+        "atoms": 480
+      },
+      "NfeB4": {
+        "category": "pto_aromatic",
+        "atoms": 480
+      },
+      "Nke": {
+        "category": "pto_positive",
+        "atoms": 160
+      }
+    },
+    "gro_sha256": "af14ef8828e10541dc784f97a527772353b464dc48d74109ac2b0fdc0247e2ee",
+    "ten_panels_verified": true
+  },
+  {
+    "gro": "/users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/Boxes/2.1/POPE75POPG25_W_WF/run_ML_cycle_02/Nk-Nm-Nke_80/Relax.gro",
+    "total_atoms": 25971,
+    "polymer_atoms": 560,
+    "residues": {
+      "Nk": {
+        "category": "pto_positive",
+        "atoms": 240
+      },
+      "Nm": {
+        "category": "pto_hydrophobic",
+        "atoms": 160
+      },
+      "Nke": {
+        "category": "pto_positive",
+        "atoms": 160
+      }
+    },
+    "gro_sha256": "1f596fb5ef022ddcc35a94a5eeccd3b885b00f37a12c91e2b265b0df7248e3ef",
+    "ten_panels_verified": true
+  }
+]

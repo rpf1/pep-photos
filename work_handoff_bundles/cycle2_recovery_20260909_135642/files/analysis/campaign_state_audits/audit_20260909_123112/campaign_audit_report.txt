@@ -1,0 +1,455 @@
+PFPEPTOIDS CONSOLIDATED CYCLE-1/CYCLE-2 CAMPAIGN AUDIT
+Generated UTC: 2026-09-09T11:31:47.648111+00:00
+Safety: read-only project inspection; no simulation, APLAnalysis, sync, training, selection, or submission.
+Project root: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids
+Detailed CSV: /users/pfb19164/Desktop/post_medical_leave/PFPeptoids/PFPeptoids/analysis/campaign_state_audits/audit_20260909_123112/campaign_stage_state.csv
+
+==============================================================================================================
+1. SOURCE AND SCHEMA CHECKS
+==============================================================================================================
+SQLite integrity_check: ok
+masterdata rows: 309
+masterdata detected columns: {'id': 'molecule_name', 'system': 'system_key', 'analysis_complete': 'analysis_complete', 'reached_100ns': 'reached_100ns', 'timepoint_100ns': 'timepoint_100ns_found', 'apl': 'APL_change'}
+workflow.py SHA256: 20ea9479f173ed29eed5ebb7347db8d0f0e3a80fe2e913237f28a50f11ad1ef8
+workflow hash verdict: PASS
+model_search_config.json: valid JSON; top-level keys=['Model0', '_example_Model3B', '_example_global_only_parent_winner', '_notes', 'default']
+current Slurm: matched 0 simulation jobs
+Slurm history: matched 386 accounting rows since 2026-08-01
+
+==============================================================================================================
+2. CANONICAL LINEAGE ASSERTIONS
+==============================================================================================================
+Assertion                                   Result  Observed/detail                           
+------------------------------------------  ------  ------------------------------------------
+SQLite integrity_check                      PASS    ok                                        
+workflow.py matches authoritative 2026-...  PASS    20ea9479f173ed29eed5ebb7347db8d0f0e3a80...
+Cycle-1 A-E canonical union = 38            PASS    38                                        
+Cycle-1 B has 15                            PASS    15                                        
+Corrected B1 contains Nf-Nfe-Nm             PASS    True                                      
+Corrected B1 excludes Nf-Nf-Nkeqm           PASS    False                                     
+Cycle-2 A has 15                            PASS    15                                        
+Canonical Cycle-2 B is empty                PASS    0                                         
+Cycle-2 D exact corrected set               PASS    missing=[]; extra=[]                      
+No duplicate active D selection rows        PASS    {}                                        
+No D1/D2 identity overlap                   PASS    []                                        
+No simultaneous overlapping D job inter...  FAIL    {"('Ne-Nm-Nfn', 'POPC60CHOL40_W_WF', 'P...
+
+==============================================================================================================
+3. CANONICAL SELECTION COUNTS
+==============================================================================================================
+Cycle  Strategy  Selected unique IDs
+-----  --------  -------------------
+1      A         15                 
+1      B         15                 
+1      C         15                 
+1      D         15                 
+1      E         15                 
+2      A         15                 
+2      B         0                  
+2      C         0                  
+2      D         15                 
+2      E         0                  
+2      F         0                  
+2      G         0                  
+
+==============================================================================================================
+4. CANONICAL ACQUISITION STATE SUMMARY
+==============================================================================================================
+Acquisition state                   Unique cycle/ID records
+----------------------------------  -----------------------
+PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  9                      
+PHYSICAL_INCOMPLETE                 10                     
+SYNCED_REAL_OBSERVATION             49                     
+
+==============================================================================================================
+5. CANONICAL STAGE ACTION SUMMARY
+==============================================================================================================
+Recommended action                          Stage rows
+------------------------------------------  ----------
+BLOCKED_UNTIL_PULL_COMPLETE                 1         
+NONE_ALREADY_SYNCED                         193       
+NONE_ANALYSED_PHYSICAL_RESULT_EXISTS        6         
+NONE_STAGE_COMPLETE                         34        
+RESUME_PULL_FROM_CHECKPOINT                 1         
+RESUME_RELAX_FROM_CHECKPOINT                8         
+REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...  3         
+RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        20        
+SETUP_RELAX_REQUIRED                        6         
+
+==============================================================================================================
+6. PER-ID CANONICAL STATE
+==============================================================================================================
+Cycle  Strategies  Peptoid         Gate     Acquisition state                   Outstanding actions                       
+-----  ----------  --------------  -------  ----------------------------------  ------------------------------------------
+1      B           Na-Na-Na        -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-Na-Nd        -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-Nf-Nwe       -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B/C/E       Na-Nfe-Nwe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-NfeB4-NfeB4  -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-NfeC4-Nk     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-NfeC4-Nwe    -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/B/D       Na-Nfex-Nfnap   -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-Nfnap-Nfnap  -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Na-Nw-NfeC4     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/D/E       Nd-Nfe-Nwe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Nd-NfeB4-Nwe    -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/D/E       Nd-Nw-Nfnap     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/D/E       Nd-Nw-Nwe       -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/D/E       Nd-Nwe-Nfe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/D         Nd-Nwe-Nwe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Nf-Nfe-Nm       B1_GATE  SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Nf-Nfe-Nwe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/E         Nf-Nfex-Nk      CE_GATE  SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/E         Nf-Ni-Nwe       CE_GATE  SYNCED_REAL_OBSERVATION             NONE                                      
+1      C/E         Nf-Nl-Nwe       CE_GATE  SYNCED_REAL_OBSERVATION             NONE                                      
+1      C           Nf-Nw-Nl        CE_GATE  SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Nfe-Nfe-Nv      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/C/D/E     Nfe-Nfex-Nk     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/C/D/E     Nfe-Nv-Nwe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/C/D/E     Nfex-Nfe-Nk     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/C/D/E     Nfex-Nfex-Nk    -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A           Nfex-Nfn-Nk     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/C/D/E     Nfex-Nv-Nwe     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A           Nfn-Nfex-Nk     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A           Ni-Nfex-Nfnap   -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A           Ni-Nfn-Nfnap    -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A           Nk-Nfex-Nf      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/D/E       Nk-Nfex-Nfe     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      B           Nk-Ni-Nfex      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/D/E       Nk-Nl-Nfnap     -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/D         Nwe-Nfn-Nl      -        SYNCED_REAL_OBSERVATION             NONE                                      
+1      A/D         Nwe-Ni-Nf       -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Ne-Nm-Nfn       -        PHYSICAL_INCOMPLETE                 BLOCKED_UNTIL_PULL_COMPLETE;RESUME_PULL...
+2      A           Nfe-Nfnap-Nl    -        PHYSICAL_INCOMPLETE                 RESUME_RELAX_FROM_CHECKPOINT;RUN_APL_AN...
+2      A           Nfe-Nw-Nl       -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      A           Nfex-Nfnap-Nk   -        PHYSICAL_INCOMPLETE                 RESUME_RELAX_FROM_CHECKPOINT;RUN_APL_AN...
+2      A           Ni-Nfnap-Nk     -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      A           Ni-Nfnap-Nl     -        PHYSICAL_INCOMPLETE                 RESUME_RELAX_FROM_CHECKPOINT              
+2      A           Nk-Nfex-Nfnap   -        PHYSICAL_INCOMPLETE                 RESUME_RELAX_FROM_CHECKPOINT              
+2      A           Nk-Nfnap-Nfe    -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      A           Nk-Nfnap-Ni     -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      D           Nk-Nfnap-Nk     -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      A           Nk-Nfnap-Nl     -        PHYSICAL_INCOMPLETE                 RESUME_RELAX_FROM_CHECKPOINT;RUN_APL_AN...
+2      D           Nk-Nk-Nwe       -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      A           Nk-Nv-Nwe       -        PHYSICAL_INCOMPLETE                 RESUME_RELAX_FROM_CHECKPOINT;RUN_APL_AN...
+2      D           Nk-Nw-Nk        -        SYNCED_REAL_OBSERVATION             REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...
+2      A           Nk-Nw-Nl        -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      D           Nk-Nw-Nwe       -        SYNCED_REAL_OBSERVATION             REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...
+2      A           Nl-Nfnap-Nfe    -        PHYSICAL_INCOMPLETE                 SETUP_RELAX_REQUIRED                      
+2      A           Nl-Nfnap-Nk     -        PHYSICAL_INCOMPLETE                 SETUP_RELAX_REQUIRED                      
+2      A           Nl-Nv-Nwe       -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      D           Nm-Nse-Nfn      -        SYNCED_REAL_OBSERVATION             REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...
+2      D           Nn-NfeB4-Nwe    -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      D           Nn-Nfnap-Nwe    -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Nn-Nw-Nwe       -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Nn-Nwe-Nwe      -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Nse-Na-Nfn      -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Nse-Nfn-Nfn     -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Nse-Nm-Nfn      -        PHYSICAL_COMPLETE_RUN_APL_ANALYSIS  RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE      
+2      A           Nv-Nfnap-Nk     -        PHYSICAL_INCOMPLETE                 SETUP_RELAX_REQUIRED                      
+2      D           Nwe-Nw-Na       -        SYNCED_REAL_OBSERVATION             NONE                                      
+2      D           Nwe-Nwe-Na      -        SYNCED_REAL_OBSERVATION             NONE                                      
+
+==============================================================================================================
+7. ACTIONABLE PHYSICAL STAGES
+==============================================================================================================
+Cycle  Strategies  Peptoid        System             Stage  Step     %        Action                                      Current jobs
+-----  ----------  -------------  -----------------  -----  -------  -------  ------------------------------------------  ------------
+2      D           Ne-Nm-Nfn      POPC60CHOL40_W_WF  Pull   1025000  20.5     RESUME_PULL_FROM_CHECKPOINT                 -           
+2      A           Nfe-Nfnap-Nl   POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nfe-Nfnap-Nl   POPC60CHOL40_W_WF  Relax  800000   16.0     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Nfe-Nw-Nl      POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nfe-Nw-Nl      POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nfex-Nfnap-Nk  POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nfex-Nfnap-Nk  POPC60CHOL40_W_WF  Relax  1105000  22.1     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Ni-Nfnap-Nk    POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Ni-Nfnap-Nk    POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Ni-Nfnap-Nl    POPE75POPG25_W_WF  Relax  965000   19.3     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Ni-Nfnap-Nl    POPC60CHOL40_W_WF  Relax  1010000  20.2     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Nk-Nfex-Nfnap  POPE75POPG25_W_WF  Relax  1035000  20.7     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Nk-Nfex-Nfnap  POPC60CHOL40_W_WF  Relax  820000   16.4     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Nk-Nfnap-Nfe   POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nfnap-Nfe   POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nfnap-Ni    POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nfnap-Ni    POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nfnap-Nl    POPE75POPG25_W_WF  Relax  985000   19.7     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      A           Nk-Nfnap-Nl    POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      D           Nk-Nk-Nwe      POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nv-Nwe      POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nv-Nwe      POPC60CHOL40_W_WF  Relax  875000   17.5     RESUME_RELAX_FROM_CHECKPOINT                -           
+2      D           Nk-Nw-Nk       POPE75POPG25_W_WF  Pull   1150000  23.0     REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...  -           
+2      A           Nk-Nw-Nl       POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nk-Nw-Nl       POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      D           Nk-Nw-Nwe      POPC60CHOL40_W_WF  Pull   2018840  40.3768  REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...  -           
+2      A           Nl-Nfnap-Nfe   POPE75POPG25_W_WF  Relax  -        -        SETUP_RELAX_REQUIRED                        -           
+2      A           Nl-Nfnap-Nfe   POPC60CHOL40_W_WF  Relax  -        -        SETUP_RELAX_REQUIRED                        -           
+2      A           Nl-Nfnap-Nk    POPE75POPG25_W_WF  Relax  -        -        SETUP_RELAX_REQUIRED                        -           
+2      A           Nl-Nfnap-Nk    POPC60CHOL40_W_WF  Relax  -        -        SETUP_RELAX_REQUIRED                        -           
+2      A           Nl-Nv-Nwe      POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nl-Nv-Nwe      POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      D           Nm-Nse-Nfn     POPC60CHOL40_W_WF  Pull   1075000  21.5     REVIEW_REAL_OBSERVATION_PLUS_INCOMPLETE...  -           
+2      D           Nn-NfeB4-Nwe   POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      D           Nn-NfeB4-Nwe   POPC60CHOL40_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      D           Nse-Nm-Nfn     POPE75POPG25_W_WF  Relax  5000000  100.0    RUN_APL_ANALYSIS_AFTER_PAIR_COMPLETE        -           
+2      A           Nv-Nfnap-Nk    POPE75POPG25_W_WF  Relax  -        -        SETUP_RELAX_REQUIRED                        -           
+2      A           Nv-Nfnap-Nk    POPC60CHOL40_W_WF  Relax  -        -        SETUP_RELAX_REQUIRED                        -           
+
+==============================================================================================================
+8. NONCANONICAL LIVE PHYSICAL DIRECTORIES
+==============================================================================================================
+Cycle  Peptoid        Systems with live directory        
+-----  -------------  -----------------------------------
+1      Ne-Nf-Nwe      POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Ne-Nfe-Nfnap   POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Ne-Nfe-Nwe     POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Ne-Nfex-Nfnap  POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Ne-Nfnap-Nfe   POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Ne-Nm-Nfn      POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nf-Nf-Nkeqm    POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nk-Nfnap-Nk    POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nk-Nk-Nwe      POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nk-Nw-Nk       POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nk-Nw-Nwe      POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nm-Nse-Nfn     POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nn-NfeB4-Nwe   POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nn-Nfnap-Nwe   POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nn-Nw-Nwe      POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nn-Nwe-Nwe     POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nse-Na-Nfn     POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nse-Nfn-Nfn    POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nse-Nm-Nfn     POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nwe-Nw-Na      POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+1      Nwe-Nwe-Na     POPC60CHOL40_W_WF/POPE75POPG25_W_WF
+These are review-only. Do not delete or submit from this list automatically.
+
+==============================================================================================================
+9. D-LINEAGE DUPLICATION AUDIT
+==============================================================================================================
+D1 unique IDs: 15
+D2 unique IDs: 15
+D1/D2 identity overlap: []
+Duplicate active D selection rows: {}
+
+Live-directory duplication by peptoid and membrane:
+Peptoid       System             Live directories  Paths and progress                        
+------------  -----------------  ----------------  ------------------------------------------
+Ne-Nm-Nfn     POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Ne-Nm-Nfn     POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nfnap-Nk   POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nfnap-Nk   POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nk-Nwe     POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nk-Nwe     POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nw-Nk      POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nw-Nk      POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nw-Nwe     POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nk-Nw-Nwe     POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nm-Nse-Nfn    POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nm-Nse-Nfn    POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-NfeB4-Nwe  POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-NfeB4-Nwe  POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-Nfnap-Nwe  POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-Nfnap-Nwe  POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-Nw-Nwe     POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-Nw-Nwe     POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-Nwe-Nwe    POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nn-Nwe-Nwe    POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nse-Na-Nfn    POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nse-Na-Nfn    POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nse-Nfn-Nfn   POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nse-Nfn-Nfn   POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nse-Nm-Nfn    POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nse-Nm-Nfn    POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nwe-Nw-Na     POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nwe-Nw-Na     POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nwe-Nwe-Na    POPC60CHOL40_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+Nwe-Nwe-Na    POPE75POPG25_W_WF  2                 /users/pfb19164/Desktop/post_medical_le...
+
+Slurm submission history by physical identity/system/stage:
+MULTIPLE_SEQUENTIAL_JOB_IDS is not by itself a duplicate simulation; it can represent cancellation/recovery from one checkpoint.
+OVERLAPPING_JOB_INTERVALS is strong evidence that two allocations ran the same physical stage simultaneously.
+Peptoid        System             Stage  Job IDs                  Classification               Overlaps         Distinct workdirs  Name/path mismatch
+-------------  -----------------  -----  -----------------------  ---------------------------  ---------------  -----------------  ------------------
+Na-Nfex-Nfnap  POPC60CHOL40_W_WF  Pull   7997506                  ONE_JOB_ID                   -                1                  -                 
+Na-Nfex-Nfnap  POPC60CHOL40_W_WF  Relax  8000078                  ONE_JOB_ID                   -                1                  -                 
+Na-Nfex-Nfnap  POPE75POPG25_W_WF  Pull   7997507                  ONE_JOB_ID                   -                1                  -                 
+Na-Nfex-Nfnap  POPE75POPG25_W_WF  Relax  8000079                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nfe-Nwe     POPC60CHOL40_W_WF  Pull   7997551                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nfe-Nwe     POPC60CHOL40_W_WF  Relax  8000084                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nfe-Nwe     POPE75POPG25_W_WF  Pull   7997552                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nfe-Nwe     POPE75POPG25_W_WF  Relax  8000085                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nfnap    POPC60CHOL40_W_WF  Pull   7997571                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nfnap    POPC60CHOL40_W_WF  Relax  8000089                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nfnap    POPE75POPG25_W_WF  Pull   7997572                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nfnap    POPE75POPG25_W_WF  Relax  8000090                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nwe      POPC60CHOL40_W_WF  Pull   7997576                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nwe      POPC60CHOL40_W_WF  Relax  8000091                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nwe      POPE75POPG25_W_WF  Pull   7997577                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nw-Nwe      POPE75POPG25_W_WF  Relax  8000092                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nfe     POPC60CHOL40_W_WF  Pull   7997582                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nfe     POPC60CHOL40_W_WF  Relax  8000094                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nfe     POPE75POPG25_W_WF  Pull   7997583                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nfe     POPE75POPG25_W_WF  Relax  8000095                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nwe     POPC60CHOL40_W_WF  Pull   7997592                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nwe     POPC60CHOL40_W_WF  Relax  8000096                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nwe     POPE75POPG25_W_WF  Pull   7997593                  ONE_JOB_ID                   -                1                  -                 
+Nd-Nwe-Nwe     POPE75POPG25_W_WF  Relax  8000097                  ONE_JOB_ID                   -                1                  -                 
+Ne-Nm-Nfn      POPC60CHOL40_W_WF  Pull   8016253/8024748          OVERLAPPING_JOB_INTERVALS    8016253+8024748  2                  -                 
+Ne-Nm-Nfn      POPE75POPG25_W_WF  Pull   8016258/8024749          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Ne-Nm-Nfn      POPE75POPG25_W_WF  Relax  8027036/8027067          OVERLAPPING_JOB_INTERVALS    8027036+8027067  2                  -                 
+Nfe-Nfex-Nk    POPC60CHOL40_W_WF  Pull   7997671                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nfex-Nk    POPC60CHOL40_W_WF  Relax  8000115                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nfex-Nk    POPE75POPG25_W_WF  Pull   7997672                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nfex-Nk    POPE75POPG25_W_WF  Relax  8000116                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nv-Nwe     POPC60CHOL40_W_WF  Pull   7997674                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nv-Nwe     POPC60CHOL40_W_WF  Relax  8000117                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nv-Nwe     POPE75POPG25_W_WF  Pull   7997676                  ONE_JOB_ID                   -                1                  -                 
+Nfe-Nv-Nwe     POPE75POPG25_W_WF  Relax  8001693                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfe-Nk    POPC60CHOL40_W_WF  Pull   7997682                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfe-Nk    POPC60CHOL40_W_WF  Relax  8000118                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfe-Nk    POPE75POPG25_W_WF  Pull   7997683                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfe-Nk    POPE75POPG25_W_WF  Relax  8001694                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfex-Nk   POPC60CHOL40_W_WF  Pull   7997695                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfex-Nk   POPC60CHOL40_W_WF  Relax  8001695                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfex-Nk   POPE75POPG25_W_WF  Pull   7997696                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nfex-Nk   POPE75POPG25_W_WF  Relax  8001696                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nv-Nwe    POPC60CHOL40_W_WF  Pull   7997724                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nv-Nwe    POPC60CHOL40_W_WF  Relax  8001699                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nv-Nwe    POPE75POPG25_W_WF  Pull   7997725                  ONE_JOB_ID                   -                1                  -                 
+Nfex-Nv-Nwe    POPE75POPG25_W_WF  Relax  8001701                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nfex-Nfe    POPC60CHOL40_W_WF  Pull   7997775                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nfex-Nfe    POPC60CHOL40_W_WF  Relax  8001710                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nfex-Nfe    POPE75POPG25_W_WF  Pull   7997778                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nfex-Nfe    POPE75POPG25_W_WF  Relax  8001711                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nfnap-Nk    POPC60CHOL40_W_WF  Pull   8016133/8024723          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nfnap-Nk    POPC60CHOL40_W_WF  Relax  8025806/8027055          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nfnap-Nk    POPE75POPG25_W_WF  Pull   8016134/8024724          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nfnap-Nk    POPE75POPG25_W_WF  Relax  8025807/8027056          OVERLAPPING_JOB_INTERVALS    8025807+8027056  2                  -                 
+Nk-Nk-Nwe      POPC60CHOL40_W_WF  Pull   8016123/8024721          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nk-Nwe      POPC60CHOL40_W_WF  Relax  8025804/8027053          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nk-Nwe      POPE75POPG25_W_WF  Pull   8016124/8024722          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nk-Nwe      POPE75POPG25_W_WF  Relax  8025805/8027054          OVERLAPPING_JOB_INTERVALS    8025805+8027054  2                  -                 
+Nk-Nl-Nfnap    POPC60CHOL40_W_WF  Pull   7997796                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nl-Nfnap    POPC60CHOL40_W_WF  Relax  8001714                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nl-Nfnap    POPE75POPG25_W_WF  Pull   7997797                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nl-Nfnap    POPE75POPG25_W_WF  Relax  8001715                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nw-Nk       POPC60CHOL40_W_WF  Pull   8016147/8024727          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nw-Nk       POPC60CHOL40_W_WF  Relax  8025810/8027059          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nw-Nk       POPE75POPG25_W_WF  Pull   8016148/8024728          OVERLAPPING_JOB_INTERVALS    8016148+8024728  2                  -                 
+Nk-Nw-Nk       POPE75POPG25_W_WF  Relax  8025811                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nw-Nwe      POPC60CHOL40_W_WF  Pull   8016108/8024719/8029070  OVERLAPPING_JOB_INTERVALS    8016108+8024719  2                  -                 
+Nk-Nw-Nwe      POPC60CHOL40_W_WF  Relax  8025802                  ONE_JOB_ID                   -                1                  -                 
+Nk-Nw-Nwe      POPE75POPG25_W_WF  Pull   8016111/8024720          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nk-Nw-Nwe      POPE75POPG25_W_WF  Relax  8025803/8027052          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nm-Nse-Nfn     POPC60CHOL40_W_WF  Pull   8016273/8024750          OVERLAPPING_JOB_INTERVALS    8016273+8024750  2                  -                 
+Nm-Nse-Nfn     POPC60CHOL40_W_WF  Relax  8027037                  ONE_JOB_ID                   -                1                  -                 
+Nm-Nse-Nfn     POPE75POPG25_W_WF  Pull   8016274/8024751          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nm-Nse-Nfn     POPE75POPG25_W_WF  Relax  8027038/8027068          OVERLAPPING_JOB_INTERVALS    8027038+8027068  2                  -                 
+Nn-NfeB4-Nwe   POPC60CHOL40_W_WF  Pull   8016080/8024713          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-NfeB4-Nwe   POPC60CHOL40_W_WF  Relax  8025796/8027046          OVERLAPPING_JOB_INTERVALS    8025796+8027046  2                  -                 
+Nn-NfeB4-Nwe   POPE75POPG25_W_WF  Pull   8016083/8024714          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-NfeB4-Nwe   POPE75POPG25_W_WF  Relax  8025797/8027047          OVERLAPPING_JOB_INTERVALS    8025797+8027047  2                  -                 
+Nn-Nfnap-Nwe   POPC60CHOL40_W_WF  Pull   8016099/8024717          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nfnap-Nwe   POPC60CHOL40_W_WF  Relax  8025800/8027050          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nfnap-Nwe   POPE75POPG25_W_WF  Pull   8016100/8024718          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nfnap-Nwe   POPE75POPG25_W_WF  Relax  8025801/8027051          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nw-Nwe      POPC60CHOL40_W_WF  Pull   8016064/8024709          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nw-Nwe      POPC60CHOL40_W_WF  Relax  8025791/8027042          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nw-Nwe      POPE75POPG25_W_WF  Pull   8016065/8024710          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nw-Nwe      POPE75POPG25_W_WF  Relax  8025792/8027043          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nwe-Nwe     POPC60CHOL40_W_WF  Pull   8016069/8024711          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nwe-Nwe     POPC60CHOL40_W_WF  Relax  8025793/8027044          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nwe-Nwe     POPE75POPG25_W_WF  Pull   8016070/8024712          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nn-Nwe-Nwe     POPE75POPG25_W_WF  Relax  8025794/8027045          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Na-Nfn     POPC60CHOL40_W_WF  Pull   8016157/8024742          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Na-Nfn     POPC60CHOL40_W_WF  Relax  8025812/8027060          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Na-Nfn     POPE75POPG25_W_WF  Pull   8016159/8024743          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Na-Nfn     POPE75POPG25_W_WF  Relax  8025813/8027061          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nfn-Nfn    POPC60CHOL40_W_WF  Pull   8016171/8024744          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nfn-Nfn    POPC60CHOL40_W_WF  Relax  8025814/8027062          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nfn-Nfn    POPE75POPG25_W_WF  Pull   8016173/8024745          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nfn-Nfn    POPE75POPG25_W_WF  Relax  8025815/8027063          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nm-Nfn     POPC60CHOL40_W_WF  Pull   8016198/8024746          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nm-Nfn     POPC60CHOL40_W_WF  Relax  8025816/8027064          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nm-Nfn     POPE75POPG25_W_WF  Pull   8016199/8024747/8025836  MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nse-Nm-Nfn     POPE75POPG25_W_WF  Relax  8027065                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Nfn-Nl     POPC60CHOL40_W_WF  Pull   7997801                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Nfn-Nl     POPC60CHOL40_W_WF  Relax  8001716                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Nfn-Nl     POPE75POPG25_W_WF  Pull   7997805                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Nfn-Nl     POPE75POPG25_W_WF  Relax  8001717                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Ni-Nf      POPC60CHOL40_W_WF  Pull   7997816                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Ni-Nf      POPC60CHOL40_W_WF  Relax  8001720                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Ni-Nf      POPE75POPG25_W_WF  Pull   7997817                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Ni-Nf      POPE75POPG25_W_WF  Relax  8001721                  ONE_JOB_ID                   -                1                  -                 
+Nwe-Nw-Na      POPC60CHOL40_W_WF  Pull   8016087/8024715          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nw-Na      POPC60CHOL40_W_WF  Relax  8025798/8027048          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nw-Na      POPE75POPG25_W_WF  Pull   8016091/8024716          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nw-Na      POPE75POPG25_W_WF  Relax  8025799/8027049          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nwe-Na     POPC60CHOL40_W_WF  Pull   8016140/8024725          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nwe-Na     POPC60CHOL40_W_WF  Relax  8025808/8027057          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nwe-Na     POPE75POPG25_W_WF  Pull   8016141/8024726          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+Nwe-Nwe-Na     POPE75POPG25_W_WF  Relax  8025809/8027058          MULTIPLE_SEQUENTIAL_JOB_IDS  -                2                  -                 
+
+==============================================================================================================
+10. LOGICAL MODEL RECORDS
+==============================================================================================================
+Model                        Status              Representation  Algorithm  Training run            Prediction run                            
+---------------------------  ------------------  --------------  ---------  ----------------------  ------------------------------------------
+Model0                       predicted           -               -          20260825_202712_319133  20260826_145029_training-20260825_20271...
+Model1A                      predicted           -               -          20260828_133513_002621  20260831_140736_training-20260828_13351...
+Model1D                      predicted           -               -          20260828_133608_149362  20260831_140740_training-20260828_13360...
+Model1X                      trained             -               -          20260828_133606_835657  -                                         
+Model1Y                      trained             -               -          20260828_133610_429093  -                                         
+Model1F_legacy_pre_midpoint  trained             -               -          20260828_133611_719419  -                                         
+Model1B_legacy_pre_nkeqm     predicted           -               -          20260828_133605_710802  20260831_140739_training-20260828_13360...
+Model1B                      predicted           -               -          20260906_142256_275557  20260908_111323_training-20260906_14225...
+Model1C                      training_submitted  -               -          20260906_144733_646541  -                                         
+Model1E                      predicted           -               -          20260906_144736_449864  20260908_111331_training-20260906_14473...
+Model1F                      predicted           -               -          20260906_144739_319815  20260908_111333_training-20260906_14473...
+
+==============================================================================================================
+11. DATASET MEMBERSHIP COUNTS
+==============================================================================================================
+Model                        Total rows  Roles                        
+---------------------------  ----------  -----------------------------
+Model0                       40          {"benchmark": 8, "train": 32}
+Model1A                      55          {"benchmark": 8, "train": 47}
+Model1B                      55          {"benchmark": 8, "train": 47}
+Model1B_legacy_pre_nkeqm     55          {"benchmark": 8, "train": 47}
+Model1C                      55          {"benchmark": 8, "train": 47}
+Model1D                      55          {"benchmark": 8, "train": 47}
+Model1E                      55          {"benchmark": 8, "train": 47}
+Model1F                      78          {"benchmark": 8, "train": 70}
+Model1F_legacy_pre_midpoint  79          {"benchmark": 8, "train": 71}
+Model1X                      55          {"benchmark": 8, "train": 47}
+Model1Y                      55          {"benchmark": 8, "train": 47}
+
+==============================================================================================================
+12. CONTROLLER CAPABILITY INVENTORY
+==============================================================================================================
+Argparse subcommands detected in live workflow.py (17):
+  compare-models, export, migrate-midpoint-v2, model-config, predict-model, predict-model0, prepare-model, prepare-model0, select, select-f, select-g, simulation-queue, status, sync, train-model, train-model0, validate
+Required capability  Detected
+-------------------  --------
+validate             YES     
+status               YES     
+sync                 YES     
+select-f             YES     
+select-g             YES     
+Static command detection is not proof of scientific correctness; live source review remains required before mutation.
+
+==============================================================================================================
+13. DECISION GATES
+==============================================================================================================
+1. Do not submit from DB queue status or directory existence alone.
+2. Submit/resume only rows classified after reconciling canonical selection, valid masterdata, preferred observation, stage progress, checkpoint and active Slurm state.
+3. Cycle-1 B gate: finish/analyse/sync Nf-Nfe-Nm before corrected Model1B.
+4. Cycle-1 C/E gate: finish/analyse/sync the four corrected midpoint acquisitions before Model1C/Model1E and pooled Model1F.
+5. Model1G must not exist. Model2G is the first no-self-feedback G control.
+6. B2 remains empty until corrected Model1B is trained, registered and predicts the full 32,768 universe.
+7. Simulation submission remains a manual action outside workflow.py.
+
+==============================================================================================================
+14. AUDIT VERDICT
+==============================================================================================================
+LINEAGE ASSERTION FAILURES: do not submit or mutate until explained.
+  - No simultaneous overlapping D job intervals
