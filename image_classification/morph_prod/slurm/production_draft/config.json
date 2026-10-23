@@ -1,0 +1,58 @@
+{
+  "baseline": "first Pull trajectory frame; historical reference, not membrane-only equilibrium",
+  "bilayers": {
+    "POPC60CHOL40_W_WF": {
+      "membrane_total": 720,
+      "po4_total": 432,
+      "resnames": [
+        "POPC"
+      ],
+      "role": "mammalian"
+    },
+    "POPC80POPS20_W_WF": {
+      "membrane_total": null,
+      "po4_total": null,
+      "resnames": [
+        "POPC",
+        "POPS"
+      ],
+      "role": "additional"
+    },
+    "POPE75POPG25_W_WF": {
+      "membrane_total": 512,
+      "po4_total": 512,
+      "resnames": [
+        "POPE",
+        "POPG"
+      ],
+      "role": "bacterial"
+    }
+  },
+  "branch_margin_min_nm": 0.3,
+  "circular_resultant_min": 0.1,
+  "endpoint_ns": 100.0,
+  "endpoint_tolerance_ns": 0.051,
+  "fit_rmse_max_nm": 0.5,
+  "grid": 32,
+  "min_wavelength_nm": 4.0,
+  "min_window_frames": 3,
+  "qc_threshold_status": "inherited pilot screening thresholds, not biological acceptance thresholds",
+  "schema_version": "production-morphology-1",
+  "slurm": {
+    "account": "tuttle-rmss",
+    "concurrency": 10,
+    "cpus": 1,
+    "partition": "standard",
+    "time": "04:00:00"
+  },
+  "start_ns": 0.0,
+  "stride": 10,
+  "thickness_valid_fraction_min": 0.95,
+  "windows_ns": [
+    30,
+    50,
+    70,
+    80,
+    90
+  ]
+}

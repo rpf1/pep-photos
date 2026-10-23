@@ -1,5 +1,5 @@
 {
-  "annotation_protocol": "One label per molecule \u00d7 bilayer_type \u00d7 run. Inspect the available views. Use uncertain when evidence is ambiguous. Membranes are independent.",
+  "annotation_protocol": "One label per molecule × bilayer_type × run. Inspect the available views. Use uncertain when evidence is ambiguous. Membranes are independent. Bulge implies interaction; flat/curved describes the surrounding membrane. Use pore_formed for a visible formed pore. Existing labels are not automatically reclassified.",
   "backup_before_edit": true,
   "backup_every_decisions": 10,
   "bilayer_to_membrane_role": {
@@ -11,7 +11,7 @@
     {
       "description": "Apply the agreed manual classification protocol.",
       "key": "1",
-      "name": "curved"
+      "name": "flat_no_interaction"
     },
     {
       "description": "Apply the agreed manual classification protocol.",
@@ -19,9 +19,24 @@
       "name": "flat_interaction"
     },
     {
-      "description": "Apply the agreed manual classification protocol.",
+      "name": "bulge_flat",
       "key": "3",
-      "name": "flat_no_interaction"
+      "description": "Local bulge with an otherwise flat membrane; interaction is implied."
+    },
+    {
+      "description": "Apply the agreed manual classification protocol.",
+      "key": "4",
+      "name": "curved"
+    },
+    {
+      "name": "bulge_curved",
+      "key": "5",
+      "description": "Local bulge with a curved surrounding membrane; interaction is implied."
+    },
+    {
+      "name": "pore_formed",
+      "key": "6",
+      "description": "A visible pore has formed; use this specific class when present."
     }
   ],
   "confirm_relabel": true,
